@@ -9,6 +9,7 @@ export default {
 			colors: {
 				primary: '#F4A261',
 				navGray: '#7A7A7A',
+				smileyblue: '#023047',
 			},
 		},
 	},
