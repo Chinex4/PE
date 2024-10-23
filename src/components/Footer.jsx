@@ -20,9 +20,9 @@ const nav = [
 const Footer = () => {
 	return (
 		<footer className='bg-[#111111] text-white py-8 space-y-10'>
-			<div className='max-w-6xl mx-auto px-4 md:flex md:justify-between md:items-center'>
+			<div className='max-w-6xl mx-auto px-4 lg:flex lg:justify-between lg:items-center'>
 				{/* Logo Section */}
-				<div className='flex items-center mb-6 md:mb-0'>
+				<div className='flex items-center mb-6 lg:mb-0'>
 					<NavLink to='/'>
 						<img
 							src={logo}
@@ -33,7 +33,7 @@ const Footer = () => {
 				</div>
 
 				{/* Navigation Links */}
-				<div className='flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 mb-6 md:mb-0'>
+				<div className='flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-8 mb-6 lg:mb-0'>
 					{nav.map((item, index) => (
 						<NavLink
 							key={index}
@@ -47,7 +47,7 @@ const Footer = () => {
 				</div>
 
 				{/* Social Media Icons */}
-				<div className='flex space-x-4 mb-6 md:mb-0'>
+				<div className='flex space-x-4 mb-6 lg:mb-0'>
 					<a
 						href='https://facebook.com'
 						target='_blank'
