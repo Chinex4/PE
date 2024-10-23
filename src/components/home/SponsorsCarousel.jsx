@@ -10,7 +10,7 @@ const SponsorsCarousel = () => {
 
 	return (
 		<section className='bg-black text-white py-16 px-4'>
-			<h2 className='text-center text-2xl leading-[2px] font-bold mb-12'>
+			<h2 className='text-center text-2xl leading-[10px] font-bold mb-12'>
 				Few Brands I Have Been Fortunate to Work With
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
