@@ -3,7 +3,7 @@ import React from 'react';
 const CommunitySection = () => {
 	return (
 		<div className='bg-black text-white py-16 px-4'>
-			<h2 className='text-center text-2xl leading-[15px] font-bold mb-12'>
+			<h2 className='text-center text-2xl leading-[20px] font-bold mb-12'>
 				CONNECT & HAVE FUN WHILE LEARNING
 				<span className='text-5xl text-primary'>.</span>
 			</h2>

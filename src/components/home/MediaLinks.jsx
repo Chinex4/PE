@@ -4,7 +4,7 @@ import { media } from '../../data';
 const MediaLinks = () => {
 	return (
 		<div className='bg-black text-white py-16'>
-			<h2 className='text-center text-2xl leading-[15px] font-bold mb-12'>
+			<h2 className='text-center text-2xl leading-[20px] font-bold mb-12'>
 				LEARN WITH ME THROUGH THE MEDIA
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
