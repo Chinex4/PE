@@ -18,7 +18,7 @@ const RequestForm = () => {
 		console.log(formData);
 	};
 	return (
-		<div className='bg-black text-white py-16 px-4'>
+		<div className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<h2 className='text-center text-2xl font-bold mb-12'>
 				REQUEST FOR A RESOURCE NOT FOUND
 				<span className='text-5xl text-primary'>.</span>

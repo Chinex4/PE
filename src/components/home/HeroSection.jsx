@@ -4,7 +4,7 @@ import smiley from '../../assets/SMILEY.png'
 
 const HeroSection = () => {
 	return (
-		<div className='text-white flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
+		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left max-w-2xl'>
 				<h1 className='text-4xl font-bold mb-4'>
 					Helping Entrepreneurs Scale Their Brands With Personalized Strategies

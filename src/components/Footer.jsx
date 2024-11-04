@@ -19,7 +19,7 @@ const nav = [
 
 const Footer = () => {
 	return (
-		<footer className='bg-[#111111] text-white py-8 space-y-10'>
+		<footer className='bg-[#111111] text-[#F5E9DC] py-8 space-y-10'>
 			<div className='max-w-6xl mx-auto px-4 lg:flex lg:justify-between lg:items-center'>
 				{/* Logo Section */}
 				<div className='flex items-center mb-6 lg:mb-0'>
@@ -39,7 +39,7 @@ const Footer = () => {
 							key={index}
 							to={item.path}
 							className={({ isActive }) =>
-								isActive ? 'text-white' : 'text-navGray hover:text-white transition-colors duration-300'
+								isActive ? 'text-[#F5E9DC]' : 'text-navGray hover:text-[#F5E9DC] transition-colors duration-300'
 							}>
 							{item.label}
 						</NavLink>

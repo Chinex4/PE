@@ -16,7 +16,7 @@ const BrandStrategist = () => {
 
 			{/* Content Section */}
 			<div className='text-center md:text-left'>
-				<h2 className='text-4xl font-bold text-white'>
+				<h2 className='text-4xl font-bold text-[#F5E9DC]'>
 					Brand <br /><span className='text-smileyblue text-5xl'>Strategist</span>
 				</h2>
 				<p className='mt-4 text-smileyblue'>

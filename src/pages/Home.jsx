@@ -10,7 +10,7 @@ import ContactForm from '../components/home/ContactForm';
 
 function Home() {
 	return (
-		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem]'>
+		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0'>
       <HeroSection />
       <SponsorsCarousel />
       <BrandStrategist />

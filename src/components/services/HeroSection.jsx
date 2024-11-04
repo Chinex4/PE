@@ -6,20 +6,20 @@ const HeroSection = () => {
 		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left max-w-2xl'>
 				<h1 className='text-4xl font-bold mb-4'>
-					Empower Your Brand with Resources Designed to Drive Growth
+					Let’s create The Right opportunities For Your Brand To Thrive
 				</h1>
 				<p className='text-lg mb-8 text-navGray'>
-					Explore a curated collection of resources tailored to help you
-					simplify brand strategy, grow your audience, and increase revenue.
+					From strategy to execution, let’s craft the roadmap your brand needs
+					to stand out, connect, and generate consistent revenue.
 				</p>
 				<Link className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
-					Request for a Resource
+					Get A Free Brand Audit
 				</Link>
 			</div>
 			<div className='mt-8'>
 				<img
-					src={'/images/resourceflash.png'}
-					alt='Resource Icon'
+					src={'/images/Subheading.png'}
+					alt='Service Icon'
 				/>
 			</div>
 		</div>

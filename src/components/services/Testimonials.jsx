@@ -1,5 +1,5 @@
 import React from 'react';
-import { testimonials } from '../../data';
+import { testimonials_2 } from '../../data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
@@ -7,9 +7,9 @@ import 'swiper/css/pagination';
 
 const Testimonials = () => {
 	return (
-		<div className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<h2 className='text-center text-2xl font-bold mb-12'>
-				WHAT PEOPLE THINK ABOUT ME
+				A Few Client Reactions Working Together
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
 			<Swiper
@@ -30,12 +30,12 @@ const Testimonials = () => {
 					},
 				}}
 				className='flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-6'>
-				{testimonials.map((testimonial, index) => (
+				{testimonials_2.map((testimonial, index) => (
 					<SwiperSlide
 						key={index}
-						className='bg-gray-100 text-smileyblue p-6 rounded-lg shadow-lg max-w-sm'>
+						className='bg-[#F5E9DC] text-smileyblue p-6 rounded-lg shadow-lg max-w-sm'>
 						<p className='mb-4 italic'>{testimonial.quote}</p>
-						<p className='font-bold'>{testimonial.author}</p>
+						<p className='mt-20 font-bold'>{testimonial.author}</p>
 						<p className='text-sm text-smileyblue flex items-center space-x-2'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -61,7 +61,7 @@ const Testimonials = () => {
 					</SwiperSlide>
 				))}
 			</Swiper>
-		</div>
+		</section>
 	);
 };
 

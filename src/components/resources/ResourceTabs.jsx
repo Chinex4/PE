@@ -38,7 +38,7 @@ const ResourceTabs = () => {
 						<div className='p-4'>
 							<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>
 							<p className='text-gray-600 mb-4'>Buy for: {item.price}</p>
-							<button className='bg-primary text-white px-4 py-2 rounded-lg'>
+							<button className='bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
 								Buy Now
 							</button>
 						</div>

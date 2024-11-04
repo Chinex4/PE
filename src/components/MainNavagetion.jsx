@@ -12,7 +12,7 @@ const nav = [
 
 const MainNavagetion = () => {
 	return (
-		<div className='navbar text-white px-4 py-5 lg:px-[10rem] lg:py-[2rem]'>
+		<div className='navbar text-[#F5E9DC] px-4 py-5 lg:px-[10rem] lg:py-[2rem]'>
 			<div className='navbar-start'>
 				<div className='dropdown lg:hidden'>
 					<div
@@ -41,7 +41,7 @@ const MainNavagetion = () => {
 								<NavLink
 									to={item.path}
 									className={({ isActive }) =>
-										isActive ? 'text-white' : 'text-navGray'
+										isActive ? 'text-[#F5E9DC]' : 'text-navGray'
 									}>
 									{item.label}
 								</NavLink>
@@ -66,7 +66,7 @@ const MainNavagetion = () => {
 							<NavLink
 								to={item.path}
 								className={({ isActive }) =>
-									isActive ? 'text-white' : 'text-navGray'
+									isActive ? 'text-[#F5E9DC]' : 'text-navGray'
 								}>
 								{item.label}
 							</NavLink>
@@ -75,7 +75,7 @@ const MainNavagetion = () => {
 				</ul>
 			</div>
 			<div className='navbar-end'>
-				<Link className='btn bg-primary border-none hover:bg-primary/80 text-white lg:px-10 text-center'>
+				<Link className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center'>
 					Contact Me
 				</Link>
 			</div>

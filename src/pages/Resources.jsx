@@ -6,7 +6,7 @@ import RequestForm from '../components/resources/RequestForm';
 
 const Resources = () => {
   return (
-    <div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem]'>
+    <div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0'>
       <HeroSection />
       <ResourceTabs />
       <RequestForm />

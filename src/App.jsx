@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Resources from './pages/Resources';
+import Services from './pages/Services';
 import './App.css'
 import MainNavagetion from './components/MainNavagetion';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/services" element={<Services />} />
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
       <Footer />
