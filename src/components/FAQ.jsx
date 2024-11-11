@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { faqs } from '../../data';
+import { faqs } from '../data';
 
 function FAQ() {
 	// State to track which FAQ is open

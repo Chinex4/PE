@@ -4,7 +4,7 @@ import Service from '../components/services/Service'
 import Testimonials from '../components/services/Testimonials'
 import CaseStudy from '../components/services/CaseStudy'
 import Processes from '../components/services/Processes'
-import FAQ from '../components/services/FAQ'
+import FAQ from '../components/FAQ'
 
 const Services = () => {
   return (

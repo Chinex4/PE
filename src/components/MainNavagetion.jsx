@@ -7,7 +7,6 @@ const nav = [
 	{ path: '/resources', label: 'Resources' },
 	{ path: '/services', label: 'Services' },
 	{ path: '/about', label: 'About Me' },
-	{ path: '/contact', label: 'Contact' },
 ];
 
 const MainNavagetion = () => {

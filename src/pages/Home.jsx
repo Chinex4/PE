@@ -6,7 +6,7 @@ import BrandStrategist from '../components/home/BrandStrategist';
 import Testimonials from '../components/home/Testimonials';
 import MediaLinks from '../components/home/MediaLinks';
 import CommunitySection from '../components/home/CommunitySection';
-import ContactForm from '../components/home/ContactForm';
+import ContactForm from '../components/ContactForm';
 
 function Home() {
 	return (
