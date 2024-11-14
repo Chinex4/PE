@@ -259,3 +259,27 @@ export const faqs = [
 			"Before starting any project, I offer a consultation call to discuss your brand's needs and goals. This gives us a chance to ensure our values align and that my approach fits with what you're looking to achieve. Transparency, trust, and open communication are essential in any successful partnership.",
 	},
 ];
+
+export const links = [
+	{
+		link: '',
+		icon: 'linkedicon'
+	},
+	{
+		link: '',
+		icon: 'igicon'
+	},
+	{
+		link: '',
+		icon: 'xicon'
+	},
+	{
+		link: '',
+		icon: 'yticon'
+	},
+	{
+		link: '',
+		icon: 'ficon'
+	},
+]
+
