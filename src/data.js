@@ -283,3 +283,11 @@ export const links = [
 	},
 ]
 
+export const approachSteps = [
+	{ step: '1', title: 'Brand Discovery & Market Analysis', description: 'Conducted a thorough analysis of Xquisite\'s market, competitors, and audience, identifying key opportunities for differentiation.' },
+	{ step: '2', title: 'Visual Identity Development', description: 'Refreshed the brand’s visual identity with colors, typography, and imagery for cohesive recognition by both primary and secondary audiences.' },
+	{ step: '3', title: 'Product Hierarchy & Messaging', description: 'Structured a clear brand hierarchy and crafted messaging that highlights each product line’s unique value within a balanced brand narrative.' },
+	{ step: '4', title: 'Integrated Marketing Strategy', description: 'Implemented a website marketing strategy, aligning updated identity to boost recognition and engagement.' },
+	{ step: '5', title: 'Continuous Feedback & Optimization', description: 'Gathered client feedback to refine strategies, ensuring impactful and relevant brand positioning.' },
+];
+

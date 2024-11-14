@@ -8,6 +8,7 @@ import MainNavagetion from './components/MainNavagetion';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import CaseStudy from './pages/CaseStudy';
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/xquisite" element={<CaseStudy />} />
+        
       </Routes>
       <Footer />
 

@@ -34,7 +34,7 @@ const CaseStudy = () => {
 						</p>
 
 						{/* <!-- Call-to-Action Button --> */}
-						<Link class='bg-primary text-black py-2 px-8 rounded-lg'>
+						<Link to={'/xquisite'} class='bg-primary text-black py-2 px-8 rounded-lg'>
 							View Full Case Study
 						</Link>
 					</div>
