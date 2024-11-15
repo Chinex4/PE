@@ -12,7 +12,7 @@ const Processes = () => {
 			{/* <!-- Process Steps Grid --> */}
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 				{/* Render Approach Steps */}
-				{approachSteps.map((step) => (
+				{processToWinSteps.map((step) => (
 					<div key={step.step} className="border border-gray-500 p-6 rounded-lg">
 						<div className="text-2xl w-12 h-12 grid place-items-center rounded-full bg-[#F5E9DC33] border border-white font-semibold text-[#F5E9DC] mb-8">
 							<span>{step.step}</span>
