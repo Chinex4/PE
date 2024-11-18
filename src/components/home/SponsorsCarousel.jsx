@@ -10,13 +10,13 @@ const SponsorsCarousel = () => {
 
 	return (
 		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
-			<h2 className='text-center text-2xl font-bold mb-12'>
-				Few Brands I Have Been Fortunate to Work With
+			<h2 className='text-center text-2xl font-bold mb-5 leading-[3px]'>
+				Few Clients I Work With
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
 			<div className='bg-[#D9D9D90A] mx-auto py-8 rounded'>
 				<Swiper
-					modules={[Navigation, Pagination, Autoplay]}
+					modules={[Pagination, Autoplay]}
 					spaceBetween={30}
 					// navigation
 					pagination={{ clickable: true }}

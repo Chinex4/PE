@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const BrandStrategist = () => {
 	return (
-		<section className='mt-[5rem] flex flex-col-reverse md:flex-row items-center bg-primary p-8 rounded-lg shadow-lg mx-auto'>
+		<section className='mt-[5rem] mb-12 flex flex-col-reverse md:flex-row items-center bg-primary p-8 rounded-lg shadow-lg mx-auto'>
 			{/* Image Section */}
 			<div className='flex-shrink-0 relative top-8 lg:mb-0 lg:mr-8'>
 				<img
@@ -16,10 +16,10 @@ const BrandStrategist = () => {
 
 			{/* Content Section */}
 			<div className='text-center md:text-left'>
-				<h2 className='text-4xl font-bold text-[#F5E9DC]'>
+				<h2 className='text-5xl font-bold text-[#F5E9DC]'>
 					Brand <br /><span className='text-smileyblue text-5xl'>Strategist</span>
 				</h2>
-				<p className='mt-4 text-smileyblue'>
+				<p className='mt-4 text-smileyblue pr-8'>
 					Hey there! I'm <span className='font-bold'>Precious Evans</span>, a
 					brand strategist with a passion for helping entrepreneurs and
 					businesses like yours turn their brands into revenue powerhouses.
@@ -28,7 +28,7 @@ const BrandStrategist = () => {
 				</p>
 
 				{/* Button */}
-				<Link className='inline-block text-lg mt-6 px-6 py-2 bg-white text-smileyblue font-medium rounded-lg hover:bg-gray-200'>
+				<Link className='inline-block text-lg mt-12 px-6 py-2 bg-white text-smileyblue font-medium rounded-lg hover:bg-gray-200'>
 					View My Services Here
 				</Link>
 			</div>

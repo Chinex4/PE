@@ -4,8 +4,8 @@ import { media } from '../../data';
 const MediaLinks = () => {
 	return (
 		<div className='bg-black text-[#F5E9DC] py-16'>
-			<h2 className='text-center text-2xl font-bold mb-12'>
-				LEARN WITH ME THROUGH THE MEDIA
+			<h2 className='text-center text-2xl font-bold mb-12 leading-[3px]'>
+				CONNECT WITH ME THROUGH THE MEDIA
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
 			<div className='flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-6'>
@@ -19,10 +19,10 @@ const MediaLinks = () => {
 						<img
 							src={item.imageUrl}
 							alt={item.name}
-							className='w-full h-48 object-cover'
+							className='w-full h-64 object-cover'
 						/>
 						<div className='absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-[#F5E9DC] flex items-center justify-between'>
-							<h3 className='text-lg font-bold'>{item.name}</h3>
+							<h3 className='text-lg font-bold uppercase'>{item.name}</h3>
 							<span className=''>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'

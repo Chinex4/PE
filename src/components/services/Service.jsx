@@ -10,14 +10,14 @@ const Services = () => {
 					<h3 class='font-semibold text-lg md:text-xl mb-2'>
 						01 - Brand Strategy & Positioning
 					</h3>
-					<p class='text-gray-700 mb-4'>
+					<p class='text-gray-700 mb-4 text-sm'>
 						Build a powerful foundation for your brand with a tailored strategy
 						that aligns with your goals and vision. Together, we'll dive deep
 						into understanding your audience, defining your unique brand
 						identity, and crafting a roadmap that sets you apart from the
 						competition.
 					</p>
-					<div class='flex space-x-4 text-center'>
+					<div class='flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
 						<Link class='bg-primary py-2 px-4 rounded-lg'>
 							Get Started
 						</Link>
@@ -38,7 +38,7 @@ const Services = () => {
 						through establishing a memorable and credible presence that
 						resonates with your audience.
 					</p>
-					<div class='flex space-x-4 text-center'>
+					<div class='flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-xs'>
 						<Link class='bg-primary text-black py-2 px-4 rounded-lg'>
 							Request Coaching
 						</Link>
@@ -58,7 +58,7 @@ const Services = () => {
 						or overcome specific challenges, I’ll help you with actionable
 						insights.
 					</p>
-					<div class='flex space-x-4 text-center'>
+					<div class='flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
 						<Link class='bg-primary text-black py-2 px-4 rounded-lg'>
 							Book A Call
 						</Link>
@@ -71,14 +71,17 @@ const Services = () => {
 				{/* <!-- Service 4 --> */}
 				<div class='bg-[#F5E9DC] text-black p-6 rounded-lg shadow-lg'>
 					<h3 class='font-semibold text-lg md:text-xl mb-2'>04 - Speaking Engagements</h3>
-					<p class='text-gray-700 mb-4'>
+					<p class='text-gray-700 mb-4 text-sm'>
 						Looking for an engaging, knowledgeable speaker on branding,
 						entrepreneurship, or business growth? I bring years of experience
 						and a deep passion for helping brands thrive. Let’s inspire and
 						equip your attendees with the tools they need to elevate their own
 						brands.
+						<br className='hidden lg:block'/>
+						<br />
+						<br />
 					</p>
-					<div class='flex space-x-4 text-center'>
+					<div class='flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
 						<Link class='bg-primary text-black py-2 px-4 rounded-lg'>
 							Request Availability
 						</Link>

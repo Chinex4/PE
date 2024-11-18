@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { resources, tabs } from '../../data';
 
 const ResourceTabs = () => {
-	const [activeTab, setActiveTab] = useState('checklists');
-
-	
+	const [activeTab, setActiveTab] = useState('latest');
 
 	return (
 		<div className='py-6'>
@@ -14,7 +12,7 @@ const ResourceTabs = () => {
 					<button
 						key={tab.id}
 						onClick={() => setActiveTab(tab.id)}
-						className={`py-2 px-4 text-sm font-medium ${
+						className={`w-[200px] px-4 text-xs font-medium whitespace-nowrap ${
 							activeTab === tab.id
 								? 'text-primary border-b-2 border-primary'
 								: 'text-gray-300'
@@ -33,14 +31,14 @@ const ResourceTabs = () => {
 						<img
 							src={item.image}
 							alt={item.title}
-							className='w-full h-40 object-cover'
+							className='w-full h-64 object-cover'
 						/>
 						<div className='p-4'>
 							<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>
 							<p className='text-gray-600 mb-4'>Buy for: {item.price}</p>
-							<button className='bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
+							<a className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
 								Buy Now
-							</button>
+							</a>
 						</div>
 					</div>
 				))}

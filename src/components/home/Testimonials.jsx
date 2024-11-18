@@ -8,8 +8,8 @@ import 'swiper/css/pagination';
 const Testimonials = () => {
 	return (
 		<div className='bg-black text-[#F5E9DC] py-16 px-4'>
-			<h2 className='text-center text-2xl font-bold mb-12'>
-				WHAT PEOPLE THINK ABOUT ME
+			<h2 className='text-center text-2xl font-bold mb-12 leading-[3px]'>
+				CLIENT REVIEWS
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
 			<Swiper

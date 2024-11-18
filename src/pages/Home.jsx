@@ -7,6 +7,8 @@ import Testimonials from '../components/home/Testimonials';
 import MediaLinks from '../components/home/MediaLinks';
 import CommunitySection from '../components/home/CommunitySection';
 import ContactForm from '../components/ContactForm';
+import Resources from '../components/home/Resources';
+import YoutubeSection from '../components/home/YoutubeSection';
 
 function Home() {
 	return (
@@ -14,6 +16,8 @@ function Home() {
       <HeroSection />
       <SponsorsCarousel />
       <BrandStrategist />
+      <Resources />
+      <YoutubeSection />
       <Testimonials />
       <MediaLinks />
       <CommunitySection />

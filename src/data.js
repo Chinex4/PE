@@ -38,11 +38,7 @@ export const sponsors = [
 ];
 
 export const media = [
-	{
-		name: 'YOUTUBE',
-		imageUrl: '/images/thumb1.png', // Replace with your image URL
-		link: 'https://www.youtube.com/channel/your-channel-link',
-	},
+	
 	{
 		name: 'Instagram',
 		imageUrl: '/images/thumb2.png', // Replace with your image URL
@@ -53,9 +49,15 @@ export const media = [
 		imageUrl: '/images/thumb3.png', // Replace with your image URL
 		link: 'https://www.linkedin.com/in/your-profile-link',
 	},
+	{
+		name: 'Twitter',
+		imageUrl: '/images/thumb3.png', // Replace with your image URL
+		link: 'https://www.linkedin.com/in/your-profile-link',
+	},
 ];
 
 export const tabs = [
+	{ id: 'latest', label: 'Latest' },
 	{ id: 'checklists', label: 'Checklists' },
 	{ id: 'starterPacks', label: 'Brand Starter Packs' },
 	{ id: 'personalBranding', label: 'Personal Branding' },
@@ -65,6 +67,19 @@ export const tabs = [
 ];
 
 export const resources = {
+	latest: [
+		{
+			title: 'Starter Pack 1',
+			price: '$49.99',
+			image: '/images/resouceman.png',
+		},
+		{
+			title: 'Starter Pack 1',
+			price: '$49.99',
+			image: '/images/resouceman.png',
+		},
+		// Add more starter pack items
+	],
 	checklists: [
 		{
 			title: 'Brand Launch Checklist',
@@ -122,6 +137,11 @@ export const resources = {
 		// Add more starter pack items
 	],
 	personalBranding: [
+		{
+			title: 'Starter Pack 1',
+			price: '$49.99',
+			image: '/images/resouceman.png',
+		},
 		{
 			title: 'Starter Pack 1',
 			price: '$49.99',
