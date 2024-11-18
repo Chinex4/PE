@@ -21,7 +21,7 @@ const YoutubeSection = () => {
 
 	return (
 		<section className='bg-black text-center py-16 px-4'>
-			<h2 className='text-2xl uppercase font-semibold text-[#F5E9DC] mb-8 leading-[3px]'>
+			<h2 className='text-2xl uppercase font-semibold text-[#F5E9DC] mb-8 leading-[8px]'>
 				Learn Insights and Strategies on Youtube
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
