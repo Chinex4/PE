@@ -12,7 +12,7 @@ const ResourceTabs = () => {
 					<button
 						key={tab.id}
 						onClick={() => setActiveTab(tab.id)}
-						className={`w-[200px] px-4 text-xs font-medium whitespace-nowrap ${
+						className={`w-[200px] px-4 py-2 text-xs font-medium whitespace-nowrap ${
 							activeTab === tab.id
 								? 'text-primary border-b-2 border-primary'
 								: 'text-gray-300'
