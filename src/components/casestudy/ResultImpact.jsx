@@ -1,8 +1,9 @@
 const ResultsImpact = () => {
 	return (
 		<section className='bg-black text-center py-16 px-4'>
-			<h2 className='text-2xl font-semibold text-[#F5E9DC] mb-4'>
+			<h2 className='text-2xl font-semibold text-[#F5E9DC] mb-4 uppercase'>
 				Results & Impact
+				<span className='text-5xl text-primary'>.</span>
 			</h2>
 			<p className='text-sm text-[#F5E9DC] mb-8 max-w-xl mx-auto'>
 				Our partnership with Xquisite has been linked to incredible results,

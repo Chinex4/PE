@@ -17,7 +17,7 @@ const Services = () => {
 						identity, and crafting a roadmap that sets you apart from the
 						competition.
 					</p>
-					<div class='flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
+					<div class='mt-6 md:mt-0 flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
 						<Link class='bg-primary py-2 px-4 rounded-lg'>
 							Get Started
 						</Link>
@@ -32,13 +32,13 @@ const Services = () => {
 					<h3 class='font-semibold text-lg md:text-xl mb-2'>
 						02 - Personal Brand Strategy
 					</h3>
-					<p class='text-gray-300 mb-4'>
+					<p class='text-gray-300 mb-4 text-sm'>
 						Uncover your authentic brand voice and learn how to leverage it for
 						influence and impact. My personal brand coaching sessions guide you
 						through establishing a memorable and credible presence that
 						resonates with your audience.
 					</p>
-					<div class='flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-xs'>
+					<div class='mt-6 md:mt-0 flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-xs'>
 						<Link class='bg-primary text-black py-2 px-4 rounded-lg'>
 							Request Coaching
 						</Link>
@@ -51,14 +51,14 @@ const Services = () => {
 				{/* <!-- Service 3 --> */}
 				<div class='border bg-[#191919] border-[#F5E9DC] p-6 rounded-lg'>
 					<h3 class='font-semibold text-lg md:text-xl mb-2'>03 - Consultation Calls</h3>
-					<p class='text-gray-300 mb-4'>
+					<p class='text-gray-300 mb-4 text-sm'>
 						Need guidance on a specific brand challenge? My one-on-one
 						consultation calls offer targeted support tailored to your unique
 						needs. Whether you’re looking to strengthen your brand positioning
 						or overcome specific challenges, I’ll help you with actionable
 						insights.
 					</p>
-					<div class='flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
+					<div class='mt-6 md:mt-0 flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
 						<Link class='bg-primary text-black py-2 px-4 rounded-lg'>
 							Book A Call
 						</Link>

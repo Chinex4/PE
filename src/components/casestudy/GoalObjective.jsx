@@ -4,11 +4,8 @@ const GoalsObjectives = () => {
 	return (
 		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<div className='max-w-4xl mx-auto text-center'>
-				<h2 className='text-2xl font-semibold'>Goals & Objectives</h2>
-
-				{/* Divider Line */}
-				<div className='w-52 h-[2px] bg-[#F5E9DC] mx-auto mb-8'></div>
-
+				<h2 className='text-2xl font-semibold uppercase mb-8'>Goals & Objectives
+				<span className='text-5xl text-primary'>.</span></h2>
 				<p className='text-sm mb-12'>
 					The primary goal for Xquisite was to enhance brand positioning and
 					visual identity, allowing them to stand out in a competitive market
@@ -47,7 +44,7 @@ const GoalsObjectives = () => {
 							{/* Replace with actual icon */}
 						</div>
 						<h3 className='text-center text-sm font-medium'>
-							Increase Brand Recognition and Engagement
+							Increase Brand Recognition <br /> and Engagement
 						</h3>
 					</div>
 

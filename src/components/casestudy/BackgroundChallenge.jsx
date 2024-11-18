@@ -4,13 +4,10 @@ const BackgroundChallenge = () => {
 	return (
 		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<div className='max-w-3xl mx-auto text-center'>
-				<h2 className='text-2xl font-semibold'>Background & Challenge</h2>
-
-                {/* Divider Line */}
-				<div className='w-52 h-[2px] bg-[#F5E9DC] mx-auto mb-8'></div>
-
+				<h2 className='text-2xl font-semibold uppercase leading-[3px]'>Background & Challenge
+				<span className='text-5xl text-primary'>.</span></h2>
 				{/* Client Overview Section */}
-				<div className='mb-8'>
+				<div className='my-8'>
 					<h3 className='text-xl font-medium mb-4'>Client Overview</h3>
 					<p className='text-sm leading-relaxed opacity-80'>
 						Our client, Xquisite, is an ambitious brand committed to outpacing

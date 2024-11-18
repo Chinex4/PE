@@ -8,7 +8,7 @@ const HeroSection = () => {
 				<h1 className='text-4xl font-bold mb-4'>
 					Let’s Connect and Bring Your Brand Vision to Life!
 				</h1>
-				<p className='text-lg mb-8 text-navGray'>
+				<p className='text-lg mb-8'>
 					Whether you’re ready to elevate your brand, need guidance on brand
 					strategy, or just want to explore how we can work together, I’d love
 					to hear from you! Every brand journey starts with a conversation, and

@@ -5,10 +5,10 @@ const MyApproach = () => {
 	return (
 		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<div className='max-w-5xl mx-auto text-center'>
-				<h2 className='text-2xl font-semibold'>My Approach</h2>
-
-				{/* Divider Line */}
-				<div className='w-44 h-[2px] bg-[#F5E9DC] mx-auto mb-8'></div>
+				<h2 className='text-2xl font-semibold uppercase mb-8'>
+					My Approach
+					<span className='text-5xl text-primary'>.</span>
+				</h2>
 
 				<p className='text-sm mb-12'>
 					To help Xquisite achieve its goals, we implemented a multi-phase

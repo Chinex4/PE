@@ -9,6 +9,7 @@ import CommunitySection from '../components/home/CommunitySection';
 import ContactForm from '../components/ContactForm';
 import Resources from '../components/home/Resources';
 import YoutubeSection from '../components/home/YoutubeSection';
+import FAQ from '../components/FAQ';
 
 function Home() {
 	return (
@@ -21,6 +22,7 @@ function Home() {
       <Testimonials />
       <MediaLinks />
       <CommunitySection />
+      <FAQ />
       <ContactForm />
     </div>
 	);

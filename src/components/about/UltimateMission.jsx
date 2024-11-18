@@ -35,7 +35,7 @@ const UltimateMission = () => {
 						{/* Call-to-Action Button */}
 						<Link
 							to='/contact'
-							className='bg-primary inline-block mt-8 text-black py-2 px-8 rounded-lg'>
+							className='bg-primary inline-block mt-8 text-black py-4 px-8 rounded-lg'>
 							Let's Talk About Your Brand
 						</Link>
 					</div>
