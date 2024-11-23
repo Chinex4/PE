@@ -19,7 +19,7 @@ const SponsorsCarousel = () => {
 					modules={[Pagination, Autoplay]}
 					spaceBetween={30}
 					// navigation
-					pagination={{ clickable: true }}
+					// pagination={{ clickable: true }}
 					autoplay={{ delay: 3000 }}
 					loop={true}
 					breakpoints={{

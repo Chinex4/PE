@@ -6,7 +6,7 @@ const HeroSection = () => {
 		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left max-w-2xl'>
 				<h1 className='text-4xl font-bold mb-4'>Hi, I am <br /> Precious Evans</h1>
-				<p className='text-sm mb-8'>
+				<p className='text-sm mb-8 text-navGray'>
 					I am a brand strategist and passionate user/customer experience
 					designer with a unique desire for solving both simple & complex
 					problems every day of my life. Over my years pf experience, I have

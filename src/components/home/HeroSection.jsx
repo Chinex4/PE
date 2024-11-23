@@ -10,7 +10,7 @@ const HeroSection = () => {
 					Helping Entrepreneurs Scale Their Brands With Personalized Strategies
 					To Drive Revenue Growth
 				</h1>
-				<p className='text-lg mb-8'>
+				<p className='text-lg mb-8 text-navGray'>
 					I create tailored brand strategies that position your business for
 					sustainable growth, stronger customer connections, and consistent
 					revenue.

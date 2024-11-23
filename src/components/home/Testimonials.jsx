@@ -15,7 +15,7 @@ const Testimonials = () => {
 			<Swiper
 				modules={[Navigation, Pagination, Autoplay]}
 				spaceBetween={30}
-				pagination={{ clickable: true }}
+				// pagination={{ clickable: true }}
 				autoplay={{ delay: 3000 }}
 				loop={true}
 				breakpoints={{

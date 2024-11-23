@@ -8,7 +8,7 @@ const HeroSection = () => {
 				<h1 className='text-4xl font-bold mb-4'>
 					Empower Your Brand with Resources Designed to Drive Growth
 				</h1>
-				<p className='text-lg mb-8'>
+				<p className='text-lg mb-8 text-navGray'>
 					Explore a curated collection of resources tailored to help you
 					simplify brand strategy, grow your audience, and increase revenue.
 				</p>
