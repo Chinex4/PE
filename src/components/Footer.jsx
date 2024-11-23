@@ -35,14 +35,14 @@ const Footer = () => {
 				{/* Navigation Links */}
 				<div className='flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-8 mb-6 lg:mb-0'>
 					{nav.map((item, index) => (
-						<NavLink
+						<a
 							key={index}
-							to={item.path}
-							className={({ isActive }) =>
-								isActive ? 'text-[#F5E9DC]' : 'text-navGray hover:text-[#F5E9DC] transition-colors duration-300'
+							href={item.path}
+							className={
+								'text-navGray hover:text-[#F5E9DC] transition-colors duration-300'
 							}>
 							{item.label}
-						</NavLink>
+						</a>
 					))}
 				</div>
 
