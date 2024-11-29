@@ -15,9 +15,9 @@ const HeroSection = () => {
 					solving skills that help me walk them through the path of achieving
 					their desires.
 				</p>
-				<Link className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
+				<a href='https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5' className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Know More About Me
-				</Link>
+				</a>
 			</div>
 			<div className='mt-8'>
 				<img

@@ -25,7 +25,7 @@ function FAQ() {
 						chat about how we can make it happen!
 					</p>
 					<a
-						href='#contact'
+						href='/contact'
 						className='mt-4 inline-block text-primary hover:text-primary/80 transition'>
 						Send A Message &rarr;
 					</a>

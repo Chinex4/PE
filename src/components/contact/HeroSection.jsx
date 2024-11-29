@@ -14,9 +14,9 @@ const HeroSection = () => {
 					to hear from you! Every brand journey starts with a conversation, and
 					I’m here to help you find the right path for growth and success.
 				</p>
-				<Link className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
+				<a href='https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5' className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Send a Direct Message
-				</Link>
+				</a>
 			</div>
 		</div>
 	);

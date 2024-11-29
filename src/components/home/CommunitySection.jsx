@@ -29,7 +29,7 @@ const CommunitySection = () => {
 					</p>
 					
 					<a
-						href='https://your-community-link.com' // Replace with the actual link
+						href='https://chat.whatsapp.com/FULmCcEHwAHBgIHmZ4Wxsa' // Replace with the actual link
 						target='_blank'
 						rel='noopener noreferrer'
 						className='inline-block bg-primary text-black px-6 py-3 rounded-md shadow-lg hover:bg-primary/80 transition-colors'>

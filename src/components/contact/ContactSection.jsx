@@ -1,7 +1,35 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { links } from '../../data';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
+	const form = useRef();
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		// Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_PUBLIC_KEY' with your actual Email.js credentials
+		emailjs
+			.sendForm(
+				'YOUR_SERVICE_ID',
+				'YOUR_TEMPLATE_ID',
+				form.current,
+				'YOUR_PUBLIC_KEY'
+			)
+			.then(
+				(result) => {
+					console.log('Email sent:', result.text);
+					alert('Message sent successfully!');
+				},
+				(error) => {
+					console.log('Error:', error.text);
+					alert('Failed to send message. Please try again.');
+				}
+			);
+
+		// Optional: Reset the form after submission
+		e.target.reset();
+	};
 	return (
 		<section className='bg-black text-[#F5E9DC] py-16'>
 			<div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-8'>
@@ -79,14 +107,17 @@ const ContactSection = () => {
 									{links.map((link, index) => {
 										return (
 											<a
-                                                key={index}
+												key={index}
 												href={link.link}
 												className='text-primary'>
-												<img className='w-[2rem]' src={`/images/${link.icon}.png`} alt="" />
+												<img
+													className='w-[2rem]'
+													src={`/images/${link.icon}.png`}
+													alt=''
+												/>
 											</a>
 										);
 									})}
-									
 								</div>
 							</div>
 						</div>
@@ -96,25 +127,36 @@ const ContactSection = () => {
 				{/* Contact Form */}
 				<div className='lg:w-1/2 bg-[#F5E9DC] text-black p-8 rounded-3xl'>
 					<h3 className='text-xl font-semibold mb-4'>SEND A MESSAGE</h3>
-					<form className='space-y-4'>
+					<form
+						ref={form}
+						onSubmit={handleSubmit}
+						className='space-y-4'>
 						<input
 							type='email'
+							name='user_email'
 							placeholder='Email address'
 							className='w-full p-3 rounded-md focus:outline-none'
+							required
 						/>
 						<input
 							type='tel'
+							name='user_phone'
 							placeholder='Phone Number'
 							className='w-full p-3 rounded-md focus:outline-none'
+							required
 						/>
 						<input
 							type='text'
+							name='user_name'
 							placeholder='Full name'
 							className='w-full p-3 rounded-md focus:outline-none'
+							required
 						/>
 						<textarea
+							name='message'
 							placeholder='Message'
-							className='w-full p-3 rounded-md focus:outline-none h-32'></textarea>
+							className='w-full p-3 rounded-md focus:outline-none h-32'
+							required></textarea>
 						<button
 							type='submit'
 							className='bg-primary text-black py-2 px-4 rounded-lg w-full font-semibold'>

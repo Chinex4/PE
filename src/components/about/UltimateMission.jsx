@@ -33,11 +33,11 @@ const UltimateMission = () => {
 						</p>
 
 						{/* Call-to-Action Button */}
-						<Link
-							to='/contact'
+						<a
+							href='https://forms.gle/tEcaehopTEzFoKLB8'
 							className='bg-primary inline-block mt-8 text-black py-4 px-8 rounded-lg'>
 							Let's Talk About Your Brand
-						</Link>
+						</a>
 					</div>
 				</div>
 			</div>

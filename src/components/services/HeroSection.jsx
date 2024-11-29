@@ -12,9 +12,9 @@ const HeroSection = () => {
 					From strategy to execution, let’s craft the roadmap your brand needs
 					to stand out, connect, and generate consistent revenue.
 				</p>
-				<Link className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
+				<a href='https://forms.gle/tEcaehopTEzFoKLB8' className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Get A Free Brand Audit
-				</Link>
+				</a>
 			</div>
 			<div className='mt-8'>
 				<img

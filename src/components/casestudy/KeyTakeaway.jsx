@@ -14,9 +14,9 @@ const KeyTakeaway = () => {
 					for sustainable growth. If you’re ready to elevate your brand’s
 					impact, let’s explore how we can create similar success for you!
 				</p>
-				<Link to='/contact' className='bg-smileyblue text-primary py-5 px-24 rounded font-semibold'>
+				<a href='https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5' className='bg-smileyblue text-primary py-5 px-24 rounded font-semibold'>
 					Let's Chat
-				</Link>
+				</a>
 			</div>
 		</section>
 	);

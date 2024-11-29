@@ -3,19 +3,19 @@ import React from 'react';
 const YoutubeSection = () => {
 	const videos = [
 		{
-			title: 'How to Create Stunning Websites',
-			thumbnail: 'https://i.ytimg.com/vi/example1/maxresdefault.jpg',
-			link: 'https://www.youtube.com/watch?v=example1',
+			title: 'How To Choose A Brand Name: Introduction With Precious Evans',
+			thumbnail: 'https://i.ytimg.com/vi/NgwY9oB6-gk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_5Lz_Hpahw9IzmNw_4DlALtfB0g',
+			link: 'https://youtu.be/NgwY9oB6-gk?si=BPaRDSbpSDj9LLPt',
 		},
 		{
-			title: 'Mastering Tailwind CSS',
-			thumbnail: 'https://i.ytimg.com/vi/example2/maxresdefault.jpg',
-			link: 'https://www.youtube.com/watch?v=example2',
+			title: 'The Power Of Content Marketing With Precious Evans',
+			thumbnail: 'https://i.ytimg.com/an_webp/yHPXTJTe0E8/mqdefault_6s.webp?du=3000&sqp=CPnFo7oG&rs=AOn4CLASqzcQKQ5KVdQRG7bRysFNbF4sWA',
+			link: 'https://youtu.be/Yl5lLmw-Ank?si=2fsm2yCbfwAceReH',
 		},
 		{
-			title: 'React.js Tutorial for Beginners',
-			thumbnail: 'https://i.ytimg.com/vi/example3/maxresdefault.jpg',
-			link: 'https://www.youtube.com/watch?v=example3',
+			title: 'How To Make Money Through Your Business Logo With Precious Evans',
+			thumbnail: 'https://i.ytimg.com/an_webp/eFaB5leqYlM/mqdefault_6s.webp?du=3000&sqp=CI_So7oG&rs=AOn4CLCkz1yAy__efhStn1eswHAe0EIJ2w',
+			link: 'https://youtu.be/eFaB5leqYlM?si=u1vadR3KMfVHUYLI',
 		},
 	];
 

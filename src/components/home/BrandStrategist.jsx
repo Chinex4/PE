@@ -28,9 +28,9 @@ const BrandStrategist = () => {
 				</p>
 
 				{/* Button */}
-				<Link className='inline-block text-lg mt-12 px-6 py-2 bg-white text-smileyblue font-medium rounded-lg hover:bg-gray-200'>
+				<a href='/services' className='inline-block text-lg mt-12 px-6 py-2 bg-white text-smileyblue font-medium rounded-lg hover:bg-gray-200'>
 					View My Services Here
-				</Link>
+				</a>
 			</div>
 		</section>
 	);

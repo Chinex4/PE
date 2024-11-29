@@ -42,17 +42,17 @@ export const media = [
 	{
 		name: 'Instagram',
 		imageUrl: '/images/thumb2.png', // Replace with your image URL
-		link: 'https://www.instagram.com/your-profile-link',
+		link: 'https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5',
 	},
 	{
 		name: 'LinkedIn',
 		imageUrl: '/images/thumb3.png', // Replace with your image URL
-		link: 'https://www.linkedin.com/in/your-profile-link',
+		link: 'https://www.linkedin.com/in/precious-evans-009563270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
 	},
 	{
 		name: 'Twitter',
-		imageUrl: '/images/thumb3.png', // Replace with your image URL
-		link: 'https://www.linkedin.com/in/your-profile-link',
+		imageUrl: '/images/twitterimage.png', // Replace with your image URL
+		link: 'https://x.com/_preciousevans?t=mW2q1PuZjtCiG9xBTPVNXA&s=09',
 	},
 ];
 
