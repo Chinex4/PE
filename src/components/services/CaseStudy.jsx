@@ -34,9 +34,9 @@ const CaseStudy = () => {
 						</p>
 
 						{/* <!-- Call-to-Action Button --> */}
-						<a href={'/xquisite'} class='bg-primary text-black py-2 px-8 rounded-lg'>
+						<Link to={'/xquisite'} class='bg-primary text-black py-2 px-8 rounded-lg'>
 							View Full Case Study
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

@@ -32,9 +32,9 @@ const Resources = () => {
 			</div>
 
 			<div className='grid place-items-center mt-8'>
-			    <a href={'/resources'} className='btn rounded-md bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
+			    <Link to={'/resources'} className='btn rounded-md bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
     				View More
-    			</a>
+    			</Link>
 			</div>
 		</div>
 	);

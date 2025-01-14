@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { faqs } from '../data';
+import { Link } from 'react-router-dom';
+
 
 function FAQ() {
 	// State to track which FAQ is open
@@ -24,11 +26,11 @@ function FAQ() {
 						directly. I’m just a message away to help your brand grow. Let’s
 						chat about how we can make it happen!
 					</p>
-					<a
+					<Link
 						href='/contact'
 						className='mt-4 inline-block text-primary hover:text-primary/80 transition'>
 						Send A Message &rarr;
-					</a>
+					</Link>
 				</div>
 
 				{/* Right Section */}

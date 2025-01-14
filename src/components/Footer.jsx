@@ -89,16 +89,7 @@ const Footer = () => {
 			{/* Copyright and Policy Links */}
 			<div className='text-center mt-10 text-sm text-navGray'>
 				© 2024 Precious Evans Security Limited.
-				<a
-					href='#privacy-policy'
-					className='ml-4 hover:text-primary transition-colors'>
-					Privacy Policy
-				</a>
-				<a
-					href='#cookie-policy'
-					className='ml-4 hover:text-primary transition-colors'>
-					Cookie Policy
-				</a>
+				
 			</div>
 		</footer>
 	);
