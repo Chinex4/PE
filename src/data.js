@@ -69,8 +69,8 @@ export const tabs = [
 export const resources = {
 	latest: [
 		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
+			title: 'Target Audience',
+			price: '$0.67 (N1000)',
 			image: '/images/resources-thumbs/TARGET-THUMB.png',
 		},
 		{
