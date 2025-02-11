@@ -31,7 +31,7 @@ const ResourceTabs = () => {
 						<img
 							src={item.image}
 							alt={item.title}
-							className='w-full h-64 object-cover'
+							className='w-[500px] h-[400px] object-cover'
 						/>
 						<div className='p-4'>
 							<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>

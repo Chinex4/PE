@@ -71,7 +71,7 @@ export const resources = {
 		{
 			title: 'Starter Pack 1',
 			price: '$49.99',
-			image: '/images/resouceman.png',
+			image: '/images/resources-thumbs/TARGET-THUMB.png',
 		},
 		{
 			title: 'Starter Pack 1',
