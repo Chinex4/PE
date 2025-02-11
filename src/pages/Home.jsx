@@ -10,7 +10,7 @@ import ContactForm from '../components/ContactForm';
 import Resources from '../components/home/Resources';
 import YoutubeSection from '../components/home/YoutubeSection';
 import FAQ from '../components/FAQ';
-import CaseStudy from '../components/services/CaseStudy';
+import CaseStudy from '../components/home/CaseStudy';
 
 function Home() {
 	return (

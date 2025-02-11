@@ -14,6 +14,7 @@ const nav = [
 	{ path: '/', label: 'Home' },
 	{ path: '/resources', label: 'Resources' },
 	{ path: '/services', label: 'Services' },
+	{ path: '/case-studies', label: 'Case Studies' },
 	{ path: '/about', label: 'About Me' },
 	{ path: '/contact', label: 'Contact' },
 ];

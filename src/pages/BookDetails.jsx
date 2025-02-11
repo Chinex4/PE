@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { resources } from '../../data';
-import FAQ from '../FAQ';
-import Testimonials from '../home/Testimonials';
+import { resources } from '../data';
+import FAQ from '../components/FAQ';
+import Testimonials from '../components/home/Testimonials';
 
 const BookDetails = () => {
 	const { title } = useParams();
@@ -32,9 +32,9 @@ const BookDetails = () => {
 					<h1 className='text-4xl font-bold mt-4 text-white'>{book.title}</h1>
 					<p className='text-2xl text-white/80 mt-2'>Price: {book.price}</p>
 					<p className='mt-4 text-white/80'>
-                        <span className='text-xl uppercase font-bold '>Description</span> <br />
-						This book provides in-depth knowledge on {book.title} and is highly
-						rated among customers.
+						<span className='text-xl uppercase font-bold '>Description</span>{' '}
+						<br />
+						<div dangerouslySetInnerHTML={{ __html: book.description }} />
 					</p>
 
 					<a

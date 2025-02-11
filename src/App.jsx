@@ -11,7 +11,7 @@ import Contact from './pages/Contact';
 import CaseStudy from './pages/CaseStudy';
 import { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop'
-import BookDetails from './components/resources/BookDetails';
+import BookDetails from './pages/BookDetails';
 
 function App() {
 	
@@ -47,6 +47,10 @@ function App() {
 				/>
 				<Route
 					path='/xquisite'
+					element={<CaseStudy />}
+				/>
+				<Route
+					path='/case-studies'
 					element={<CaseStudy />}
 				/>
 			</Routes>

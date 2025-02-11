@@ -22,7 +22,7 @@ export const testimonials = [
 			'I must say that for My personal Brand and Agency, I gained clarity. Precious opened my eyes to new things, I discovered what I needed to start almost immediately.',
 		author: 'Sharon (Writer & Entrepreneur)',
 		location: 'Nigeria',
-		pic: '/images/Sharonn.png'
+		pic: '/images/Sharonn.png',
 	},
 	{
 		quote:
@@ -41,7 +41,7 @@ export const testimonials = [
 			'Mehn, thanks for the call man. You really helped me with good ideas and action plans to help scale this idea very well and the idea was approved! I’ll hit you up for another call when I need to.',
 		author: 'Arinze (Product Manager)',
 		location: 'Nigeria',
-		pic: '/images/Arinze.png'
+		pic: '/images/Arinze.png',
 	},
 	{
 		quote:
@@ -138,6 +138,31 @@ export const resources = {
 			price: '$0.67 (N1000)',
 			image: '/images/resources-thumbs/TARGET-THUMB.png',
 			link: 'https://selar.com/f09jqh',
+			description: `
+			Discover Your Ideal Customer with the Target Audience Persona
+			Template. <br /> <br />
+			
+			Understanding your audience is the key to unlocking
+			business growth, but it can be challenging without a clear guide.
+			This thoughtfully crafted template will help you define exactly who
+			your ideal customers are and what makes them tick.
+			<br /> <br />
+			Imagine knowing your customers so well that your marketing feels like a conversation
+			rather than a pitch. With this template, you'll gain clarity on
+			crucial details like their demographics, interests, challenges, and
+			purchasing behaviors. <br /> <br />
+			You’ll be able to see patterns, spot pain points, and tailor your messaging to address exactly what they need,
+			whether it’s their next big purchase or simply a reason to trust
+			your brand. 
+			<br /> <br />
+			The best part? The template is easy to use and fully
+			customizable. Whether you're just starting or scaling your business,
+			it’s a powerful tool designed to help you craft strategies that
+			connect with your audience on a deeper level and lead to better
+			results. <br /> <br />
+			If you’re ready to stop guessing and start making informed
+			decisions, this template is exactly what you need.
+			`,
 		},
 		{
 			title: 'Target Audience',
