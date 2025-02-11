@@ -4,22 +4,13 @@ import { Link } from 'react-router-dom';
 
 const BrandStrategist = () => {
 	return (
-		<section className='mt-[5rem] mb-12 flex flex-col-reverse md:flex-row items-center bg-primary p-8 rounded-lg shadow-lg mx-auto'>
-			{/* Image Section */}
-			<div className='flex-shrink-0 relative top-8 lg:mb-0 lg:mr-8'>
-				<img
-					src={smiley}
-					alt='Brand Strategist'
-					className='w-[25rem] object-cover'
-				/>
-			</div>
-
+		<section className='mt-[5rem] mb-12 bg-primary p-8 rounded-lg shadow-lg mx-auto'>
 			{/* Content Section */}
-			<div className='text-center md:text-left'>
-				<h2 className='text-5xl font-bold text-[#F5E9DC]'>
-					Brand <br /><span className='text-smileyblue text-5xl'>Strategist</span>
+			<div className='text-center'>
+				<h2 className='text-[52px] font-bold text-[#F5E9DC]'>
+					Brand <span className='text-smileyblue text-5xl'>Strategist</span>
 				</h2>
-				<p className='mt-4 text-smileyblue pr-8'>
+				<p className='mt-4 text-smileyblue text-[20px] pr-8'>
 					Hey there! I'm <span className='font-bold'>Precious Evans</span>, a
 					brand strategist with a passion for helping entrepreneurs and
 					businesses like yours turn their brands into revenue powerhouses.

@@ -4,7 +4,8 @@
     height: 12px;
     background-color: #888; /* Default bullet color */
     opacity: 1; /* Make sure the bullets are fully visible */
-    margin: 10rem 6px; /* Spacing between bullets */
+    margin: 10
+    rem 6px; /* Spacing between bullets */
     border-radius: 50%; /* Make them circular */
   }
   

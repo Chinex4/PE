@@ -9,12 +9,12 @@ const YoutubeSection = () => {
 		},
 		{
 			title: 'The Power Of Content Marketing With Precious Evans',
-			thumbnail: 'https://i.ytimg.com/an_webp/yHPXTJTe0E8/mqdefault_6s.webp?du=3000&sqp=CPnFo7oG&rs=AOn4CLASqzcQKQ5KVdQRG7bRysFNbF4sWA',
+			thumbnail: 'https://i.ytimg.com/an_webp/yHPXTJTe0E8/mqdefault_6s.webp?du=3000&sqp=CPbUrb0G&rs=AOn4CLCa2tgOrx5XvgeOIsV5NarCnnrQUA',
 			link: 'https://youtu.be/Yl5lLmw-Ank?si=2fsm2yCbfwAceReH',
 		},
 		{
 			title: 'How To Make Money Through Your Business Logo With Precious Evans',
-			thumbnail: 'https://i.ytimg.com/an_webp/eFaB5leqYlM/mqdefault_6s.webp?du=3000&sqp=CI_So7oG&rs=AOn4CLCkz1yAy__efhStn1eswHAe0EIJ2w',
+			thumbnail: 'https://i.ytimg.com/an_webp/eFaB5leqYlM/mqdefault_6s.webp?du=3000&sqp=COfFrb0G&rs=AOn4CLCamuJIXsBMW5kcRo0LCS09hzGBvQ',
 			link: 'https://youtu.be/eFaB5leqYlM?si=u1vadR3KMfVHUYLI',
 		},
 	];

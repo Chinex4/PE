@@ -5,6 +5,7 @@ import {
 	FaTwitter,
 	FaLinkedinIn,
 	FaYoutube,
+	FaTiktok,
 } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/headlogo.png';
@@ -56,26 +57,20 @@ const Footer = () => {
 						<FaFacebookF />
 					</a>
 					<a
+						href='https://www.tiktok.com/@_preciousevans?_t=ZM-8tpY7S83Lc7&_r=1'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='hover:text-orange-500'>
+						<FaTiktok />
+					</a>
+					<a
 						href='https://instagram.com'
 						target='_blank'
 						rel='noopener noreferrer'
 						className='hover:text-orange-500'>
 						<FaInstagram />
 					</a>
-					<a
-						href='https://twitter.com'
-						target='_blank'
-						rel='noopener noreferrer'
-						className='hover:text-orange-500'>
-						<FaTwitter />
-					</a>
-					<a
-						href='https://linkedin.com'
-						target='_blank'
-						rel='noopener noreferrer'
-						className='hover:text-orange-500'>
-						<FaLinkedinIn />
-					</a>
+					
 					<a
 						href='https://youtube.com'
 						target='_blank'
@@ -88,7 +83,7 @@ const Footer = () => {
 
 			{/* Copyright and Policy Links */}
 			<div className='text-center mt-10 text-sm text-navGray'>
-				© 2024 Precious Evans Security Limited.
+				© 2025 Precious Evans PE.
 				
 			</div>
 		</footer>

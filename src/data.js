@@ -1,20 +1,74 @@
 export const testimonials = [
 	{
 		quote:
-			'It was just all in my head and all I could say was luxury, nutritious, organic and quality but you Precious have helped me communicate this better giving me the nice visuals I need and materials to increase my brand experience and customer satisfaction. Thank you, Precious!',
-		author: 'Founder, XQUISITE FOODS',
+			'I read the Content Strategy Guide and I must say that it is really incredible. You really broke down everything and made it easy to understand. I will make sure to try out what I read there for my brand',
+		author: 'Ayanfe (Entrepreneur)',
+		location: 'Nigeria',
+	},
+	{
+		quote:
+			'Thank you for giving me your time and attention on the call earilier. The call was great and worth, it was an eye opener. Now I know how to and what to do.',
+		author: 'Ezekiel (Entrepreneur)',
+		location: 'Nigeria',
+	},
+	{
+		quote:
+			"The call with precious Evans, I'd call it the most important call and discussion for the Matallo brand. Precious made me see the bigger picture, he gave me a lens to help me see farther than I did. Thank you precious, now I know I have to re-strategize, to build a better model that will go farther and do much more.",
+		author: 'Tobiloba (Founder Matallo)',
+		location: 'Nigeria',
+	},
+	{
+		quote:
+			'I must say that for My personal Brand and Agency, I gained clarity. Precious opened my eyes to new things, I discovered what I needed to start almost immediately.',
+		author: 'Sharon (Writer & Entrepreneur)',
+		location: 'Nigeria',
+	},
+	{
+		quote:
+			'Mehn, thanks for the call man. You really helped me with good ideas and action plans to help scale this idea very well and the idea was approved! I’ll hit you up for another call when I need to.',
+		author: 'Arinze (Product Manager)',
+		location: 'Nigeria',
+	},
+	{
+		quote:
+			'The book, Content Strategy provided practical insights into identifying my target audience, creating meaningful content not just anyhow content, and maintaining consistency to drive business growth effectively.',
+		author: 'Deborah (Marketer)',
+		location: 'Nigeria',
+	},
+	{
+		quote:
+			'Mehn, thanks for the call man. You really helped me with good ideas and action plans to help scale this idea very well and the idea was approved! I’ll hit you up for another call when I need to.',
+		author: 'Arinze (Product Manager)',
+		location: 'Nigeria',
+	},
+	{
+		quote:
+			"Taking a moment to genuinely appreciate the profound impact of your insight and expertise on my brand's strategy, Precious. Your remarkable ability to distill complex ideas into actionable strategies is always a game changer and one you should be proud of! I am grateful for your dedication to understanding my vision and goals.Thank you Precious for being an exceptional partner in brand building!",
+		author: 'Victor (Founder, School Cafe & Gen6ixx)',
 		location: 'United Kingdom',
 	},
 	{
 		quote:
-			'It was just all in my head and all I could say was luxury, nutritious, organic and quality but you Precious have helped me communicate this better giving me the nice visuals I need and materials to increase my brand experience and customer satisfaction. Thank you, Precious!',
-		author: 'Founder, XQUISITE FOODS',
+			'I love working with you Evans, especially because of the way you translate the mission and vision of my brand with great understanding. You are now my go to guy for branding cause you communicate everything needed perfectly always and they always convert! Thank you for being amazing my guy!',
+		author: 'Precious Kings (Founder, 10X Pc & Operations Manager)',
 		location: 'United Kingdom',
 	},
 	{
 		quote:
-			'It was just all in my head and all I could say was luxury, nutritious, organic and quality but you Precious have helped me communicate this better giving me the nice visuals I need and materials to increase my brand experience and customer satisfaction. Thank you, Precious!',
-		author: 'Founder, XQUISITE FOODS',
+			'It was just all in my head and all I could say was luxury, nutritious, organic and quality but Precious have helped me communicate this better giving me the nice visuals I need and materials to increase my brand experience and customer satisfaction. Thank you, Precious!',
+		author: 'Uche & Co.',
+		location: 'United Kingdom',
+	},
+	{
+		quote:
+			'Thank you for your insightful video and teachings, I have learnt stuffs like building the right perception starts with self-evaluation, tracking progress, renewing my mindset, surrounding myself with the right people, focusing on value over clout, letting go of past baggage, and staying consistent without overdoing things. And lots more, Precious these mean so much to me',
+		author: 'Abibat',
+		location: 'United Kingdom',
+	},
+	{
+		quote:
+			"I want to say thank you for the call, you opened my eyes to see beyond, you gave me clarity and you gave me tips on what to do and how to find my unique voice and to stand out in the crowd. I've started implementing all that you've taught me and I know it's a gradual process, I'm getting there. Thank you soo much. God bless you 🙏🏽",
+		author: 'Victoria (Virtual Assistant)',
 		location: 'United Kingdom',
 	},
 	{
@@ -34,26 +88,29 @@ export const sponsors = [
 	{ id: 7, imgSrc: '/images/R.png', alt: 'R' },
 	{ id: 8, imgSrc: '/images/ROO.png', alt: 'ROO' },
 	{ id: 9, imgSrc: '/images/smileyfoods.png', alt: 'SFOODS' },
-	{ id: 10, imgSrc: '/images/BOOK.png', alt: 'BOOKS' },
+	{ id: 10, imgSrc: '/images/bote.png', alt: 'BOOKS' },
+	{ id: 10, imgSrc: '/images/est2025.png', alt: 'BOOKS' },
+	{ id: 10, imgSrc: '/images/grovine.png', alt: 'BOOKS' },
+	{ id: 10, imgSrc: '/images/romeo.png', alt: 'BOOKS' },
+	{ id: 10, imgSrc: '/images/sedapay.png', alt: 'BOOKS' },
 ];
 
 export const media = [
-	
 	{
 		name: 'Instagram',
 		imageUrl: '/images/thumb2.png', // Replace with your image URL
 		link: 'https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5',
 	},
-	{
-		name: 'LinkedIn',
-		imageUrl: '/images/thumb3.png', // Replace with your image URL
-		link: 'https://www.linkedin.com/in/precious-evans-009563270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-	},
-	{
-		name: 'Twitter',
-		imageUrl: '/images/twitterimage.png', // Replace with your image URL
-		link: 'https://x.com/_preciousevans?t=mW2q1PuZjtCiG9xBTPVNXA&s=09',
-	},
+	// {
+	// 	name: 'LinkedIn',
+	// 	imageUrl: '/images/thumb3.png', // Replace with your image URL
+	// 	link: 'https://www.linkedin.com/in/precious-evans-009563270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+	// },
+	// {
+	// 	name: 'Twitter',
+	// 	imageUrl: '/images/twitterimage.png', // Replace with your image URL
+	// 	link: 'https://x.com/_preciousevans?t=mW2q1PuZjtCiG9xBTPVNXA&s=09',
+	// },
 ];
 
 export const tabs = [
@@ -72,12 +129,19 @@ export const resources = {
 			title: 'Target Audience',
 			price: '$0.67 (N1000)',
 			image: '/images/resources-thumbs/TARGET-THUMB.png',
+			link: 'https://selar.com/f09jqh',
 		},
 		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
+			title: 'Target Audience',
+			price: '$0.67 (N1000)',
+			image: '/images/resources-thumbs/TARGET-THUMB.png',
 		},
+		{
+			title: 'Target Audience',
+			price: '$0.67 (N1000)',
+			image: '/images/resources-thumbs/TARGET-THUMB.png',
+		},
+
 		// Add more starter pack items
 	],
 	checklists: [
@@ -283,31 +347,55 @@ export const faqs = [
 export const links = [
 	{
 		link: '',
-		icon: 'linkedicon'
+		icon: 'linkedicon',
 	},
 	{
 		link: '',
-		icon: 'igicon'
+		icon: 'igicon',
 	},
 	{
 		link: '',
-		icon: 'xicon'
+		icon: 'xicon',
 	},
 	{
 		link: '',
-		icon: 'yticon'
+		icon: 'yticon',
 	},
 	{
 		link: '',
-		icon: 'ficon'
+		icon: 'ficon',
 	},
-]
-
-export const approachSteps = [
-	{ step: '1', title: 'Brand Discovery & Market Analysis', description: 'Conducted a thorough analysis of Xquisite\'s market, competitors, and audience, identifying key opportunities for differentiation.' },
-	{ step: '2', title: 'Visual Identity Development', description: 'Refreshed the brand’s visual identity with colors, typography, and imagery for cohesive recognition by both primary and secondary audiences.' },
-	{ step: '3', title: 'Product Hierarchy & Messaging', description: 'Structured a clear brand hierarchy and crafted messaging that highlights each product line’s unique value within a balanced brand narrative.' },
-	{ step: '4', title: 'Integrated Marketing Strategy', description: 'Implemented a website marketing strategy, aligning updated identity to boost recognition and engagement.' },
-	{ step: '5', title: 'Continuous Feedback & Optimization', description: 'Gathered client feedback to refine strategies, ensuring impactful and relevant brand positioning.' },
 ];
 
+export const approachSteps = [
+	{
+		step: '1',
+		title: 'Brand Discovery & Market Analysis',
+		description:
+			"Conducted a thorough analysis of Xquisite's market, competitors, and audience, identifying key opportunities for differentiation.",
+	},
+	{
+		step: '2',
+		title: 'Visual Identity Development',
+		description:
+			'Refreshed the brand’s visual identity with colors, typography, and imagery for cohesive recognition by both primary and secondary audiences.',
+	},
+	{
+		step: '3',
+		title: 'Product Hierarchy & Messaging',
+		description:
+			'Structured a clear brand hierarchy and crafted messaging that highlights each product line’s unique value within a balanced brand narrative.',
+	},
+	{
+		step: '4',
+		title: 'Integrated Marketing Strategy',
+		description:
+			'Implemented a website marketing strategy, aligning updated identity to boost recognition and engagement.',
+	},
+	{
+		step: '5',
+		title: 'Continuous Feedback & Optimization',
+		description:
+			'Gathered client feedback to refine strategies, ensuring impactful and relevant brand positioning.',
+	},
+];

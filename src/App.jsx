@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import CaseStudy from './pages/CaseStudy';
 import { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop'
+import BookDetails from './components/resources/BookDetails';
 
 function App() {
 	
@@ -27,6 +28,10 @@ function App() {
 				<Route
 					path='/resources'
 					element={<Resources />}
+				/>
+				<Route
+					path='/book/:title'
+					element={<BookDetails />}
 				/>
 				<Route
 					path='/services'

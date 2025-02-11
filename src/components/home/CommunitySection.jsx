@@ -28,13 +28,14 @@ const CommunitySection = () => {
 						Join us to bring your vision to life! :)
 					</p>
 					
-					<a
-						href='https://chat.whatsapp.com/FULmCcEHwAHBgIHmZ4Wxsa' // Replace with the actual link
+					<button
+						// href='https://chat.whatsapp.com/FULmCcEHwAHBgIHmZ4Wxsa' // Replace with the actual link
 						target='_blank'
+						aria-disabled="true"
 						rel='noopener noreferrer'
 						className='inline-block bg-primary text-black px-6 py-3 rounded-md shadow-lg hover:bg-primary/80 transition-colors'>
-						Click Here To Join
-					</a>
+						Coming Soon!
+					</button>
 				</div>
 			</div>
 		</div>

@@ -11,29 +11,31 @@ const Resources = () => {
 			</h2>
 
 			<div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
-				{resources['personalBranding'].map((item, index) => (
-					<div
-						key={index}
-						className='bg-white rounded-lg shadow-lg overflow-hidden'>
-						<img
-							src={item.image}
-							alt={item.title}
-							className='w-full h-40 object-cover'
-						/>
-						<div className='p-4'>
-							<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>
-							<p className='text-gray-600 mb-4'>Buy for: {item.price}</p>
-							<button className='bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
-								Buy Now
-							</button>
+				{resources['latest'].map((item, index) => (
+					<Link to={`/book/${encodeURIComponent(item.title)}`}>
+						<div
+							key={index}
+							className='bg-white rounded-lg shadow-lg overflow-hidden'>
+							<img
+								src={item.image}
+								alt={item.title}
+								className='w-[500px] h-[400px] object-cover'
+							/>
+							<div className='p-4'>
+								<h3 className='font-semibold text-lg mb-2 text-black'>{item.title}</h3>
+								<p className='text-gray-600 mb-4'>Available for: {item.price}</p>
+								<button className='bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
+									Buy Now
+								</button>
+							</div>
 						</div>
-					</div>
+					</Link>
 				))}
 			</div>
 
 			<div className='grid place-items-center mt-8'>
 			    <Link to={'/resources'} className='btn rounded-md bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
-    				View More
+    				View More Resources
     			</Link>
 			</div>
 		</div>
