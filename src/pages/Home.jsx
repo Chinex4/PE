@@ -10,6 +10,7 @@ import ContactForm from '../components/ContactForm';
 import Resources from '../components/home/Resources';
 import YoutubeSection from '../components/home/YoutubeSection';
 import FAQ from '../components/FAQ';
+import CaseStudy from '../components/services/CaseStudy';
 
 function Home() {
 	return (
@@ -18,6 +19,7 @@ function Home() {
       <SponsorsCarousel />
       <BrandStrategist />
       <Resources />
+      <CaseStudy />
       <YoutubeSection />
       <Testimonials />
       <MediaLinks />

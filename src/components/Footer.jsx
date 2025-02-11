@@ -50,13 +50,6 @@ const Footer = () => {
 				{/* Social Media Icons */}
 				<div className='flex space-x-4 mb-6 lg:mb-0'>
 					<a
-						href='https://facebook.com'
-						target='_blank'
-						rel='noopener noreferrer'
-						className='hover:text-orange-500'>
-						<FaFacebookF />
-					</a>
-					<a
 						href='https://www.tiktok.com/@_preciousevans?_t=ZM-8tpY7S83Lc7&_r=1'
 						target='_blank'
 						rel='noopener noreferrer'
@@ -64,7 +57,7 @@ const Footer = () => {
 						<FaTiktok />
 					</a>
 					<a
-						href='https://instagram.com'
+						href='https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5'
 						target='_blank'
 						rel='noopener noreferrer'
 						className='hover:text-orange-500'>
@@ -72,12 +65,24 @@ const Footer = () => {
 					</a>
 					
 					<a
-						href='https://youtube.com'
+						href='https://www.youtube.com/@_preciousevans'
 						target='_blank'
 						rel='noopener noreferrer'
 						className='hover:text-orange-500'>
 						<FaYoutube />
 					</a>
+					<Link
+						to='/contact'
+						rel='noopener noreferrer'
+						className='hover:text-orange-500'>
+						<FaLinkedinIn />
+					</Link>
+					<Link
+						to='/contact'
+						rel='noopener noreferrer'
+						className='hover:text-orange-500'>
+						<FaFacebookF />
+					</Link>
 				</div>
 			</div>
 

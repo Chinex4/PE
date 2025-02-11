@@ -22,6 +22,7 @@ export const testimonials = [
 			'I must say that for My personal Brand and Agency, I gained clarity. Precious opened my eyes to new things, I discovered what I needed to start almost immediately.',
 		author: 'Sharon (Writer & Entrepreneur)',
 		location: 'Nigeria',
+		pic: '/images/Sharonn.png'
 	},
 	{
 		quote:
@@ -40,6 +41,7 @@ export const testimonials = [
 			'Mehn, thanks for the call man. You really helped me with good ideas and action plans to help scale this idea very well and the idea was approved! I’ll hit you up for another call when I need to.',
 		author: 'Arinze (Product Manager)',
 		location: 'Nigeria',
+		pic: '/images/Arinze.png'
 	},
 	{
 		quote:
@@ -70,6 +72,7 @@ export const testimonials = [
 			"I want to say thank you for the call, you opened my eyes to see beyond, you gave me clarity and you gave me tips on what to do and how to find my unique voice and to stand out in the crowd. I've started implementing all that you've taught me and I know it's a gradual process, I'm getting there. Thank you soo much. God bless you 🙏🏽",
 		author: 'Victoria (Virtual Assistant)',
 		location: 'United Kingdom',
+		pic: '/images/Victoria.png',
 	},
 	{
 		quote:
@@ -98,8 +101,13 @@ export const sponsors = [
 export const media = [
 	{
 		name: 'Instagram',
-		imageUrl: '/images/thumb2.png', // Replace with your image URL
+		imageUrl: '/images/igthumb.png', // Replace with your image URL
 		link: 'https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5',
+	},
+	{
+		name: 'Tiktok',
+		imageUrl: '/images/tiltokthumb.png', // Replace with your image URL
+		link: 'https://www.tiktok.com/@_preciousevans?_t=ZM-8tpY7S83Lc7&_r=1',
 	},
 	// {
 	// 	name: 'LinkedIn',

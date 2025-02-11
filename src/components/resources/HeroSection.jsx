@@ -12,9 +12,9 @@ const HeroSection = () => {
 					Explore a curated collection of resources tailored to help you
 					simplify brand strategy, grow your audience, and increase revenue.
 				</p>
-				<Link className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
+				<a href='#resourceform' className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Request for a Resource
-				</Link>
+				</a>
 			</div>
 			<div className='mt-8'>
 				<img

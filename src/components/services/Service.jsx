@@ -30,7 +30,7 @@ const Services = () => {
 				{/* <!-- Service 2 --> */}
 				<div class='border bg-[#191919] border-[#F5E9DC] p-6 rounded-lg'>
 					<h3 class='font-semibold text-lg md:text-xl mb-2'>
-						02 - Personal Brand Strategy
+						02 - Personal Branding
 					</h3>
 					<p class='text-gray-300 mb-4 text-sm'>
 						Uncover your authentic brand voice and learn how to leverage it for

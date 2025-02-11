@@ -35,15 +35,26 @@ const Testimonials = () => {
 						key={index}
 						className='bg-gray-100 h-[330px] flex flex-col justify-between text-smileyblue p-6 rounded-lg shadow-lg'>
 						<p className='mb-4 italic'>{testimonial.quote}</p>
-						<div>
-							
+						<div className='flex gap-3 items-center'>
 							<div>
-								<img src="" alt="" />
+								{testimonial.pic ? (
+									<img
+										className='size-16'
+										src={testimonial.pic}
+										alt=''
+									/>
+								) : (
+									<img
+										className='size-10'
+										src='/images/man.png'
+										alt=''
+									/>
+								)}
 							</div>
 
 							<div>
 								<p className='font-bold'>{testimonial.author}</p>
-								<p className='text-sm text-smileyblue flex items-center space-x-2'>
+								<p className='text-sm text-smileyblue flex items-center space-x-1'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
 										fill='none'
@@ -62,7 +73,7 @@ const Testimonials = () => {
 											d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
 										/>
 									</svg>
-		
+
 									<span>{testimonial.location}</span>
 								</p>
 							</div>
