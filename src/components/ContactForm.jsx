@@ -33,7 +33,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<div className='bg-black py-16 px-4'>
 			<h2 className='text-center text-[24px] leading-[1.5] font-bold mb-12'>
 				SEND ME A DIRECT MESSAGE TODAY TO CONNECT
 				<span className='text-[48px] text-primary'>.</span>
