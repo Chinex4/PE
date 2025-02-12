@@ -1,25 +1,27 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { links } from '../../data';
 import emailjs from '@emailjs/browser';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ContactSection = () => {
 	const form = useRef();
-
+	const [isModalOpen, setIsModalOpen] = useState(false);
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
 		// Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_PUBLIC_KEY' with your actual Email.js credentials
 		emailjs
 			.sendForm(
-				'YOUR_SERVICE_ID',
-				'YOUR_TEMPLATE_ID',
+				'service_hzqkqj6',
+				'template_uyhpfre',
 				form.current,
-				'YOUR_PUBLIC_KEY'
+				'_hE5FK0e73MmOnlBf'
 			)
 			.then(
 				(result) => {
 					console.log('Email sent:', result.text);
-					alert('Message sent successfully!');
+					setIsModalOpen(true); // Show success modal
+					form.current.reset();
 				},
 				(error) => {
 					console.log('Error:', error.text);
@@ -165,6 +167,38 @@ const ContactSection = () => {
 					</form>
 				</div>
 			</div>
+
+			{/* MODAL */}
+			<AnimatePresence>
+				{isModalOpen && (
+					<motion.div
+						className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50'
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						onClick={() => setIsModalOpen(false)} // Close modal on click outside
+					>
+						<motion.div
+							className='bg-white p-6 rounded-lg shadow-lg max-w-sm text-center'
+							initial={{ y: 50, opacity: 0 }}
+							animate={{ y: 0, opacity: 1 }}
+							exit={{ y: 50, opacity: 0 }}
+							transition={{ duration: 0.3, ease: 'easeInOut' }}
+							onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
+						>
+							<h2 className='text-lg font-semibold'>Message Sent</h2>
+							<p className='text-gray-600 mt-2'>
+								Your message has been sent successfully!
+							</p>
+							<button
+								className='mt-4 bg-primary px-4 py-2 rounded-md text-white'
+								onClick={() => setIsModalOpen(false)}>
+								Close
+							</button>
+						</motion.div>
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</section>
 	);
 };
