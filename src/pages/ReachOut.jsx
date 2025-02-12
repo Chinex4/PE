@@ -34,11 +34,11 @@ const ReachOut = () => {
 	};
 	return (
 		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0'>
-		    <div className='bg-black text-[#F5E9DC] py-16 px-4'>
-    			{/* <h2 className='text-center text-[24px] leading-[1.5] font-bold mb-12'>
-    				SEND ME A DIRECT MESSAGE TODAY TO CONNECT
+		    <div className='bg-black py-16 px-4'>
+    			<h2 className='text-center text-[24px] uppercase leading-[1.5] font-bold mb-12'>
+    				Fill this form and I will reach out to you shortly to get started
     				<span className='text-[48px] text-primary'>.</span>
-    			</h2> */}
+    			</h2>
     			<form
     				ref={form}
     				onSubmit={handleSubmit}
@@ -47,28 +47,28 @@ const ReachOut = () => {
     					type='email'
     					name='user_email'
     					placeholder='Email address'
-    					className='w-full p-3 rounded-md focus:outline-none'
+    					className='w-full p-3 rounded-md text-black focus:outline-none'
     					required
     				/>
     				<input
     					type='tel'
     					name='user_phone'
     					placeholder='Phone Number'
-    					className='w-full p-3 rounded-md focus:outline-none'
+    					className='w-full p-3 rounded-md text-black focus:outline-none'
     					required
     				/>
     				<input
     					type='text'
-    					name='profile_handle'
-    					placeholder='Profile Handle'
-    					className='w-full p-3 rounded-md focus:outline-none'
+    					name='brand_handle'
+    					placeholder='Brand Handle'
+    					className='w-full p-3 rounded-md text-black focus:outline-none'
     					required
     				/>
     				<input
     					type='text'
     					name='user_name'
     					placeholder='Full Name'
-    					className='w-full p-3 rounded-md focus:outline-none'
+    					className='w-full p-3 rounded-md text-black focus:outline-none'
     					required
     				/>
     				<textarea
@@ -115,7 +115,7 @@ const ReachOut = () => {
     				)}
     			</AnimatePresence>
     		</div>
-            
+
 		</div>
 	);
 };

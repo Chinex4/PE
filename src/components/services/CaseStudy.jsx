@@ -5,7 +5,7 @@ const CaseStudy = () => {
 	return (
 		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<div class=''>
-				<h2 className='text-center text-2xl font-bold mb-12'>
+				<h2 className='text-center text-2xl font-bold mb-12 uppercase'>
 					Case Study Spotlight
 					<span className='text-5xl text-primary'>.</span>
 				</h2>

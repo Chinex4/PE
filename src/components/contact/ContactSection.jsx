@@ -37,7 +37,7 @@ const ContactSection = () => {
 			<div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-8'>
 				{/* Contact Options */}
 				<div className='lg:w-1/2 space-y-8'>
-					<h2 className='text-2xl font-semibold'>Get in touch</h2>
+					<h2 className='text-2xl font-semibold uppercase'>Get in touch</h2>
 					<p className='mb-6'>
 						You can book a consultation, request for a brand audit, or get to
 						know how we can work together. Also feel free to connect with me on

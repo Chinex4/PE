@@ -7,9 +7,8 @@ const BrandStrategist = () => {
 		<section className='mt-[5rem] mb-12 bg-primary p-8 rounded-lg shadow-lg mx-auto'>
 			{/* Content Section */}
 			<div className='text-center'>
-				<h2 className='text-[30px] leading-[1] font-bold text-[#F5E9DC]'>
-					Your Brand Deserves Profitable Growth Not Just Visibility (Highlight
-					from Profitable Growth Not Just Visibility)
+				<h2 className='text-[30px] leading-[1] font-bold text-[#F5E9DC] uppercase'>
+					Your Brand Deserves <span className='text-smileyblue'>Profitable Growth Not Just Visibility </span>
 				</h2>
 				<p className='mt-8 text-smileyblue text-sm md:text-[18px]'>
 					A few years ago, I noticed many entrepreneurs show up, market hard,
@@ -23,10 +22,10 @@ const BrandStrategist = () => {
 				</p>
 
 				{/* Button */}
-				<div className='flex flex-col lg:flex-row items-center gap-4 justify-center'>
+				<div className='flex flex-col lg:flex-row items-center gap-4 justify-center mt-12'>
 					<Link
 						to='/reach-out'
-						className='inline-flex items-center gap-2  text-lg mt-12 px-6 py-2 bg-smileyblue text-white font-medium rounded-lg hover:bg-smileyblue/50'>
+						className='inline-flex items-center gap-2 text-xs lg:text-lg px-6 py-2 bg-smileyblue text-white font-medium rounded-lg hover:bg-smileyblue/50'>
 						<span>Let's Build Your Growth Strategy</span>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -44,7 +43,7 @@ const BrandStrategist = () => {
 					</Link>
 					<Link
 						to='/services'
-						className='inline-block text-lg mt-12 px-6 py-2 bg-white text-smileyblue font-medium rounded-lg hover:bg-gray-200'>
+						className='inline-block text-lg px-6 py-2 bg-white text-smileyblue font-medium rounded-lg hover:bg-gray-200'>
 						View My Services Here
 					</Link>
 					

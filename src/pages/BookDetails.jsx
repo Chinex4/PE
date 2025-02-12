@@ -40,8 +40,21 @@ const BookDetails = () => {
 					<p className='mt-4 text-white/80'>
 						<span className='text-xl uppercase font-bold '>Description</span>{' '}
 						<br />
-						<div className='text-justify' dangerouslySetInnerHTML={{ __html: book.description }} />
+						<div
+							className='text-justify'
+							dangerouslySetInnerHTML={{ __html: book.description }}
+						/>
 					</p>
+					{book.author && (
+						<p className='mt-4 text-white/80'>
+							<span className='text-xl uppercase font-bold '>Author's Note</span>{' '}
+							<br />
+							<div
+								className='text-justify'
+								dangerouslySetInnerHTML={{ __html: book.author }}
+							/>
+						</p>
+					)}
 				</div>
 			</div>
 			<Testimonials />

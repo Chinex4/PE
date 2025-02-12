@@ -17,7 +17,7 @@ function FAQ() {
 			<div className='flex flex-col lg:flex-row items-center md:items-center gap-12 max-w-6xl mx-auto'>
 				{/* Left Section */}
 				<div className='text-center lg:text-left mb-8 md:mb-0 flex-1 basis-[50%]'>
-					<h2 className='text-4xl font-bold mb-8'>
+					<h2 className='text-4xl font-bold mb-8 uppercase'>
 						Got Any Questions? I have got the answers you need!
 					</h2>
 					<p className='mt-2'>

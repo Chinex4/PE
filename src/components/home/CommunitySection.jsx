@@ -12,7 +12,7 @@ const CommunitySection = () => {
 					/>
 				</div>
 				<div className='w-full lg:w-1/2 text-center lg:text-left'>
-					<h3 className='text-2xl font-bold mb-4'>
+					<h3 className='text-2xl font-bold mb-4 uppercase'>
 						Join The Builder's Cabin Community Today!
 					</h3>
 					<p className='mb-6'>

@@ -5,7 +5,7 @@ const HeroSection = () => {
 	return (
 		<div className='text-[#F5E9DC] flex flex-col items-center justify-center lg:justify-between'>
 			<div className='text-center max-w-2xl'>
-				<h1 className='text-4xl font-bold mb-4'>
+				<h1 className='text-4xl font-bold mb-4 uppercase'>
 					Let’s Connect and Bring Your Brand Vision to Life!
 				</h1>
 				<p className='text-lg mb-8 text-navGray'>
