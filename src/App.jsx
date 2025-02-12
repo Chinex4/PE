@@ -12,6 +12,7 @@ import CaseStudy from './pages/CaseStudy';
 import { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop'
 import BookDetails from './pages/BookDetails';
+import CaseStudyPage from './pages/CaseStudyPage';
 
 function App() {
 	
@@ -51,7 +52,7 @@ function App() {
 				/>
 				<Route
 					path='/case-studies'
-					element={<CaseStudy />}
+					element={<CaseStudyPage />}
 				/>
 			</Routes>
 			<Footer />

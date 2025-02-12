@@ -38,7 +38,7 @@ const ResourceTabs = () => {
 							<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>
 							<p className='text-gray-600 mb-4'>Available for: {item.price}</p>
 							<a href={item.link} target='_blank' rel='noopener noreferrer' className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
-								Buy Now
+								Get Now
 							</a>
 						</div>
 					</div>

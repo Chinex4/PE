@@ -24,9 +24,9 @@ const Resources = () => {
 							<div className='p-4'>
 								<h3 className='font-semibold text-lg mb-2 text-black'>{item.title}</h3>
 								<p className='text-gray-600 mb-4'>Available for: {item.price}</p>
-								<button className='bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
-									Buy Now
-								</button>
+								<a href={item.link} className='bg-primary text-[#F5E9DC] px-4 py-3 rounded-lg inline-block w-full text-center'>
+									Get Now
+								</a>
 							</div>
 						</div>
 					</Link>

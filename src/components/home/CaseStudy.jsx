@@ -31,7 +31,7 @@ const CaseStudy = () => {
 						</p>
 
 						{/* <!-- Call-to-Action Button --> */}
-						<Link to={'/case-studies'} class='bg-primary text-black py-2 px-8 rounded-lg'>
+						<Link to={'/case-studies'} class='bg-primary text-black py-2 px-8 rounded-lg mt-4 inline-block'>
 							View More Case Studies
 						</Link>
 					</div>

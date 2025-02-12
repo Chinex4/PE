@@ -16,7 +16,7 @@ const HeroSection = () => {
 					Request for a Resource
 				</a>
 			</div>
-			<div className='mt-8'>
+			<div className='mt-8 mb-16'>
 				<img
 					src={'/images/resourceflash.png'}
 					alt='Resource Icon'

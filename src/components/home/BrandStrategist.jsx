@@ -7,10 +7,10 @@ const BrandStrategist = () => {
 		<section className='mt-[5rem] mb-12 bg-primary p-8 rounded-lg shadow-lg mx-auto'>
 			{/* Content Section */}
 			<div className='text-center'>
-				<h2 className='text-[52px] font-bold text-[#F5E9DC]'>
-					Brand <span className='text-smileyblue text-5xl'>Strategist</span>
+				<h2 className='text-[52px] leading-[1] font-bold text-[#F5E9DC]'>
+					Brand <span className='text-smileyblue'>Strategist</span>
 				</h2>
-				<p className='mt-4 text-smileyblue text-[20px] pr-8'>
+				<p className='mt-8 text-smileyblue text-[20px]'>
 					Hey there! I'm <span className='font-bold'>Precious Evans</span>, a
 					brand strategist with a passion for helping entrepreneurs and
 					businesses like yours turn their brands into revenue powerhouses.

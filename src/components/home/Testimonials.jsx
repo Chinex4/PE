@@ -34,18 +34,18 @@ const Testimonials = () => {
 					<SwiperSlide
 						key={index}
 						className='bg-gray-100 h-[330px] flex flex-col justify-between text-smileyblue p-6 rounded-lg shadow-lg'>
-						<p className='mb-4 italic'>{testimonial.quote}</p>
+						<p className='mb-4 italic text-[12px] md:text-[16px]'>{testimonial.quote}</p>
 						<div className='flex gap-3 items-center'>
-							<div>
+							<div className=''>
 								{testimonial.pic ? (
 									<img
-										className='size-16'
+										className='size-10 md:size-16'
 										src={testimonial.pic}
 										alt=''
 									/>
 								) : (
 									<img
-										className='size-10'
+										className='size-8 md:size-10'
 										src='/images/man.png'
 										alt=''
 									/>
@@ -53,7 +53,7 @@ const Testimonials = () => {
 							</div>
 
 							<div>
-								<p className='font-bold'>{testimonial.author}</p>
+								<p className='font-bold text-xs md:text-[16px]'>{testimonial.author}</p>
 								<p className='text-sm text-smileyblue flex items-center space-x-1'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
@@ -61,7 +61,7 @@ const Testimonials = () => {
 										viewBox='0 0 24 24'
 										strokeWidth={1.5}
 										stroke='currentColor'
-										className='size-6'>
+										className='size-3'>
 										<path
 											strokeLinecap='round'
 											strokeLinejoin='round'
@@ -74,7 +74,7 @@ const Testimonials = () => {
 										/>
 									</svg>
 
-									<span>{testimonial.location}</span>
+									<span className='text-xs md:text-sm'>{testimonial.location}</span>
 								</p>
 							</div>
 						</div>

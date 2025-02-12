@@ -33,7 +33,7 @@ const CommunitySection = () => {
 						target='_blank'
 						aria-disabled="true"
 						rel='noopener noreferrer'
-						className='inline-block bg-primary text-black px-6 py-3 rounded-md shadow-lg hover:bg-primary/80 transition-colors'>
+						className='inline-block cursor-not-allowed bg-gray-600/60 text-black px-6 py-3 rounded-md shadow-lg transition-colors'>
 						Coming Soon!
 					</button>
 				</div>

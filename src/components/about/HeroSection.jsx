@@ -21,7 +21,7 @@ const HeroSection = () => {
 			</div>
 			<div className='mt-8'>
 				<img
-					src={'/images/smileys.png'}
+					src={'/images/Aboutpe.png'}
 					alt='Service Icon'
 				/>
 			</div>

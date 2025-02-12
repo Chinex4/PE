@@ -26,12 +26,6 @@ export const testimonials = [
 	},
 	{
 		quote:
-			'Mehn, thanks for the call man. You really helped me with good ideas and action plans to help scale this idea very well and the idea was approved! I’ll hit you up for another call when I need to.',
-		author: 'Arinze (Product Manager)',
-		location: 'Nigeria',
-	},
-	{
-		quote:
 			'The book, Content Strategy provided practical insights into identifying my target audience, creating meaningful content not just anyhow content, and maintaining consistency to drive business growth effectively.',
 		author: 'Deborah (Marketer)',
 		location: 'Nigeria',
@@ -101,12 +95,12 @@ export const sponsors = [
 export const media = [
 	{
 		name: 'Instagram',
-		imageUrl: '/images/igthumb.png', // Replace with your image URL
+		imageUrl: '/images/igthumbb.png', // Replace with your image URL
 		link: 'https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5',
 	},
 	{
 		name: 'Tiktok',
-		imageUrl: '/images/tiltokthumb.png', // Replace with your image URL
+		imageUrl: '/images/tiktokthumb.png', // Replace with your image URL
 		link: 'https://www.tiktok.com/@_preciousevans?_t=ZM-8tpY7S83Lc7&_r=1',
 	},
 	// {
@@ -135,7 +129,7 @@ export const resources = {
 	latest: [
 		{
 			title: 'Target Audience',
-			price: '$0.67 (N1000)',
+			price: '$0.67 (NGN 1,000)',
 			image: '/images/resources-thumbs/TARGET-THUMB.png',
 			link: 'https://selar.com/f09jqh',
 			description: `
@@ -166,12 +160,12 @@ export const resources = {
 		},
 		{
 			title: 'Target Audience',
-			price: '$0.67 (N1000)',
+			price: '$0.67 (NGN 1,000)',
 			image: '/images/resources-thumbs/TARGET-THUMB.png',
 		},
 		{
 			title: 'Target Audience',
-			price: '$0.67 (N1000)',
+			price: '$0.67 (NGN 1,000)',
 			image: '/images/resources-thumbs/TARGET-THUMB.png',
 		},
 
@@ -266,9 +260,35 @@ export const resources = {
 	],
 	templates: [
 		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
+			title: 'Target Audience',
+			price: '$0.67 (NGN 1,000)',
+			image: '/images/resources-thumbs/TARGET-THUMB.png',
+			link: 'https://selar.com/f09jqh',
+			description: `
+			Discover Your Ideal Customer with the Target Audience Persona
+			Template. <br /> <br />
+			
+			Understanding your audience is the key to unlocking
+			business growth, but it can be challenging without a clear guide.
+			This thoughtfully crafted template will help you define exactly who
+			your ideal customers are and what makes them tick.
+			<br /> <br />
+			Imagine knowing your customers so well that your marketing feels like a conversation
+			rather than a pitch. With this template, you'll gain clarity on
+			crucial details like their demographics, interests, challenges, and
+			purchasing behaviors. <br /> <br />
+			You’ll be able to see patterns, spot pain points, and tailor your messaging to address exactly what they need,
+			whether it’s their next big purchase or simply a reason to trust
+			your brand. 
+			<br /> <br />
+			The best part? The template is easy to use and fully
+			customizable. Whether you're just starting or scaling your business,
+			it’s a powerful tool designed to help you craft strategies that
+			connect with your audience on a deeper level and lead to better
+			results. <br /> <br />
+			If you’re ready to stop guessing and start making informed
+			decisions, this template is exactly what you need.
+			`,
 		},
 		{
 			title: 'Starter Pack 1',
@@ -430,5 +450,58 @@ export const approachSteps = [
 		title: 'Continuous Feedback & Optimization',
 		description:
 			'Gathered client feedback to refine strategies, ensuring impactful and relevant brand positioning.',
+	},
+];
+
+export const caseStudies = [
+	{
+		id: 1,
+		title: 'Xquisite Foods & Groceries',
+		description:
+			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
+		image: '/images/xquisitecase.png',
+		link:'/xquisite' 
+	},
+	{
+		id: 2,
+		title: 'Grovine',
+		description:
+			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
+		image: '/images/grovinecase.png',
+	},
+	{
+		id: 3,
+		title: 'Foodhut',
+		description:
+			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
+		image: '/images/foodhutcase.png',
+	},
+	{
+		id: 4,
+		title: 'Romeo Laundry Service',
+		description:
+			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
+		image: '/images/romeocase.png',
+	},
+	{
+		id: 5,
+		title: 'Matallo',
+		description:
+			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
+		image: '/images/matallocase.png',
+	},
+	{
+		id: 6,
+		title: 'Raotory',
+		description:
+			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
+		image: '/images/raotorycase.png',
+	},
+	{
+		id: 7,
+		title: 'Sedapay',
+		description:
+			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
+		image: '/images/sedapaycase.png',
 	},
 ];
