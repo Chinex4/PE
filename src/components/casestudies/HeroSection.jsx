@@ -14,11 +14,11 @@ const HeroSection = () => {
 					case study highlights the challenges, strategies, and successes that
 					drive impactful growth.
 				</p>
-				<a
-					href='https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5'
+				<Link
+					to='/reach-out'
 					className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Book A Call Now
-				</a>
+				</Link>
 			</div>
 			<div className='mt-8'>
 				<img

@@ -15,11 +15,11 @@ const HeroSection = () => {
 					sustainability tools. No guesswork or wasted effort. From strategy to
 					execution.
 				</p>
-				<a
-					href='https://forms.gle/RBLA2MLGCuYBPb9Y8'
+				<Link
+					to='/reach-out'
 					className='btn rounded-md bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Book A Free Brand Audit!
-				</a>
+				</Link>
 			</div>
 			<div className='mt-8'>
 				<img

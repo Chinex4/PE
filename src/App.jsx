@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop'
 import BookDetails from './pages/BookDetails';
 import CaseStudyPage from './pages/CaseStudyPage';
+import ReachOut from './pages/ReachOut';
 
 function App() {
 	
@@ -53,6 +54,10 @@ function App() {
 				<Route
 					path='/case-studies'
 					element={<CaseStudyPage />}
+				/>
+				<Route
+					path='/reach-out'
+					element={<ReachOut />}
 				/>
 			</Routes>
 			<Footer />

@@ -78,9 +78,9 @@ const MainNavagetion = () => {
 				</div>
 			</div>
 			<div className='navbar-end hidden lg:flex'>
-				<a href='https://www.instagram.com/_preciousevans?igsh=ZzlnaHE3bnd5YjE5' className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center'>
+				<Link to='/reach-out' className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center'>
 					Contact Me
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

@@ -25,8 +25,8 @@ const ResourceTabs = () => {
 
 			{/* Tab Content */}
 			<div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
-				{resources[activeTab].map((item, index) =>
-					item ? (
+				{resources[activeTab] && resources[activeTab].length > 0 ? (
+					resources[activeTab].map((item, index) => (
 						<div
 							key={index}
 							className='bg-white rounded-lg shadow-lg overflow-hidden'>
@@ -51,13 +51,11 @@ const ResourceTabs = () => {
 								</a>
 							</div>
 						</div>
-					) : (
-						<div
-							key={index}
-							className='w-full text-center text-white text-xl'>
-							No resources available for this category.
-						</div>
-					)
+					))
+				) : (
+					<div className='w-full text-center text-white text-xl col-span-full'>
+						No resources available yet for this category.
+					</div>
 				)}
 			</div>
 		</div>
