@@ -33,9 +33,9 @@ const ReachOut = () => {
 		e.target.reset();
 	};
 	return (
-		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0'>
+		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] lg:mt-0'>
 		    <div className='bg-black py-16 px-4'>
-    			<h2 className='text-center text-[24px] uppercase leading-[1.5] font-bold mb-12'>
+    			<h2 className='text-center text-[24px] text-[#F5E9DC] uppercase leading-[1.5] font-bold mb-12'>
     				Fill this form and I will reach out to you shortly to get started
     				<span className='text-[48px] text-primary'>.</span>
     			</h2>
