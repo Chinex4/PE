@@ -6,7 +6,7 @@ const Resources = () => {
 	return (
 		<div className='bg-black text-[#F5E9DC] py-16'>
 			<h2 className='text-center uppercase text-2xl font-bold mb-12 leading-[3px]'>
-				Explore Resources for your brand growth
+				Build and Grow your brand easily with these resources 
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
 

@@ -17,7 +17,7 @@ const ResourceTabs = () => {
 							activeTab === tab.id
 								? 'text-primary border-b-2 border-primary'
 								: 'text-gray-300'
-						}`} >
+						}`}>
 						{tab.label}
 					</button>
 				))}
@@ -25,24 +25,40 @@ const ResourceTabs = () => {
 
 			{/* Tab Content */}
 			<div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
-				{resources[activeTab].map((item, index) => (
-					<div key={index} className='bg-white rounded-lg shadow-lg overflow-hidden'>
-						<Link to={`/book/${encodeURIComponent(item.title)}`}>
-							<img
-								src={item.image}
-								alt={item.title}
-								className='w-[500px] h-[400px] object-cover cursor-pointer'
-							/>
-						</Link>
-						<div className='p-4'>
-							<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>
-							<p className='text-gray-600 mb-4'>Available for: {item.price}</p>
-							<a href={item.link} target='_blank' rel='noopener noreferrer' className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
-								Get Now
-							</a>
+				{resources[activeTab].map((item, index) =>
+					item ? (
+						<div
+							key={index}
+							className='bg-white rounded-lg shadow-lg overflow-hidden'>
+							<Link to={`/book/${encodeURIComponent(item.title)}`}>
+								<img
+									src={item.image}
+									alt={item.title}
+									className='w-[500px] h-[400px] object-cover cursor-pointer'
+								/>
+							</Link>
+							<div className='p-4'>
+								<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>
+								<p className='text-gray-600 mb-4'>
+									Available for: {item.price}
+								</p>
+								<a
+									href={item.link}
+									target='_blank'
+									rel='noopener noreferrer'
+									className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
+									Get Now
+								</a>
+							</div>
 						</div>
-					</div>
-				))}
+					) : (
+						<div
+							key={index}
+							className='w-full text-center text-white text-xl'>
+							No resources available for this category.
+						</div>
+					)
+				)}
 			</div>
 		</div>
 	);

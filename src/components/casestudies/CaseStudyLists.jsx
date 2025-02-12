@@ -8,12 +8,8 @@ const CaseStudies = () => {
 	const [selectedCase, setSelectedCase] = useState(null);
 
 	const handleViewCaseStudy = (caseStudy) => {
-		if (caseStudy.link) {
-			window.open(caseStudy.link); // Open link in new tab
-		} else {
-			setSelectedCase(caseStudy);
-			setShowModal(true);
-		}
+		setSelectedCase(caseStudy);
+		setShowModal(true);
 	};
 	return (
 		<section className='bg-black text-white py-16 px-4'>
@@ -43,11 +39,19 @@ const CaseStudies = () => {
 									{caseStudy.description}
 								</p>
 							</div>
-							<button
-								onClick={() => handleViewCaseStudy(caseStudy)}
-								className='text-center mt-4 w-full bg-primary text-white font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
-								View Case Study
-							</button>
+							{caseStudy.link ? (
+								<Link
+									to={caseStudy.link}
+									className='text-center mt-4 w-full bg-primary text-white font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
+									View Case Study
+								</Link>
+							) : (
+								<button
+									onClick={() => handleViewCaseStudy(caseStudy)}
+									className='text-center mt-4 w-full bg-primary text-white font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
+									View Case Study
+								</button>
+							)}
 						</div>
 					</motion.div>
 				))}
@@ -74,8 +78,8 @@ const CaseStudies = () => {
 						>
 							<h3 className='text-xl font-bold'>Page Not Ready Yet</h3>
 							<p className='mt-2 text-gray-600'>
-								The case study for <strong>{selectedCase?.title}</strong> is not
-								available yet. Please check back later.
+								The case study for <strong>{selectedCase?.title}</strong> will
+								be available soon. Please check back later.
 							</p>
 							<button
 								onClick={() => setShowModal(false)}

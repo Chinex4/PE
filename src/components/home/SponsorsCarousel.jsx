@@ -11,7 +11,7 @@ const SponsorsCarousel = () => {
 	return (
 		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<h2 className='text-center text-2xl font-bold mb-5 leading-[3px]'>
-				Few Clients I Work With
+				From Vision to Results: Brands I've Worked with
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
 			<div className='bg-[#D9D9D90A] mx-auto py-8 rounded'>
@@ -20,7 +20,7 @@ const SponsorsCarousel = () => {
 					spaceBetween={30}
 					// navigation
 					// pagination={{ clickable: true }}
-					autoplay={{ delay: 3000 }}
+					autoplay={{ delay: 300 }}
 					loop={true}
 					breakpoints={{
 						640: {

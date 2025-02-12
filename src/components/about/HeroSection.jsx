@@ -9,7 +9,7 @@ const HeroSection = () => {
 				<p className='text-sm mb-8 text-navGray'>
 					I am a brand strategist and passionate user/customer experience
 					designer with a unique desire for solving both simple & complex
-					problems every day of my life. Over my years pf experience, I have
+					problems every day of my life. Over my years of experience, I have
 					been equipped with a communication skill which help me interpret
 					entrepreneurs dreams & desires to its simplest form and problem
 					solving skills that help me walk them through the path of achieving

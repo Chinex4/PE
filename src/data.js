@@ -158,104 +158,21 @@ export const resources = {
 			decisions, this template is exactly what you need.
 			`,
 		},
-		{
-			title: 'Target Audience',
-			price: '$0.67 (NGN 1,000)',
-			image: '/images/resources-thumbs/TARGET-THUMB.png',
-		},
-		{
-			title: 'Target Audience',
-			price: '$0.67 (NGN 1,000)',
-			image: '/images/resources-thumbs/TARGET-THUMB.png',
-		},
-
 		// Add more starter pack items
 	],
 	checklists: [
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Brand Launch Checklist',
-			price: '$29.99',
-			image: '/images/resouceman.png',
-		},
 		// Add more checklist items if needed
 	],
 	starterPacks: [
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
+		
 		// Add more starter pack items
 	],
 	personalBranding: [
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
+		
 		// Add more starter pack items
 	],
 	contentCreation: [
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
+		
 		// Add more starter pack items
 	],
 	templates: [
@@ -290,24 +207,11 @@ export const resources = {
 			decisions, this template is exactly what you need.
 			`,
 		},
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
+		
 		// Add more starter pack items
 	],
 	strategies: [
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
-		{
-			title: 'Starter Pack 1',
-			price: '$49.99',
-			image: '/images/resouceman.png',
-		},
+		
 		// Add more starter pack items
 	],
 	// Add more categories with resource items as needed
