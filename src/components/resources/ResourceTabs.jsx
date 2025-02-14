@@ -24,29 +24,32 @@ const ResourceTabs = () => {
 			</div>
 
 			{/* Tab Content */}
-			<div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+			<div className='mt-8 grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5'>
 				{resources[activeTab] && resources[activeTab].length > 0 ? (
 					resources[activeTab].map((item, index) => (
 						<div
 							key={index}
-							className='bg-white rounded-lg shadow-lg overflow-hidden'>
+							className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full max-w-[250px] md:max-w-[350px] mx-auto'>
 							<Link to={`/book/${encodeURIComponent(item.title)}`}>
 								<img
 									src={item.image}
 									alt={item.title}
-									className='w-[500px] h-[400px] object-cover cursor-pointer'
+									className='w-full h-[180px] md:h-[350px] object-cover cursor-pointer'
 								/>
 							</Link>
-							<div className='p-4'>
-								<h3 className='font-semibold text-lg mb-2'>{item.title}</h3>
-								<p className='text-gray-600 mb-4'>
-									Available for: {item.price}
-								</p>
+							<div className='p-3 flex flex-col flex-grow justify-between'>
+								<div>
+									<h3 className='font-semibold text-xs md:text-lg mb-1 text-black'>
+										{item.title}
+									</h3>
+									<p className='text-gray-600 mb-3 text-xs md:text-base'>
+										Available for: {item.price}
+									</p>
+								</div>
 								<a
 									href={item.link}
-									target='_blank'
 									rel='noopener noreferrer'
-									className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
+									className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-3 py-2 rounded-md text-xs md:text-base mt-auto'>
 									Get Now
 								</a>
 							</div>
