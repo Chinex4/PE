@@ -9,7 +9,7 @@ const HeroSection = () => {
 					Empower Your Brand with Resources Designed to Drive Growth
 				</h1>
 				<p className='text-lg mb-8 text-navGray'>
-					Explore a curated collection of resources tailored to help you
+					Discover a curated collection of resources tailored to help you
 					simplify brand strategy, grow your audience, and increase revenue.
 				</p>
 				<a href='#resourceform' className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>

@@ -9,7 +9,7 @@ const HeroSection = () => {
 					Behind Every Thriving Brand: Real Strategies, Real Results
 				</h1>
 				<p className='text-sm mb-8 text-navGray'>
-					Explore how we’ve helped entrepreneurs and brands transform their
+					Discover how we’ve helped entrepreneurs and brands transform their
 					positioning, scale their businesses, and generate more revenue. Each
 					case study highlights the challenges, strategies, and successes that
 					drive impactful growth.
