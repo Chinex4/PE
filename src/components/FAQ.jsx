@@ -23,8 +23,7 @@ function FAQ() {
 					<p className='mt-2'>
 						Do you have any questions about building your brand or ready to get
 						started? Dive into our FAQs for quick answers, or reach out
-						directly. I’m just a message away to help your brand grow. Let’s
-						chat about how we can make it happen!
+						directly. I’m just a message away!
 					</p>
 					<Link
 						to='/contact'

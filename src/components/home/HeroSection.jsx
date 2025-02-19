@@ -10,7 +10,7 @@ const HeroSection = () => {
 					5x Your Brand's Revenue in just 16 weeks!
 				</h1>
 				<p className='text-lg mb-8 text-navGray'>
-					I offer Proven brand strategies, product design & automation and marketing
+					I offer proven brand strategies, product design & automation and marketing
 					systems to 5X your revenue in just 16 weeks, together with
 					sustainability tools. No guesswork or wasted effort. From strategy to
 					execution.

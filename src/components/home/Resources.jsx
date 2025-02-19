@@ -114,7 +114,7 @@ const Resources = () => {
 							</h2>
 							<form
 								onSubmit={handleSubmit}
-								className='space-y-4'>
+								className='space-y-4 text-black'>
 								<div>
 									<label className='block text-sm font-medium text-gray-700'>
 										Name

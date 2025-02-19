@@ -8,17 +8,21 @@ const BrandStrategist = () => {
 			{/* Content Section */}
 			<div className='text-center'>
 				<h2 className='text-[30px] leading-[1] font-bold text-[#F5E9DC] uppercase'>
-					Your Brand Deserves <span className='text-smileyblue'>Profitable Growth Not Just Visibility </span>
+					Your Brand Deserves Profitable Growth
+					<span className='text-smileyblue'> Not Just Visibility </span>
 				</h2>
 				<p className='mt-8 text-smileyblue text-sm md:text-[18px]'>
-					A few years ago, I noticed many entrepreneurs show up, market hard,
-					and still struggle to scale. The problem? A lack of strategic
-					positioning and messaging that turns visibility into revenue. I’ve
-					helped businesses 5X their revenue in weeks by applying brand
-					positioning, product design and automation, revenue-driven marketing,
-					and high-converting messaging. Your brand doesn’t need more noise, it
-					needs a strategy that attracts, converts, and retains high-paying
-					customers.
+					A few years ago, I identified a problem with my friend’s brand. A
+					problem I later got to learn was common with a lot of businesses.
+					Amanda, my friend, ran a small business. Amanda worked so hard. She
+					put in all the work, but she recorded little to no results. On a
+					closer look, I noticed Amanda had problems with brand positioning and
+					messaging. She was working hard, but not hard on the problem. There
+					are lots of Amandas and that’s why I’ve decided to create solutions by
+					helping businesses 5X revenue through effective brand positioning and
+					messaging, product design and automation, and revenue-driven
+					marketing. Your brand doesn’t need more noise, it needs a strategy
+					that attracts, converts and retains high-paying customers/clients.
 				</p>
 
 				{/* Button */}
@@ -46,7 +50,6 @@ const BrandStrategist = () => {
 						className='inline-block text-lg px-6 py-2 bg-white text-smileyblue font-medium rounded-lg hover:bg-gray-200'>
 						View My Services Here
 					</Link>
-					
 				</div>
 			</div>
 		</section>
