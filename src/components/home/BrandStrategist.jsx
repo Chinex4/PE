@@ -11,7 +11,7 @@ const BrandStrategist = () => {
 					Your Brand Deserves Profitable Growth
 					<span className='text-smileyblue'> Not Just Visibility </span>
 				</h2>
-				<p className='mt-8 text-smileyblue text-sm md:text-[18px]'>
+				<p className='mt-8 text-smileyblue text-sm md:text-[18px] leading-6'>
 					A few years ago, I identified a problem with my friend’s brand. A
 					problem I later got to learn was common with a lot of businesses.
 					Amanda, my friend, ran a small business. Amanda worked so hard. She
