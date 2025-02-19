@@ -1,9 +1,86 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 import { resources, tabs } from '../../data';
 
 const ResourceTabs = () => {
 	const [activeTab, setActiveTab] = useState('latest');
+	const [showForm, setShowForm] = useState(false);
+	const [selectedResource, setSelectedResource] = useState(null);
+	const [formData, setFormData] = useState({ name: '', email: '' });
+	const [errors, setErrors] = useState({});
+
+	const [loading, setLoading] = useState(false);
+
+	const openForm = (resource) => {
+		setSelectedResource(resource);
+		setShowForm(true);
+	};
+
+	const closeForm = () => {
+		setShowForm(false);
+		setFormData({ name: '', email: '' });
+		setErrors({});
+	};
+
+	// Handle form input change
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	// Validate form
+	const validateForm = () => {
+		let newErrors = {};
+		if (!formData.name.trim()) newErrors.name = 'Name is required';
+		if (!formData.email.trim()) {
+			newErrors.email = 'Email is required';
+		} else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+			newErrors.email = 'Enter a valid email';
+		}
+		setErrors(newErrors);
+		return Object.keys(newErrors).length === 0;
+	};
+
+	// Handle form submission
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		if (!validateForm()) return;
+
+		// EmailJS config
+
+		const serviceID = 'service_hzqkqj6';
+		const templateID = 'template_r5nhlxa';
+		const publicKey = '_hE5FK0e73MmOnlBf';
+
+		const templateParams = {
+			name: formData.name,
+			email: formData.email,
+			resource: selectedResource.title,
+		};
+
+		setLoading(true);
+		try {
+			await emailjs.send(
+				serviceID,
+				templateID,
+				templateParams,
+				publicKey
+			);
+
+			setLoading(false);
+			closeForm();
+			window.location.href = selectedResource.link; // Redirect to Selar link
+		} catch (error) {
+			console.error('EmailJS Error:', error);
+			setLoading(false);
+		}
+	};
+
+	// Open modal form
+	const handleGetNowClick = (resource) => {
+		setSelectedResource(resource);
+		setShowForm(true);
+	};
 
 	return (
 		<div className='py-6'>
@@ -46,12 +123,11 @@ const ResourceTabs = () => {
 										Available for: {item.price}
 									</p>
 								</div>
-								<a
-									href={item.link}
-									rel='noopener noreferrer'
+								<button
+									onClick={() => openForm(item)}
 									className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-3 py-2 rounded-md text-xs md:text-base mt-auto'>
 									Get Now
-								</a>
+								</button>
 							</div>
 						</div>
 					))
@@ -61,6 +137,66 @@ const ResourceTabs = () => {
 					</div>
 				)}
 			</div>
+
+			{/* Animated Form Modal */}
+			{showForm && (
+				<div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50'>
+					<div className='bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-[400px] animate-fadeIn'>
+						<h2 className='text-lg font-bold mb-4 text-center'>
+							Get Your Resource
+						</h2>
+						<form
+							onSubmit={handleSubmit}
+							className='space-y-4'>
+							<div>
+								<label className='block text-sm font-medium text-gray-700'>
+									Name
+								</label>
+								<input
+									type='text'
+									name='name'
+									value={formData.name}
+									onChange={handleChange}
+									className='w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary'
+									placeholder='Enter your name'
+								/>
+								{errors.name && (
+									<p className='text-red-500 text-xs'>{errors.name}</p>
+								)}
+							</div>
+							<div>
+								<label className='block text-sm font-medium text-gray-700'>
+									Email
+								</label>
+								<input
+									type='email'
+									name='email'
+									value={formData.email}
+									onChange={handleChange}
+									className='w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary'
+									placeholder='Enter your email'
+								/>
+								{errors.email && (
+									<p className='text-red-500 text-xs'>{errors.email}</p>
+								)}
+							</div>
+							<div className='flex justify-between items-center'>
+								<button
+									onClick={closeForm}
+									className='mt-3 text-gray-500 hover:text-gray-700 block text-center'>
+									Cancel
+								</button>
+								<button
+									type='submit'
+									disabled={loading}
+									className='bg-primary text-white py-2 px-4 rounded-md font-medium'>
+									{loading ? "Submitting..." : "Submit"}
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };
