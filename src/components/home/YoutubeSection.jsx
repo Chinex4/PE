@@ -3,20 +3,20 @@ import React from 'react';
 const YoutubeSection = () => {
 	const videos = [
 		{
-			title: 'How To Choose A Brand Name: Introduction With Precious Evans',
-			thumbnail: 'https://i.ytimg.com/vi/NgwY9oB6-gk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_5Lz_Hpahw9IzmNw_4DlALtfB0g',
-			link: 'https://youtu.be/NgwY9oB6-gk?si=BPaRDSbpSDj9LLPt',
+			title: 'How To Build A Personal Brand - You, The Brand By Precious Evans',
+			thumbnail: '/images/ythumb1.jpg',
+			link: 'https://youtu.be/SmYR_H9hq7U',
 		},
 		{
-			title: 'The Power Of Content Marketing With Precious Evans',
-			thumbnail: 'https://i.ytimg.com/an_webp/yHPXTJTe0E8/mqdefault_6s.webp?du=3000&sqp=CPbUrb0G&rs=AOn4CLCa2tgOrx5XvgeOIsV5NarCnnrQUA',
-			link: 'https://youtu.be/Yl5lLmw-Ank?si=2fsm2yCbfwAceReH',
+			title: 'What is Personal Branding | You, The Brand By Preious Evans',
+			thumbnail: '/images/ythumb2.jpg',
+			link: 'https://youtu.be/Kd-QIX5Mdt4',
 		},
-		{
-			title: 'How To Make Money Through Your Business Logo With Precious Evans',
-			thumbnail: 'https://i.ytimg.com/an_webp/eFaB5leqYlM/mqdefault_6s.webp?du=3000&sqp=COfFrb0G&rs=AOn4CLCamuJIXsBMW5kcRo0LCS09hzGBvQ',
-			link: 'https://youtu.be/eFaB5leqYlM?si=u1vadR3KMfVHUYLI',
-		},
+		// {
+		// 	title: 'How To Make Money Through Your Business Logo With Precious Evans',
+		// 	thumbnail: 'https://i.ytimg.com/an_webp/eFaB5leqYlM/mqdefault_6s.webp?du=3000&sqp=COfFrb0G&rs=AOn4CLCamuJIXsBMW5kcRo0LCS09hzGBvQ',
+		// 	link: 'https://youtu.be/eFaB5leqYlM?si=u1vadR3KMfVHUYLI',
+		// },
 	];
 
 	return (
