@@ -8,6 +8,7 @@ const nav = [
 	{ path: '/services', label: 'Services' },
 	{ path: '/case-studies', label: 'Case Studies' },
 	{ path: '/about', label: 'About Me' },
+	{ path: '/newsletter', label: 'Newsletter' },
 	{ path: '/contact', label: 'Contact' },
 ];
 
