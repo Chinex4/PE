@@ -10,57 +10,62 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import CaseStudy from './pages/CaseStudy';
 import { useEffect } from 'react';
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop';
 import BookDetails from './pages/BookDetails';
 import CaseStudyPage from './pages/CaseStudyPage';
 import ReachOut from './pages/ReachOut';
+import NewsLetter from './pages/NewsLetter';
 
 function App() {
-	
-
 	return (
 		<div className='bg-black min-h-screen font-sans'>
-			<MainNavagetion />
-      <ScrollToTop />
-			<Routes>
-				<Route
-					path='/'
-					element={<Home />}
-				/>
-				<Route
-					path='/resources'
-					element={<Resources />}
-				/>
-				<Route
-					path='/book/:title'
-					element={<BookDetails />}
-				/>
-				<Route
-					path='/services'
-					element={<Services />}
-				/>
-				<Route
-					path='/about'
-					element={<About />}
-				/>
-				<Route
-					path='/contact'
-					element={<Contact />}
-				/>
-				<Route
-					path='/xquisite'
-					element={<CaseStudy />}
-				/>
-				<Route
-					path='/case-studies'
-					element={<CaseStudyPage />}
-				/>
-				<Route
-					path='/reach-out'
-					element={<ReachOut />}
-				/>
-			</Routes>
-			<Footer />
+			<div className='max-w-[100rem] mx-auto'>
+				<MainNavagetion />
+				<ScrollToTop />
+				<Routes>
+					<Route
+						path='/'
+						element={<Home />}
+					/>
+					<Route
+						path='/resources'
+						element={<Resources />}
+					/>
+					<Route
+						path='/book/:title'
+						element={<BookDetails />}
+					/>
+					<Route
+						path='/services'
+						element={<Services />}
+					/>
+					<Route
+						path='/about'
+						element={<About />}
+					/>
+					<Route
+						path='/contact'
+						element={<Contact />}
+					/>
+					<Route
+						path='/xquisite'
+						element={<CaseStudy />}
+					/>
+					<Route
+						path='/case-studies'
+						element={<CaseStudyPage />}
+					/>
+					<Route
+						path='/reach-out'
+						element={<ReachOut />}
+					/>
+					<Route
+						path='/newsletter'
+						element={<NewsLetter />}
+					/>
+				</Routes>
+				<Footer />
+			</div>
 		</div>
 	);
 }
