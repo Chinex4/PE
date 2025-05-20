@@ -99,7 +99,7 @@ const Resources = () => {
 							</div>
 							<button
 								onClick={() => openForm(item)}
-								className='inline-block w-full text-center bg-primary text-[#F5E9DC] px-3 py-2 rounded-md text-xs md:text-base mt-auto'>
+								className='inline-block w-full text-center bg-primary text-[#000000] px-3 py-2 rounded-md text-xs md:text-base mt-auto'>
 								Get Now
 							</button>
 						</div>
