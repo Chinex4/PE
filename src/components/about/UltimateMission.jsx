@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UltimateMission = () => {
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className=' text-[#F5E9DC] py-16 px-4'>
 			<div className='max-w-6xl mx-auto'>
 				<div className='flex flex-col lg:flex-row rounded-lg shadow-lg overflow-hidden'>
 					{/* Logo/Image */}

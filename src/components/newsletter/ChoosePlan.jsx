@@ -87,7 +87,7 @@ const ChoosePlan = () => {
 	};
 
 	return (
-		<div className='bg-black text-[#F5E9DC] py-16 px-6 md:px-16'>
+		<div className=' text-[#F5E9DC] py-16 px-6 md:px-16'>
 			<Toaster />
 			<h2 className='text-center text-3xl font-bold mb-12'>Choose Your Plan</h2>
 

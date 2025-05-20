@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CaseStudy = () => {
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className=' text-[#F5E9DC] py-16 px-4'>
 			<div class=''>
 				<h2 className='text-center text-2xl font-bold mb-12 uppercase'>
 					Case Study Spotlight

@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Services = () => {
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className=' text-[#F5E9DC] py-16 px-4'>
 			<div class='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto'>
 				{/* <!-- Service 1 --> */}
 				<div class='bg-[#F5E9DC] text-black p-6 rounded-lg shadow-lg'>
 					<h3 class='font-semibold text-lg md:text-xl mb-2'>
 						01 - Brand Strategy & Positioning
 					</h3>
-					<p class='text-gray-700 mb-4 text-sm'>
+					<p class='text-navGray mb-4 text-sm'>
 						Build a powerful foundation for your brand with a tailored strategy
 						that aligns with your goals and vision. Together, we'll dive deep
 						into understanding your audience, defining your unique brand
@@ -71,7 +71,7 @@ const Services = () => {
 				{/* <!-- Service 4 --> */}
 				<div class='bg-[#F5E9DC] text-black p-6 rounded-lg shadow-lg'>
 					<h3 class='font-semibold text-lg md:text-xl mb-2'>04 - Speaking Engagements</h3>
-					<p class='text-gray-700 mb-4 text-sm'>
+					<p class='text-navGray mb-4 text-sm'>
 						Looking for an engaging, knowledgeable speaker on branding,
 						entrepreneurship, or business growth? I bring years of experience
 						and a deep passion for helping brands thrive. Let’s inspire and

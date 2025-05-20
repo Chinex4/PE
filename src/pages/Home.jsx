@@ -14,7 +14,7 @@ import CaseStudy from '../components/home/CaseStudy';
 
 function Home() {
 	return (
-		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0'>
+		<div className='px-4 py-5 lg:px-[10rem] lg:pb-[2rem] mt-8 lg:mt-0'>
       <HeroSection />
       <SponsorsCarousel />
       <BrandStrategist />
@@ -23,7 +23,7 @@ function Home() {
       <YoutubeSection />
       <Testimonials />
       <MediaLinks />
-      <CommunitySection />
+      <CommunitySection /> 
       <FAQ />
       <ContactForm />
     </div>

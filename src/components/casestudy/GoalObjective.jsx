@@ -2,7 +2,7 @@ import React from 'react';
 
 const GoalsObjectives = () => {
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className=' text-[#F5E9DC] py-16 px-4'>
 			<div className='max-w-4xl mx-auto text-center'>
 				<h2 className='text-2xl font-semibold uppercase mb-8'>Goals & Objectives
 				<span className='text-5xl text-primary'>.</span></h2>

@@ -12,7 +12,7 @@ const CaseStudies = () => {
 		setShowModal(true);
 	};
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className=' text-[#F5E9DC] py-16 px-4'>
 			<h2 className='text-center uppercase text-2xl font-bold mb-12'>
 				View Most Of Our Case Studies<span className='text-primary'>.</span>
 			</h2>

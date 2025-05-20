@@ -1,22 +1,14 @@
-import { useState } from 'react';
+import { Disclosure } from '@headlessui/react';
 import { faqs } from '../data';
 import { Link } from 'react-router-dom';
-
+import { ChevronUpIcon } from '@heroicons/react/24/solid';
 
 function FAQ() {
-	// State to track which FAQ is open
-	const [openIndex, setOpenIndex] = useState(null);
-
-	// Toggle function for opening and closing answers
-	const toggleFAQ = (index) => {
-		setOpenIndex(openIndex === index ? null : index);
-	};
-
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
-			<div className='flex flex-col lg:flex-row items-center md:items-center gap-12 max-w-6xl mx-auto'>
+		<section className='text-[#F5E9DC] py-16 px-4'>
+			<div className='flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto'>
 				{/* Left Section */}
-				<div className='text-center lg:text-left mb-8 md:mb-0 flex-1 basis-[50%]'>
+				<div className='text-center lg:text-left flex-1 basis-[50%]'>
 					<h2 className='text-4xl font-bold mb-8 uppercase'>
 						Got Any Questions? I have got the answers you need!
 					</h2>
@@ -33,23 +25,25 @@ function FAQ() {
 				</div>
 
 				{/* Right Section */}
-				<div className='space-y-4 flex-1 basis-[50%]'>
+				<div className='flex-1 basis-[50%] space-y-4 w-full'>
 					{faqs.map((faq, index) => (
-						<div
-							key={index}
-							className='border-b border-[#F5E9DC]'>
-							<button
-								onClick={() => toggleFAQ(index)}
-								className='w-full text-left py-4 flex justify-between items-center text-lg'>
-								<span>{faq.question}</span>
-								<span className='text-[#F5E9DC]'>
-									{openIndex === index ? '−' : '+'}
-								</span>
-							</button>
-							{openIndex === index && (
-								<div className='pb-4 text-[#F5E9DC]/80'>{faq.answer}</div>
+						<Disclosure key={index}>
+							{({ open }) => (
+								<div className='border-b border-[#F5E9DC] pb-2'>
+									<Disclosure.Button className='flex justify-between items-center w-full py-4 text-left text-lg'>
+										<span>{faq.question}</span>
+										<ChevronUpIcon
+											className={`w-5 h-5 text-[#F5E9DC] transition-transform ${
+												open ? 'rotate-180' : 'rotate-0'
+											}`}
+										/>
+									</Disclosure.Button>
+									<Disclosure.Panel className='text-[#F5E9DC]/80 pb-4'>
+										{faq.answer}
+									</Disclosure.Panel>
+								</div>
 							)}
-						</div>
+						</Disclosure>
 					))}
 				</div>
 			</div>

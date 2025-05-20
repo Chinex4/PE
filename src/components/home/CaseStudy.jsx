@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MyButton from '../ui/Button';
 
 const CaseStudy = () => {
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className='text-[#F5E9DC] py-16 px-4'>
 			<div class=''>
 				<h2 className='text-center text-2xl font-bold mb-12 uppercase'>
 					Case Studies
 					<span className='text-5xl text-primary'>.</span>
 				</h2>
 
-				<div class='flex flex-col md:flex-row items-center rounded-lg shadow-lg'>
+				<div class='flex flex-col md:flex-row items-center rounded-lg'>
 					{/* <!-- Logo/Image --> */}
 					<div class='w-full md:w-1/2 lg:w-1/2 flex justify-center mb-6 md:mb-0'>
 						<img
@@ -31,9 +32,10 @@ const CaseStudy = () => {
 						</p>
 
 						{/* <!-- Call-to-Action Button --> */}
-						<Link to={'/case-studies'} class='bg-primary text-black py-2 px-8 rounded-lg mt-4 inline-block'>
-							View More Case Studies
-						</Link>
+						<MyButton
+							to='/case-studies'
+							label='View More Case Studies'
+						/>
 					</div>
 				</div>
 			</div>

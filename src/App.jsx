@@ -18,7 +18,7 @@ import NewsLetter from './pages/NewsLetter';
 
 function App() {
 	return (
-		<div className='bg-black min-h-screen font-sans'>
+		<div className='bg-[#171717] min-h-screen font-sans'>
 			<div className='max-w-[100rem] mx-auto'>
 				<MainNavagetion />
 				<ScrollToTop />

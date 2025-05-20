@@ -1,25 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import smiley from '../../assets/SMILEY.png';
+import MyButton from '../ui/Button';
 
 const HeroSection = () => {
 	return (
 		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left max-w-2xl'>
 				<h1 className='text-4xl font-bold mb-4 uppercase'>
-					5x Your Brand's Revenue in just 16 weeks!
+					The Fastest Way to Grow? Say the Right Thing to the Right People
 				</h1>
 				<p className='text-lg mb-8 text-navGray'>
-					I offer proven brand strategies, product design & automation and marketing
-					systems to 5X your revenue in just 16 weeks, together with
-					sustainability tools. No guesswork or wasted effort. From strategy to
-					execution.
+					Fix your brand messaging, implement a solid strategy, and watch your
+					business grow in revenue and relevance.
 				</p>
-				<Link
-					to='/reach-out'
-					className='btn rounded-md bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
-					Book A Free Brand Audit!
-				</Link>
+				<div className=''>
+					<MyButton
+						label='Book a Call'
+						to='/reach-out'
+					/>
+				</div>
 			</div>
 			<div className='mt-8'>
 				<img

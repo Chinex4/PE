@@ -33,7 +33,7 @@ const ContactSection = () => {
 		e.target.reset();
 	};
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16'>
+		<section className=' text-[#F5E9DC] py-16'>
 			<div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-8'>
 				{/* Contact Options */}
 				<div className='lg:w-1/2 space-y-8'>

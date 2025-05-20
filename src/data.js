@@ -76,20 +76,30 @@ export const testimonials = [
 	},
 ];
 export const sponsors = [
-	{ id: 1, imgSrc: '/images/foodhut.png', alt: 'Food Hut' },
-	{ id: 2, imgSrc: '/images/elance.png', alt: 'Elance' },
-	{ id: 3, imgSrc: '/images/matallo.png', alt: 'Matallo' },
-	{ id: 4, imgSrc: '/images/G.png', alt: 'G' },
-	{ id: 5, imgSrc: '/images/H.png', alt: 'H' },
-	{ id: 6, imgSrc: '/images/EXQUISITE.png', alt: 'XQUISITE' },
-	{ id: 7, imgSrc: '/images/R.png', alt: 'R' },
-	{ id: 8, imgSrc: '/images/ROO.png', alt: 'ROO' },
-	{ id: 9, imgSrc: '/images/smileyfoods.png', alt: 'SFOODS' },
-	{ id: 10, imgSrc: '/images/bote.png', alt: 'BOOKS' },
-	{ id: 10, imgSrc: '/images/est2025.png', alt: 'BOOKS' },
-	{ id: 10, imgSrc: '/images/grovine.png', alt: 'BOOKS' },
-	{ id: 10, imgSrc: '/images/romeo.png', alt: 'BOOKS' },
-	{ id: 10, imgSrc: '/images/sedapay.png', alt: 'BOOKS' },
+	{ id: 1, imgSrc: '/images/sponsors/10x.png', alt: 'Food Hut' },
+	{ id: 2, imgSrc: '/images/sponsors/autolin.png', alt: 'Elance' },
+	{ id: 3, imgSrc: '/images/sponsors/elance.png', alt: 'Matallo' },
+	{ id: 4, imgSrc: '/images/sponsors/est.png', alt: 'G' },
+	{ id: 5, imgSrc: '/images/sponsors/gen6ixx.png', alt: 'H' },
+	{ id: 6, imgSrc: '/images/sponsors/grovine.png', alt: 'XQUISITE' },
+	{ id: 7, imgSrc: '/images/sponsors/mayvibe.png', alt: 'R' },
+	{ id: 8, imgSrc: '/images/sponsors/roo.png', alt: 'ROO' },
+	{ id: 9, imgSrc: '/images/sponsors/sedapay.png', alt: 'SFOODS' },
+	{ id: 10, imgSrc: '/images/sponsors/xquisite.png', alt: 'BOOKS' },
+	{ id: 11, imgSrc: '/images/sponsors/10x.png', alt: 'Food Hut' },
+	{ id: 12, imgSrc: '/images/sponsors/autolin.png', alt: 'Elance' },
+	{ id: 13, imgSrc: '/images/sponsors/elance.png', alt: 'Matallo' },
+	{ id: 14, imgSrc: '/images/sponsors/est.png', alt: 'G' },
+	{ id: 15, imgSrc: '/images/sponsors/gen6ixx.png', alt: 'H' },
+	{ id: 16, imgSrc: '/images/sponsors/grovine.png', alt: 'XQUISITE' },
+	{ id: 17, imgSrc: '/images/sponsors/mayvibe.png', alt: 'R' },
+	{ id: 18, imgSrc: '/images/sponsors/roo.png', alt: 'ROO' },
+	{ id: 19, imgSrc: '/images/sponsors/sedapay.png', alt: 'SFOODS' },
+	{ id: 20, imgSrc: '/images/sponsors/xquisite.png', alt: 'BOOKS' },
+	// { id: 10, imgSrc: '/images/sponsors/est2025.png', alt: 'BOOKS' },
+	// { id: 10, imgSrc: '/images/sponsors/grovine.png', alt: 'BOOKS' },
+	// { id: 10, imgSrc: '/images/sponsors/romeo.png', alt: 'BOOKS' },
+	// { id: 10, imgSrc: '/images/sponsors/sedapay.png', alt: 'BOOKS' },
 ];
 
 export const media = [
@@ -147,7 +157,7 @@ export const resources = {
 				And that same way, when a Food Business is formed, there are elements which I call recipes required to make it grow into its true form and vision just as the creator saw before beginning the journey.
 				<br /> <br />
 				At the end of this playbook, with the application of the recipes combined together and in its right amount, you wouldn’t have to worry about scaling, it will begin to happen on default."
-			`
+			`,
 		},
 		{
 			title: 'Target Audience',
@@ -180,7 +190,7 @@ export const resources = {
 			decisions, this template is exactly what you need.
 			`,
 		},
-		
+
 		// Add more starter pack items
 	],
 	checklists: [
@@ -207,16 +217,14 @@ export const resources = {
 				And that same way, when a Food Business is formed, there are elements which I call recipes required to make it grow into its true form and vision just as the creator saw before beginning the journey.
 				<br /> <br />
 				At the end of this playbook, with the application of the recipes combined together and in its right amount, you wouldn’t have to worry about scaling, it will begin to happen on default."
-			`
+			`,
 		},
 		// Add more starter pack items
 	],
 	personalBranding: [
-		
 		// Add more starter pack items
 	],
 	contentCreation: [
-		
 		// Add more starter pack items
 	],
 	templates: [
@@ -251,11 +259,10 @@ export const resources = {
 			decisions, this template is exactly what you need.
 			`,
 		},
-		
+
 		// Add more starter pack items
 	],
 	strategies: [
-		
 		// Add more starter pack items
 	],
 	// Add more categories with resource items as needed
@@ -324,24 +331,25 @@ export const processToWinSteps = [
 // FAQs and answers
 export const faqs = [
 	{
-		question: 'What is your approach to brand strategy?',
+		question: 'What exactly do you mean by “brand messaging”?',
 		answer:
-			'My approach is all about personalization and sustainability. I start by understanding your unique brand goals, challenges, and target audience. From there, I create a customized strategy designed to position your brand for growth, visibility, and increased revenue. I focus on building a brand that resonates authentically with your audience and adapts to changing market dynamics.',
+			'Brand messaging is how you communicate the value of your business to the right audience. It shapes how people perceive, remember, and connect with your brand, across your website, content, offers, and more.',
 	},
 	{
-		question: 'How long does it take to see results?',
+		question:
+			'I already have a logo and social media pages, why isn’t my brand growing?',
 		answer:
-			'The timeline for results can vary depending on the scope and nature of the strategy. Generally, clients start seeing initial engagement improvements within 2-3 months, while more significant brand growth and recognition often take 6-12 months as the strategy gains momentum.',
+			'Because branding isn’t just about how things look, it’s about what you say and how clearly you say it. Without clear messaging, even the best visuals won’t convert interest into income.',
 	},
 	{
-		question: 'What is your pricing structure?',
+		question: 'What results can I expect from working with you?',
 		answer:
-			"My pricing is customized based on the specific needs of your brand and the services required. After an initial consultation, I'll provide a proposal outlining a transparent breakdown of costs, which can be tailored to your budget and objectives.",
+			'You’ll walk away with brand clarity, a stronger position in your industry, content that resonates, and a message that attracts the right clients, leading to consistent growth and increased revenue.',
 	},
 	{
-		question: "How do I know if we're a good fit to work together?",
+		question: 'How do I know if this is right for me?',
 		answer:
-			"Before starting any project, I offer a consultation call to discuss your brand's needs and goals. This gives us a chance to ensure our values align and that my approach fits with what you're looking to achieve. Transparency, trust, and open communication are essential in any successful partnership.",
+			'If you’re struggling to explain what you do, attract the right audience, or generate consistent sales, this is exactly what you need. I help you align your message with your goals so your brand starts working for you.',
 	},
 ];
 
@@ -408,7 +416,7 @@ export const caseStudies = [
 		description:
 			'Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...',
 		image: '/images/xquisitecase.png',
-		link:'/xquisite' 
+		link: '/xquisite',
 	},
 	{
 		id: 2,

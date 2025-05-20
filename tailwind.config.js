@@ -2,6 +2,15 @@
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
+		animation: {
+			marquee: 'marquee 12s linear infinite',
+		},
+		keyframes: {
+			marquee: {
+				'0%': { transform: 'translateX(0%)' },
+				'100%': { transform: 'translateX(-50%)' },
+			},
+		},
 		extend: {
 			fontFamily: {
 				sans: ['Poppins', 'Arial', 'sans-serif'], // Fallback to Arial if Helvetica isn't available

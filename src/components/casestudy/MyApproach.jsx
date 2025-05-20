@@ -3,7 +3,7 @@ import { approachSteps } from '../../data';
 
 const MyApproach = () => {
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className=' text-[#F5E9DC] py-16 px-4'>
 			<div className='max-w-5xl mx-auto text-center'>
 				<h2 className='text-2xl font-semibold uppercase mb-8'>
 					My Approach

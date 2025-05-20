@@ -3,7 +3,7 @@ import { processToWinSteps } from '../../data';
 
 const Processes = () => {
 	return (
-		<div class='bg-black text-[#F5E9DC] py-16 px-4'>
+		<div class=' text-[#F5E9DC] py-16 px-4'>
 			{/* <!-- Title --> */}
 			<h2 class='text-center text-2xl font-bold mb-12 uppercase '>
 				The Process To Helping You Win<span class='text-primary'>•</span>
@@ -18,7 +18,7 @@ const Processes = () => {
 							<span>{step.step}</span>
 						</div>
 						<h3 className="text-lg font-semibold mb-2 text-[#F5E9DC]">{step.title}</h3>
-						<p className="text-[#F5E9DC] text-sm">{step.description}</p>
+						<p className="text-navGray text-sm">{step.description}</p>
 					</div>
 				))}
 			</div>

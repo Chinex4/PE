@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { resources } from '../../data';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import MyButton from '../ui/Button';
 
 const Resources = () => {
 	const [showForm, setShowForm] = useState(false);
@@ -70,7 +71,7 @@ const Resources = () => {
 		}
 	};
 	return (
-		<div className='bg-black text-[#F5E9DC] py-16'>
+		<div className='text-[#F5E9DC] py-16'>
 			<h2 className='text-center uppercase text-2xl font-bold mb-12 leading-[1.1]'>
 				Build and Grow your brand easily with these resources
 				<span className='text-5xl text-primary'>.</span>
@@ -167,11 +168,8 @@ const Resources = () => {
 			</div>
 
 			<div className='grid place-items-center mt-8'>
-				<Link
-					to={'/resources'}
-					className='btn rounded-md bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
-					View More Resources
-				</Link>
+				<MyButton to='/resources' label='View More Resources' />
+				
 			</div>
 		</div>
 	);

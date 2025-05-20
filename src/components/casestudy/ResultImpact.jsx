@@ -1,6 +1,6 @@
 const ResultsImpact = () => {
 	return (
-		<section className='bg-black text-center py-16 px-4'>
+		<section className=' text-center py-16 px-4'>
 			<h2 className='text-2xl font-semibold text-[#F5E9DC] mb-4 uppercase'>
 				Results & Impact
 				<span className='text-5xl text-primary'>.</span>

@@ -33,7 +33,7 @@ const RequestForm = () => {
 	return (
 		<div
 			id='resourceform'
-			className='bg-black text-[#F5E9DC] py-16 px-4'>
+			className=' text-[#F5E9DC] py-16 px-4'>
 			<h2 className='text-center text-2xl font-bold mb-12 leading-[3px]'>
 				REQUEST FOR A RESOURCE NOT FOUND
 				<span className='text-5xl text-primary'>.</span>

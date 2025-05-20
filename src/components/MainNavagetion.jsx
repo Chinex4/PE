@@ -6,9 +6,9 @@ const nav = [
 	{ path: '/', label: 'Home' },
 	{ path: '/resources', label: 'Resources' },
 	{ path: '/services', label: 'Services' },
+	{ path: '/newsletter', label: 'Newsletter' },
 	{ path: '/case-studies', label: 'Case Studies' },
 	{ path: '/about', label: 'About Me' },
-	{ path: '/newsletter', label: 'Newsletter' },
 	// { path: '/contact', label: 'Contact' },
 ];
 
@@ -19,7 +19,7 @@ const MainNavagetion = () => {
 				<div>
 					<NavLink to='/'>
 						<img
-							src={logo}
+							src={'/images/logo.svg'}
 							alt='Logo'
 							className='logo'
 						/>

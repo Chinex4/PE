@@ -31,7 +31,7 @@ const myApproach = {
 // React component
 const TeamValuesAndApproach = () => {
 	return (
-		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
+		<section className=' text-[#F5E9DC] py-16 px-4'>
 			<h2 className='text-center text-2xl font-bold mb-12 leading-[3px] uppercase'>
 				What I & My Team Stand For
 				<span className='text-5xl text-primary'>.</span>
