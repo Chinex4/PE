@@ -26,7 +26,7 @@ const MyApproach = () => {
 							<div className='text-2xl w-12 h-12 grid place-items-center rounded-full bg-[#F5E9DC33] border border-white font-semibold text-[#F5E9DC] mb-4'>
 								<span>{step.step}</span>
 							</div>
-							<h3 className='text-lg font-semibold mb-2 text-white'>
+							<h3 className='text-lg font-semibold mb-2 text-[#F5E9DC]'>
 								{step.title}
 							</h3>
 							<p className='text-[#F5E9DC]'>{step.description}</p>

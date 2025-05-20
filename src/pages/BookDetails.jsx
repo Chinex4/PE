@@ -29,15 +29,15 @@ const BookDetails = () => {
 					className='lg:w-[842px] lg:h-[595px] object-cover rounded-lg shadow-md'
 				/>
 				<div>
-					<h1 className='text-4xl font-bold mt-4 text-white'>{book.title}</h1>
-					<p className='text-2xl text-white/80 mt-2'>Price: {book.price}</p>
+					<h1 className='text-4xl font-bold mt-4 text-[#F5E9DC]'>{book.title}</h1>
+					<p className='text-2xl text-[#F5E9DC]/80 mt-2'>Price: {book.price}</p>
 					<a
 						href={book.link}
 						rel='noopener noreferrer'
-						className='inline-block mt-6 bg-primary text-white px-4 py-2 rounded-lg'>
+						className='inline-block mt-6 bg-primary text-[#F5E9DC] px-4 py-2 rounded-lg'>
 						Get Now
 					</a>
-					<p className='mt-4 text-white/80'>
+					<p className='mt-4 text-[#F5E9DC]/80'>
 						<span className='text-xl uppercase font-bold '>Description</span>{' '}
 						<br />
 						<div
@@ -46,7 +46,7 @@ const BookDetails = () => {
 						/>
 					</p>
 					{book.author && (
-						<p className='mt-4 text-white/80'>
+						<p className='mt-4 text-[#F5E9DC]/80'>
 							<span className='text-xl uppercase font-bold '>Author's Note</span>{' '}
 							<br />
 							<div

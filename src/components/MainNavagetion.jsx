@@ -9,7 +9,7 @@ const nav = [
 	{ path: '/case-studies', label: 'Case Studies' },
 	{ path: '/about', label: 'About Me' },
 	{ path: '/newsletter', label: 'Newsletter' },
-	{ path: '/contact', label: 'Contact' },
+	// { path: '/contact', label: 'Contact' },
 ];
 
 const MainNavagetion = () => {
@@ -79,7 +79,7 @@ const MainNavagetion = () => {
 				</div>
 			</div>
 			<div className='navbar-end hidden lg:flex'>
-				<Link to='/reach-out' className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center'>
+				<Link to='/contact' className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center'>
 					Contact Me
 				</Link>
 			</div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrinciplesSection = () => {
 	return (
-		<section className='mt-32 lg:mt-[10rem] text-white flex flex-col lg:flex-row gap-10 lg:gap-20'>
+		<section className='mt-32 lg:mt-[10rem] text-[#F5E9DC] flex flex-col lg:flex-row gap-10 lg:gap-20'>
 			{/* Left Side */}
 			<div className='flex-1'>
 				<h2 className='text-2xl md:text-3xl font-bold uppercase leading-snug mb-8'>
@@ -10,7 +10,7 @@ const PrinciplesSection = () => {
 					<br />
 					NOT JUST LAWS BUT
 					<br />
-					<span className='text-[#F4A261] border-b-2 border-[#F4A261] pb-1 inline-block'>
+					<span className='text-[#F4A261] pb-1 inline-block'>
 						SIMPLE PRINCIPLES
 					</span>
 				</h2>

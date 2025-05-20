@@ -17,7 +17,7 @@ const Processes = () => {
 						<div className="text-2xl w-12 h-12 grid place-items-center rounded-full bg-[#F5E9DC33] border border-white font-semibold text-[#F5E9DC] mb-8">
 							<span>{step.step}</span>
 						</div>
-						<h3 className="text-lg font-semibold mb-2 text-white">{step.title}</h3>
+						<h3 className="text-lg font-semibold mb-2 text-[#F5E9DC]">{step.title}</h3>
 						<p className="text-[#F5E9DC] text-sm">{step.description}</p>
 					</div>
 				))}

@@ -29,7 +29,7 @@ const BrandStrategist = () => {
 				<div className='flex flex-col lg:flex-row items-center gap-4 justify-center mt-12'>
 					<Link
 						to='/reach-out'
-						className='inline-flex items-center gap-2 text-xs lg:text-lg px-6 py-2 bg-smileyblue text-white font-medium rounded-lg hover:bg-smileyblue/50'>
+						className='inline-flex items-center gap-2 text-xs lg:text-lg px-6 py-2 bg-smileyblue text-[#F5E9DC] font-medium rounded-lg hover:bg-smileyblue/50'>
 						<span>Let's Build Your Growth Strategy</span>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 	return (
-		<div className='text-white flex flex-col lg:flex-row items-center justify-between'>
+		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-between'>
 			{/* Text Content */}
 			<div className='max-w-xl text-center lg:text-left'>
 				<h2 className='text-3xl md:text-4xl font-semibold mb-4'>
@@ -19,7 +19,7 @@ const HeroSection = () => {
 					<button className='bg-[#F4A261] text-black font-medium py-3 px-6 rounded-md hover:bg-[#f4a261cc] transition'>
 						Subscribe
 					</button>
-					<button className='border border-[#F4A261] text-white font-medium py-3 px-6 rounded-md hover:bg-[#f4a2611a] transition'>
+					<button className='border border-[#F4A261] text-[#F5E9DC] font-medium py-3 px-6 rounded-md hover:bg-[#f4a2611a] transition'>
 						View Plans
 					</button>
 				</div>

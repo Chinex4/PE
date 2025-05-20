@@ -132,7 +132,7 @@ const ResourceTabs = () => {
 						</div>
 					))
 				) : (
-					<div className='w-full text-center text-white text-xl col-span-full'>
+					<div className='w-full text-center text-[#F5E9DC] text-xl col-span-full'>
 						No resources available yet for this category.
 					</div>
 				)}
@@ -189,7 +189,7 @@ const ResourceTabs = () => {
 								<button
 									type='submit'
 									disabled={loading}
-									className='bg-primary text-white py-2 px-4 rounded-md font-medium'>
+									className='bg-primary text-[#F5E9DC] py-2 px-4 rounded-md font-medium'>
 									{loading ? "Redirecting..." : "Get Resource"}
 								</button>
 							</div>

@@ -12,7 +12,7 @@ const CaseStudies = () => {
 		setShowModal(true);
 	};
 	return (
-		<section className='bg-black text-white py-16 px-4'>
+		<section className='bg-black text-[#F5E9DC] py-16 px-4'>
 			<h2 className='text-center uppercase text-2xl font-bold mb-12'>
 				View Most Of Our Case Studies<span className='text-primary'>.</span>
 			</h2>
@@ -42,13 +42,13 @@ const CaseStudies = () => {
 							{caseStudy.link ? (
 								<Link
 									to={caseStudy.link}
-									className='text-center mt-4 w-full bg-primary text-white font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
+									className='text-center mt-4 w-full bg-primary text-[#F5E9DC] font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
 									View Case Study
 								</Link>
 							) : (
 								<button
 									onClick={() => handleViewCaseStudy(caseStudy)}
-									className='text-center mt-4 w-full bg-primary text-white font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
+									className='text-center mt-4 w-full bg-primary text-[#F5E9DC] font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
 									View Case Study
 								</button>
 							)}
@@ -83,7 +83,7 @@ const CaseStudies = () => {
 							</p>
 							<button
 								onClick={() => setShowModal(false)}
-								className='mt-4 w-full bg-primary text-white font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
+								className='mt-4 w-full bg-primary text-[#F5E9DC] font-bold py-2 rounded-lg hover:bg-primary/80 transition'>
 								Close
 							</button>
 						</motion.div>

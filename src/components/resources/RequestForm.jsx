@@ -91,7 +91,7 @@ const RequestForm = () => {
 								Your message has been sent successfully!
 							</p>
 							<button
-								className='mt-4 bg-primary px-4 py-2 rounded-md text-white'
+								className='mt-4 bg-primary px-4 py-2 rounded-md text-[#F5E9DC]'
 								onClick={() => setIsModalOpen(false)}>
 								Close
 							</button>

@@ -156,7 +156,7 @@ const Resources = () => {
 									<button
 										type='submit'
 										disabled={loading}
-										className='bg-primary text-white py-2 px-4 rounded-md font-medium'>
+										className='bg-primary text-[#F5E9DC] py-2 px-4 rounded-md font-medium'>
 										{loading ? 'Redirecting...' : 'Get Resource'}
 									</button>
 								</div>
