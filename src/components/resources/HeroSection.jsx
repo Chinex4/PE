@@ -6,13 +6,15 @@ const HeroSection = () => {
 		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left max-w-2xl'>
 				<h1 className='text-4xl font-bold mb-4 uppercase'>
-					Empower Your Brand with Resources Designed to Drive Growth
+					Tools to Build a Profitable & Sustainable Brand.
 				</h1>
 				<p className='text-lg mb-8 text-navGray'>
-					Discover a curated collection of resources tailored to help you
-					simplify brand strategy, grow your audience, and increase revenue.
+					Access checklists, templates, and guides that help you simplify your
+					message, attract more customers, and grow with clarity.
 				</p>
-				<a href='#resourceform' className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
+				<a
+					href='#resourceform'
+					className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Request for a Resource
 				</a>
 			</div>

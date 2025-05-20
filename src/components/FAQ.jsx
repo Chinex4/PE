@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { faqs } from '../data';
 import { Link } from 'react-router-dom';
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
+import MyButton from './ui/Button';
 
 function FAQ() {
 	return (
@@ -17,11 +18,12 @@ function FAQ() {
 						started? Dive into our FAQs for quick answers, or reach out
 						directly. I’m just a message away!
 					</p>
-					<Link
-						to='/contact'
-						className='mt-4 inline-block text-primary hover:text-primary/80 transition'>
-						Send A Message &rarr;
-					</Link>
+					<div className='mt-6'>
+						<MyButton
+							to='/contact'
+							label='Send A message &rarr;'
+						/>
+					</div>
 				</div>
 
 				{/* Right Section */}
