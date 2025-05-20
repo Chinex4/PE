@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MyButton from '../ui/Button';
 
 const HeroSection = () => {
 	return (
@@ -12,9 +13,10 @@ const HeroSection = () => {
 					From strategy to execution, let’s craft the roadmap your brand needs
 					to stand out, connect, and generate consistent revenue.
 				</p>
-				<Link to='/reach-out' className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
-					Get A Free Brand Audit
-				</Link>
+				<MyButton
+					label='Get A Free Brand Audit'
+					to='/reach-out'
+				/>
 			</div>
 			<div className='mt-8'>
 				<img

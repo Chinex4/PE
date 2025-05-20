@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MyButton from '../ui/Button';
 
 const HeroSection = () => {
 	return (
@@ -12,11 +13,7 @@ const HeroSection = () => {
 					Access checklists, templates, and guides that help you simplify your
 					message, attract more customers, and grow with clarity.
 				</p>
-				<a
-					href='#resourceform'
-					className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
-					Request for a Resource
-				</a>
+				<MyButton label='Request for a Resource' href='#resourceform' />
 			</div>
 			<div className='mt-8 mb-16'>
 				<img
