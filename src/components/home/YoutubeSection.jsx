@@ -5,15 +5,14 @@ const YoutubeSection = () => {
 	const videoId = 'KgvA7o8c7RI'; // Your YouTube video ID
 
 	const opts = {
-		height: '390',
-		width: '640',
+		height: '350',
+		width: '100%',
 		playerVars: {
-			autoplay: 0, // set to 1 if you want autoplay
+			autoplay: 0,
 		},
 	};
 
 	const onReady = (event) => {
-		// access to player in all event handlers via event.target
 		console.log('Player is ready');
 	};
 
@@ -24,15 +23,17 @@ const YoutubeSection = () => {
 				<span className='text-5xl text-primary'>.</span>
 			</h2>
 
-			<div className='flex justify-center'>
+			{/* Responsive Video Wrapper */}
+			<div className='relative w-full max-w-3xl mx-auto aspect-video'>
 				<YouTube
 					videoId={videoId}
 					opts={opts}
 					onReady={onReady}
+					className='absolute top-0 left-0 w-full h-[400px]'
 				/>
 			</div>
 
-			<p className='text-[#F5E9DC] mt-6 text-sm font-medium max-w-xl mx-auto'>
+			<p className='text-[#F5E9DC] mt-10 md:-mt-12 text-sm font-medium max-w-xl mx-auto'>
 				Keynote Speech: How To Build Strong International Brands by Precious
 				Evans
 			</p>

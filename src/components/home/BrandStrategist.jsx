@@ -32,9 +32,9 @@ const BrandStrategist = () => {
 				</p>
 				<MyButton to='/reach-out' label="Let's Fix Your Message"/>
 			</div>
-			<div className='mt-8'>
+			<div className='mt-8 hidden md:block'>
 				<img
-					src={'/images/Subheading.png'}
+					src={'/images/news.PNG'}
 					alt='Service Icon'
 				/>
 			</div>

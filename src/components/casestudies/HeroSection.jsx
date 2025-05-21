@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MyButton from '../ui/Button';
 
 const HeroSection = () => {
 	return (
@@ -14,11 +15,12 @@ const HeroSection = () => {
 					case study highlights the challenges, strategies, and successes that
 					drive impactful growth.
 				</p>
-				<Link
+				<MyButton label='Book A Call Now' to='/reach-out' />
+				{/* <Link
 					to='/reach-out'
 					className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>
 					Book A Call Now
-				</Link>
+				</Link> */}
 			</div>
 			<div className='mt-8'>
 				<img

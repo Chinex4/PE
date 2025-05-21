@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const MyButton = ({ to = '', href = '', label = '', sec = false }) => {
-	const baseClasses = `inline-flex items-center gap-2 ${
+	const baseClasses = `inline-flex items-center justify-center gap-2 ${
 		sec ? 'border border-primary' : 'bg-primary'
 	} px-5 py-2 rounded-full hover:opacity-90 transition-all`;
 

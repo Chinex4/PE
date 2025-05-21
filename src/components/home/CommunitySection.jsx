@@ -3,7 +3,7 @@ import MyButton from '../ui/Button';
 
 const CommunitySection = () => {
 	return (
-		<div className=' text-[#F5E9DC] py-16 px-4'>
+		<div className='text-[#F5E9DC] py-16 px-4'>
 			<div className='flex flex-col lg:flex-row items-center lg:space-x-8'>
 				<div className='w-full lg:w-1/2 mb-8 lg:mb-0'>
 					<img
@@ -29,7 +29,7 @@ const CommunitySection = () => {
 						</span>
 					</p>
 
-					<div className='flex gap-4'>
+					<div className='flex flex-col md:flex-row gap-4'>
 						<MyButton label='View More' />
 						<MyButton label='Choose A Plan' sec={true} />
 					</div>

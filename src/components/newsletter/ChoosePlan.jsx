@@ -9,26 +9,25 @@ const PUBLIC_KEY = 'pk_test_974a54216f3c864c639064740e5105a6cb38c5c0';
 
 const plans = [
 	{
-		name: 'Free',
-		price: '₦0',
-		benefits: ['Limited access', 'Community Forum', 'Email Support'],
-		tier: 'free',
+		name: 'Monthly',
+		price: 3, // numeric
+		description:
+			'Stay flexible with month-to-month access to all premium content, insights, and tools.',
+		tier: 'monthly',
 	},
 	{
-		name: 'Pro',
-		price: '₦2,000',
-		benefits: ['All Free Features', 'Premium Courses', '1-on-1 Mentorship'],
-		tier: 'pro',
+		name: '6 Months',
+		price: 15,
+		description:
+			'Commit for half a year and save. Includes all premium content + bonus resources.',
+		tier: '6months',
 	},
 	{
-		name: 'Gold',
-		price: '₦5,000',
-		benefits: [
-			'All Pro Features',
-			'Case Study Feature',
-			'Monthly Strategy Calls',
-		],
-		tier: 'gold',
+		name: '1 year',
+		price: 33,
+		description:
+			'Best value for deep thinkers. Full access, all updates, and exclusive yearly-only perks.',
+		tier: '1year',
 	},
 ];
 
@@ -44,14 +43,12 @@ const ChoosePlan = () => {
 
 	const handleFreeSubmit = async () => {
 		if (!email) return toast.error('Please enter a valid email.');
-
 		try {
 			await addDoc(collection(db, 'subscriptions'), {
 				email,
 				plan: selectedPlan.name,
 				date: new Date(),
 			});
-
 			toast.success('Subscribed successfully!');
 			setIsOpen(false);
 			setEmail('');
@@ -61,9 +58,15 @@ const ChoosePlan = () => {
 		}
 	};
 
+	const USD_TO_NGN = 1600; // Change this rate as needed
+
+	const getAmountInKobo = (usd) => {
+		return usd * USD_TO_NGN * 100;
+	};
+
 	const paystackProps = {
 		email,
-		amount: selectedPlan?.tier === 'pro' ? 200000 : 500000, // Paystack uses kobo
+		amount: selectedPlan ? selectedPlan.price * USD_TO_NGN * 100 : 0, // ensure selectedPlan is not null
 		publicKey: PUBLIC_KEY,
 		text: 'Proceed to Paystack',
 		onSuccess: async (ref) => {
@@ -87,7 +90,7 @@ const ChoosePlan = () => {
 	};
 
 	return (
-		<div className=' text-[#F5E9DC] py-16 px-6 md:px-16'>
+		<div className='text-[#F5E9DC] py-16 px-6 md:px-16'>
 			<Toaster />
 			<h2 className='text-center text-3xl font-bold mb-12'>Choose Your Plan</h2>
 
@@ -95,24 +98,10 @@ const ChoosePlan = () => {
 				{plans.map((plan, index) => (
 					<div
 						key={index}
-						className={`rounded-xl p-6 border border-gray-700 flex flex-col items-center transition-all duration-300
-              ${
-								plan.tier === 'pro'
-									? 'lg:scale-105 bg-zinc-900 shadow-xl'
-									: 'bg-zinc-800'
-							}
-            `}>
+						className={`rounded-xl p-6 border border-gray-700 flex flex-col items-center transition-all duration-300 bg-zinc-800`}>
 						<h3 className='text-xl font-semibold mb-2'>{plan.name}</h3>
-						<p className='text-2xl font-bold mb-4'>{plan.price}</p>
-						<ul className='mb-6 space-y-2 text-sm'>
-							{plan.benefits.map((b, i) => (
-								<li
-									key={i}
-									className='flex items-center gap-2'>
-									✅ {b}
-								</li>
-							))}
-						</ul>
+						<p className='text-2xl font-bold mb-4'>${plan.price}</p>
+						<p className='text-sm text-center mb-6'>{plan.description}</p>
 						<button
 							onClick={() => handleSubscribe(plan)}
 							className='bg-green-600 hover:bg-green-700 px-4 py-2 rounded text-[#F5E9DC]'>
@@ -141,18 +130,10 @@ const ChoosePlan = () => {
 							className='w-full border p-2 rounded mb-4'
 						/>
 
-						{selectedPlan?.tier === 'free' ? (
-							<button
-								onClick={handleFreeSubmit}
-								className='bg-green-600 hover:bg-green-700 text-[#F5E9DC] px-4 py-2 rounded'>
-								Submit
-							</button>
-						) : (
-							<PaystackButton
-								{...paystackProps}
-								className='bg-green-600 hover:bg-green-700 text-[#F5E9DC] px-4 py-2 rounded'
-							/>
-						)}
+						<PaystackButton
+							{...paystackProps}
+							className='bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded'
+						/>
 					</Dialog.Panel>
 				</div>
 			</Dialog>
