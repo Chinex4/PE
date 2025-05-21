@@ -8,7 +8,8 @@ const HeroSection = () => {
 		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left max-w-2xl'>
 				<h1 className='text-4xl font-bold mb-4 uppercase'>
-					The Fastest Way to Grow? Say the Right Thing to the Right People
+					Do you know saying the right thing to your customer can be the
+					difference between 1X and 10X?
 				</h1>
 				<p className='text-lg mb-8 text-navGray'>
 					Fix your brand messaging, implement a solid strategy, and watch your
