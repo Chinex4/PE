@@ -16,10 +16,8 @@ const HeroSection = () => {
 					grow sustainably.
 				</p>
 
-				<div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
-					<MyButton label='Subscribe'/>
-					<MyButton label='View Plans' sec={true}/>
-				</div>
+
+				<MyButton label='View Plans' href='#plans' />
 			</div>
 
 			{/* Image */}

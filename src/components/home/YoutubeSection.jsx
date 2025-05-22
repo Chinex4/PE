@@ -18,9 +18,9 @@ const YoutubeSection = () => {
 
 	return (
 		<section className='text-center py-16 px-4'>
-			<h2 className='text-2xl uppercase font-semibold text-[#F5E9DC] mb-8 leading-[20px]'>
+			<h2 className='text-2xl uppercase font-semibold text-[#F5E9DC] mb-8 leading-[1.1]'>
 				Learn Insights and Strategies on Youtube
-				<span className='text-5xl text-primary'>.</span>
+				<span className='text-[3rem] leading-[2px] text-primary'>.</span>
 			</h2>
 
 			{/* Responsive Video Wrapper */}

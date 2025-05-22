@@ -21,7 +21,7 @@ const MainNavagetion = () => {
 						<img
 							src={'/images/logo.svg'}
 							alt='Logo'
-							className='logo'
+							className='logo w-[130px]'
 						/>
 					</NavLink>
 				</div>
@@ -88,29 +88,3 @@ const MainNavagetion = () => {
 };
 
 export default MainNavagetion;
-
-{
-	/* <div className='navbar'>
-			<div className='flex-1'>
-                <Link to='/'><img className='logo mx-2' src={logo} alt='Precious Evans' /></Link>
-			</div>
-			<div className='flex-none'>
-				<ul className='menu menu-horizontal px-1'>
-					<li>
-						<Link to='/'>Home</Link>
-					</li>
-					<li>
-						<Link to='/resources'>Resources</Link>
-					</li>
-					<li>
-						<Link to='/services'>Services</Link>
-					</li>
-					<li>
-						<Link to='/about'>About Me</Link>
-					</li>
-				</ul>
-				<button className='btn btn-outline ml-4'>Contact Me</button>
-			</div>
-
-		</div> */
-}

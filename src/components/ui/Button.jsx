@@ -24,8 +24,8 @@ const MyButton = ({ to = '', href = '', label = '', sec = false }) => {
 		<a
 			href={href}
 			className={baseClasses}
-			target='_blank'
-			rel='noopener noreferrer'>
+			// target='_blank'
+		>
 			{content}
 		</a>
 	) : (

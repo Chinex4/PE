@@ -10,10 +10,10 @@ function FAQ() {
 			<div className='flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto'>
 				{/* Left Section */}
 				<div className='text-center lg:text-left flex-1 basis-[50%]'>
-					<h2 className='text-4xl font-bold mb-8 uppercase'>
+					<h2 className='text-2xl font-bold mb-8 uppercase'>
 						Got Any Questions? I have got the answers you need!
 					</h2>
-					<p className='mt-2'>
+					<p className='mt-2 text-navGray'>
 						Do you have any questions about building your brand or ready to get
 						started? Dive into our FAQs for quick answers, or reach out
 						directly. I’m just a message away!
@@ -33,14 +33,14 @@ function FAQ() {
 							{({ open }) => (
 								<div className='border-b border-[#F5E9DC] pb-2'>
 									<Disclosure.Button className='flex justify-between items-center w-full py-4 text-left text-lg'>
-										<span>{faq.question}</span>
+										<span className='flex-1'>{faq.question}</span>
 										<ChevronUpIcon
-											className={`w-5 h-5 text-[#F5E9DC] transition-transform ${
+											className={`w-5 h-5 min-w-[20px] min-h-[20px] text-[#F5E9DC] transition-transform ${
 												open ? 'rotate-180' : 'rotate-0'
 											}`}
 										/>
 									</Disclosure.Button>
-									<Disclosure.Panel className='text-[#F5E9DC]/80 pb-4'>
+									<Disclosure.Panel className='text-navGray pb-4'>
 										{faq.answer}
 									</Disclosure.Panel>
 								</div>

@@ -17,21 +17,15 @@ const CommunitySection = () => {
 						NOT JUST EXPERIENCES, NOT JUST LAWS BUT SIMPLE PRINCIPLES
 					</h3>
 					<p className='mb-6 flex flex-col gap-3'>
-						<span>
+						<span className='text-navGray'>
 							Mind & Market is a weekly letter for founders, creators, and brand
 							builders who want to scale with substance, not just speed. 
-						</span>
-						<span>
-							Each edition blends insight from branding, marketing, business strategy,
-							and personal development. But this isn’t just another “how-to”
-							newsletter. It’s built on principles, not just playbooks, designed
-							to sharpen your thinking and elevate the way you build.
 						</span>
 					</p>
 
 					<div className='flex flex-col md:flex-row gap-4'>
-						<MyButton label='View More' />
-						<MyButton label='Choose A Plan' sec={true} />
+						<MyButton label='View More' to='/newsletter' />
+						<MyButton label='Choose A Plan' to='/newsletter#plans' sec={true} />
 					</div>
 				</div>
 			</div>

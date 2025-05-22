@@ -27,9 +27,9 @@ const Footer = () => {
 				<div className='flex items-center mb-6 lg:mb-0'>
 					<NavLink to='/'>
 						<img
-							src={logo}
+							src={'/images/logo.svg'}
 							alt='Logo'
-							className='logo'
+							className='logo w-[130px]'
 						/>
 					</NavLink>
 				</div>

@@ -90,7 +90,7 @@ const ChoosePlan = () => {
 	};
 
 	return (
-		<div className='text-[#F5E9DC] py-16 px-6 md:px-16'>
+		<section id="plans" className='text-[#F5E9DC] py-16 px-6 md:px-16'>
 			<Toaster />
 			<h2 className='text-center text-3xl font-bold mb-12'>Choose Your Plan</h2>
 
@@ -137,7 +137,7 @@ const ChoosePlan = () => {
 					</Dialog.Panel>
 				</div>
 			</Dialog>
-		</div>
+		</section>
 	);
 };
 

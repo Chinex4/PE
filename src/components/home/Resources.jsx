@@ -73,8 +73,8 @@ const Resources = () => {
 	return (
 		<div className='text-[#F5E9DC] py-16'>
 			<h2 className='text-center uppercase text-2xl font-bold mb-12 leading-[1.1]'>
-				Build and Grow your brand easily with these resources
-				<span className='text-5xl text-primary'>.</span>
+				<span className=''>Build and Grow your brand easily with these resources</span>
+				<span className='text-[3rem] leading-[2px] text-primary'>.</span>
 			</h2>
 
 			<div className='mt-8 grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5'>

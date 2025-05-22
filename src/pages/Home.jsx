@@ -22,7 +22,7 @@ function Home() {
       <CaseStudy />
       <YoutubeSection />
       <Testimonials />
-      <MediaLinks />
+      {/* <MediaLinks /> */}
       <CommunitySection /> 
       <FAQ />
       <ContactForm />
