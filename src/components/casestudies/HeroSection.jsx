@@ -4,7 +4,7 @@ import MyButton from '../ui/Button';
 
 const HeroSection = () => {
 	return (
-		<div className='text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
+		<div className='mt-16 text-[#F5E9DC] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left lg:w-[600px]'>
 				<h1 className='text-4xl font-bold mb-4 uppercase'>
 					Behind Every Thriving Brand: Real Strategies, Real Results

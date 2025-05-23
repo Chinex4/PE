@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -20,13 +20,38 @@ const navItemVariants = {
 	}),
 };
 
-const MainNavagetion = () => {
+const MainNavigation = () => {
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			// if scrolled more than 10px from top, set scrolled = true
+			if (window.scrollY > 10) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: -20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6 }}
-			className='navbar text-[#F5E9DC] px-4 py-5 lg:px-[10rem] lg:py-[2rem]'>
+			// Fixed and sticky positioning + dynamic styles
+			className={`navbar fixed top-0 left-0 w-full z-50 px-4 py-5 lg:px-[10rem] lg:py-[2rem] font-poppins
+        ${
+					scrolled
+						? 'bg-[#171717]/30 py-3 backdrop-blur-md border-b border-[#171717]/30 shadow-sm text-[#F5E9DC]'
+						: 'bg-transparent text-[#F5E9DC]'
+				}`}>
 			<div className='navbar-start'>
 				<NavLink to='/'>
 					<motion.img
@@ -120,4 +145,4 @@ const MainNavagetion = () => {
 	);
 };
 
-export default MainNavagetion;
+export default MainNavigation;

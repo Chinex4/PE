@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 	return (
-		<div className='text-[#F5E9DC] flex flex-col items-center justify-center lg:justify-between'>
+		<div className='mt-16 text-[#F5E9DC] flex flex-col items-center justify-center lg:justify-between'>
 			<div className='text-center max-w-2xl'>
 				<h1 className='text-4xl font-bold mb-4 uppercase'>
 					Let’s Connect and Bring Your Brand Vision to Life!

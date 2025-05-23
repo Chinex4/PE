@@ -2,7 +2,7 @@ import React from 'react';
 
 const MeetXquisite = () => {
 	return (
-		<section className=' text-[#F5E9DC]'>
+		<section className='mt-16 text-[#F5E9DC]'>
 			<div className='max-w-4xl mx-auto text-center'>
 				<div className='lg:w-[30rem] mx-auto'>
 				    <h2 className='text-2xl font-semibold mb-4'>Meet Xquisite</h2>
