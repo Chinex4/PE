@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import smiley from '/images/pepicture.png';
+import smiley from '/images/prepic.png';
 import MyButton from '../ui/Button';
 
 const HeroSection = () => {
