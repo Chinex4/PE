@@ -36,6 +36,7 @@ const BrandStrategist = () => {
 				<img
 					src={'/images/news.PNG'}
 					alt='Service Icon'
+					className='w-[300px]'
 				/>
 			</div>
 		</div>
