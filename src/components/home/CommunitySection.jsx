@@ -18,14 +18,28 @@ const CommunitySection = () => {
 					</h3>
 					<p className='mb-6 flex flex-col gap-3'>
 						<span className='text-navGray'>
-							Mind & Market is a weekly letter for founders, creators, and brand
-							builders who want to scale with substance, not just speed. 
+							It started with a simple observation.... Too many founders and
+							creators are sprinting toward growth, chasing speed, hacks, and
+							hype, without truly understanding what makes a brand stand out or
+							a business sustainable. 
+							<br /> <br />
+							I kept seeing talented people building
+							without clarity. Launching offers with no real positioning.
+							Scaling businesses with shaky foundations. And I knew what was
+							missing, principles.
 						</span>
 					</p>
 
 					<div className='flex flex-col md:flex-row gap-4'>
-						<MyButton label='View More' to='/newsletter' />
-						<MyButton label='Choose A Plan' to='/newsletter#plans' sec={true} />
+						<MyButton
+							label='View More'
+							to='/newsletter'
+						/>
+						<MyButton
+							label='Choose A Plan'
+							to='/newsletter#plans'
+							sec={true}
+						/>
 					</div>
 				</div>
 			</div>

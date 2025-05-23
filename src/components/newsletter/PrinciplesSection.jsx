@@ -2,9 +2,9 @@ import React from 'react';
 
 const PrinciplesSection = () => {
 	return (
-		<section className='mt-32 lg:mt-[10rem] text-[#F5E9DC] flex flex-col lg:flex-row gap-10 lg:gap-20'>
+		<section className=' mt-32 lg:mt-[10rem] text-[#F5E9DC] flex flex-col gap-10 lg:gap-20'>
 			{/* Left Side */}
-			<div className='flex-1'>
+			<div className=' lg:flex lg:justify-center lg:gap-24'>
 				<h2 className='text-2xl md:text-3xl font-bold uppercase leading-snug mb-8'>
 					NOT JUST EXPERIENCES,
 					<br />
@@ -25,9 +25,12 @@ const PrinciplesSection = () => {
 							key={index}
 							className='flex items-center gap-3'>
 							{/* <CheckCircle2 className='text-green-500 w-5 h-5' /> */}
-                            <span>
-                                <img src="/images/thumbs.png" alt="thumbs up" />
-                            </span>
+							<span>
+								<img
+									src='/images/thumbs.png'
+									alt='thumbs up'
+								/>
+							</span>
 							<span>{text}</span>
 						</li>
 					))}
@@ -35,25 +38,39 @@ const PrinciplesSection = () => {
 			</div>
 
 			{/* Right Side */}
-			<div className='flex-1 text-navGray text-sm md:text-base space-y-5'>
+			<div className='lg:text-center lg:max-w-xl lg:mx-auto  text-navGray text-sm md:text-base space-y-5'>
 				<p>
-					<b>Mind & Market</b> is a weekly letter for founders, creators, and
-					brand builders who want to scale with substance, not just speed.
+					It started with a simple observation.... <br /> Too many founders and
+					creators are sprinting toward growth, chasing speed, hacks, and hype,
+					without truly understanding what makes a brand stand out or a business
+					sustainable.
 				</p>
 				<p>
-					Each edition blends insight from branding, marketing, business
-					strategy, and personal development. But this isn’t just another
-					“how-to” newsletter. It’s built on principles, not just playbooks,
-					designed to sharpen your thinking and elevate the way you build.
+					I kept seeing talented people building without clarity. Launching
+					offers with no real positioning. Scaling businesses with shaky
+					foundations. And I knew what was missing, principles.
 				</p>
 				<p>
-					We study what makes brands stand out and why businesses grow or don’t.
-					Then we break it down into clear, practical insights you can apply.
+					Not just more tactics. <br />
+					Not just another how-to thread. <br />
+					But deeper thinking. Better questions. <br />
+					Clarity that creates confidence. <br />
 				</p>
 				<p>
-					Whether you’re defining your brand, launching your next offer, or
-					reworking your mindset for growth, Mind & Market delivers what you
-					need to think clearer, move smarter, and scale better.
+					So I built Mind & Market, a weekly letter for founders, brand
+					builders, and creators who want to scale with substance.
+				</p>
+				<p>
+					Each week, I study what works and what doesn’t in branding, marketing,
+					strategy, and mindset. Then I distill it into clear, thoughtful
+					insights you can use. Real lessons. No fluff. The kind of mental
+					shifts and frameworks that change how you build.
+				</p>
+				<p>
+					Because sometimes, what you need isn’t more noise, it’s sharper
+					thinking. Whether you're defining your brand, launching your next
+					offer, or shifting your mindset for growth, Join the letter list
+					today by subscribing.
 				</p>
 			</div>
 		</section>

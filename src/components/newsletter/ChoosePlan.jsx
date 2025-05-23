@@ -1,33 +1,33 @@
 import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react';
-import { PaystackButton } from 'react-paystack';
 import toast, { Toaster } from 'react-hot-toast';
 import { db } from '../../config/firebase';
 import { collection, addDoc } from 'firebase/firestore';
 
-const PUBLIC_KEY = 'pk_test_974a54216f3c864c639064740e5105a6cb38c5c0';
-
 const plans = [
 	{
 		name: 'Monthly',
-		price: 3, // numeric
+		price: 3500,
 		description:
 			'Stay flexible with month-to-month access to all premium content, insights, and tools.',
 		tier: 'monthly',
+		link: 'https://selar.com/63p800',
 	},
 	{
-		name: '6 Months',
-		price: 15,
+		name: '3 Months',
+		price: 9000,
 		description:
 			'Commit for half a year and save. Includes all premium content + bonus resources.',
-		tier: '6months',
+		tier: '3months',
+		link: 'https://selar.com/40mz35',
 	},
 	{
 		name: '1 year',
-		price: 33,
+		price: 37000,
 		description:
 			'Best value for deep thinkers. Full access, all updates, and exclusive yearly-only perks.',
 		tier: '1year',
+		link: 'https://selar.com/your-1year-link', // Replace with the correct Selar link
 	},
 ];
 
@@ -58,39 +58,10 @@ const ChoosePlan = () => {
 		}
 	};
 
-	const USD_TO_NGN = 1600; // Change this rate as needed
-
-	const getAmountInKobo = (usd) => {
-		return usd * USD_TO_NGN * 100;
-	};
-
-	const paystackProps = {
-		email,
-		amount: selectedPlan ? selectedPlan.price * USD_TO_NGN * 100 : 0, // ensure selectedPlan is not null
-		publicKey: PUBLIC_KEY,
-		text: 'Proceed to Paystack',
-		onSuccess: async (ref) => {
-			try {
-				await addDoc(collection(db, 'subscriptions'), {
-					email,
-					plan: selectedPlan.name,
-					reference: ref.reference,
-					date: new Date(),
-				});
-
-				toast.success('Payment Successful!');
-				setIsOpen(false);
-				setEmail('');
-			} catch (err) {
-				toast.error('Error storing data.');
-				console.error(err);
-			}
-		},
-		onClose: () => toast('Payment popup closed.'),
-	};
-
 	return (
-		<section id="plans" className='text-[#F5E9DC] py-16 px-6 md:px-16'>
+		<section
+			id='plans'
+			className='text-[#F5E9DC] py-16 px-6 md:px-16'>
 			<Toaster />
 			<h2 className='text-center text-3xl font-bold mb-12'>Choose Your Plan</h2>
 
@@ -98,9 +69,11 @@ const ChoosePlan = () => {
 				{plans.map((plan, index) => (
 					<div
 						key={index}
-						className={`rounded-xl p-6 border border-gray-700 flex flex-col items-center transition-all duration-300 bg-zinc-800`}>
+						className='rounded-xl p-6 border border-gray-700 flex flex-col items-center transition-all duration-300 bg-zinc-800'>
 						<h3 className='text-xl font-semibold mb-2'>{plan.name}</h3>
-						<p className='text-2xl font-bold mb-4'>${plan.price}</p>
+						<p className='text-2xl font-bold mb-4'>
+							₦{plan.price.toLocaleString()}
+						</p>
 						<p className='text-sm text-center mb-6'>{plan.description}</p>
 						<button
 							onClick={() => handleSubscribe(plan)}
@@ -130,10 +103,27 @@ const ChoosePlan = () => {
 							className='w-full border p-2 rounded mb-4'
 						/>
 
-						<PaystackButton
-							{...paystackProps}
-							className='bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded'
-						/>
+						<a
+							href={selectedPlan?.link}
+							target='_blank'
+							rel='noopener noreferrer'
+							onClick={async () => {
+								if (!email) return toast.error('Please enter a valid email.');
+								try {
+									await addDoc(collection(db, 'subscriptions'), {
+										email,
+										plan: selectedPlan.name,
+										date: new Date(),
+									});
+									toast.success('Redirecting to payment...');
+								} catch (err) {
+									toast.error('Error saving subscription info.');
+									console.error(err);
+								}
+							}}
+							className='bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded block text-center'>
+							Proceed to Payment
+						</a>
 					</Dialog.Panel>
 				</div>
 			</Dialog>
