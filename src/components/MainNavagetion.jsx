@@ -136,7 +136,7 @@ const MainNavigation = () => {
 					whileTap={{ scale: 0.95 }}>
 					<Link
 						to='/contact'
-						className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center whitespace-nowrap'>
+						className='btn bg-primary border-none hover:bg-primary/80 text-[#000000] lg:px-10 text-center whitespace-nowrap'>
 						Contact Me
 					</Link>
 				</motion.div>
