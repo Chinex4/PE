@@ -6,7 +6,7 @@ import MyButton from '../ui/Button';
 const BrandStrategist = () => {
 	return (
 		<div className='text-[#F5E9DC] flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-between'>
-			<div className='text-center lg:text-left max-w-2xl'>
+			<div className='text-left lg:text-left max-w-2xl'>
 				<h1 className='text-2xl font-bold mb-4 uppercase'>
 					Why Most Growth Strategies Fail (And What Actually Works)
 				</h1>
