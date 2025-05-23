@@ -54,9 +54,9 @@ const TeamValuesAndApproach = () => {
 						<p className='text-[#F5E9DC]/80'>{value.description}</p>
 
 						{/* Vertical Divider Line */}
-						{index < teamValues.length - 1 && (
+						{/* {index < teamValues.length - 1 && (
 							<div className='hidden md:block absolute right-0 top-0 h-full border-r border-gray-600 p-8'>5</div>
-						)}
+						)} */}
 					</div>
 				))}
 			</div>

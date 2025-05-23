@@ -17,6 +17,7 @@ import ReachOut from './pages/ReachOut';
 import NewsLetter from './pages/NewsLetter';
 import AnimatedBackground from './components/AnimatedBackground'
 import AnimatedBlobs from './components/AnimatedBlobs';
+import NewsletterPlan from './pages/NewsLetterPlan';
 
 function App() {
 	return (
@@ -66,6 +67,10 @@ function App() {
 					<Route
 						path='/newsletter'
 						element={<NewsLetter />}
+					/>
+					<Route
+						path='/newsletter/plan'
+						element={<NewsletterPlan />}
 					/>
 				</Routes>
 				<Footer />
