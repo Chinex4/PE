@@ -15,11 +15,15 @@ import BookDetails from './pages/BookDetails';
 import CaseStudyPage from './pages/CaseStudyPage';
 import ReachOut from './pages/ReachOut';
 import NewsLetter from './pages/NewsLetter';
+import AnimatedBackground from './components/AnimatedBackground'
+import AnimatedBlobs from './components/AnimatedBlobs';
 
 function App() {
 	return (
 		<div className='bg-[#171717] min-h-screen font-sans'>
-			<div className='max-w-[100rem] mx-auto'>
+			<AnimatedBackground />
+			{/* <AnimatedBlobs /> */}
+			<div className='max-w-[100rem] relative z-20 mx-auto'>
 				<MainNavagetion />
 				<ScrollToTop />
 				<Routes>

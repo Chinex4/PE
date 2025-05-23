@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../assets/headlogo.png';
+import { motion } from 'framer-motion';
 
 const nav = [
 	{ path: '/', label: 'Home' },
@@ -9,27 +9,45 @@ const nav = [
 	{ path: '/newsletter', label: 'Newsletter' },
 	{ path: '/case-studies', label: 'Case Studies' },
 	{ path: '/about', label: 'About Me' },
-	// { path: '/contact', label: 'Contact' },
 ];
+
+const navItemVariants = {
+	hidden: { opacity: 0, y: -10 },
+	visible: (i) => ({
+		opacity: 1,
+		y: 0,
+		transition: { delay: i * 0.1, duration: 0.4 },
+	}),
+};
 
 const MainNavagetion = () => {
 	return (
-		<div className='navbar text-[#F5E9DC] px-4 py-5 lg:px-[10rem] lg:py-[2rem]'>
+		<motion.div
+			initial={{ opacity: 0, y: -20 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.6 }}
+			className='navbar text-[#F5E9DC] px-4 py-5 lg:px-[10rem] lg:py-[2rem]'>
 			<div className='navbar-start'>
-				<div>
-					<NavLink to='/'>
-						<img
-							src={'/images/logo.svg'}
-							alt='Logo'
-							className='logo w-[130px]'
-						/>
-					</NavLink>
-				</div>
+				<NavLink to='/'>
+					<motion.img
+						src={'/images/logo.svg'}
+						alt='Logo'
+						className='logo w-[130px]'
+						whileHover={{ scale: 1.05 }}
+						transition={{ type: 'spring', stiffness: 300 }}
+					/>
+				</NavLink>
 			</div>
+
 			<div className='navbar-center'>
 				<ul className='menu menu-horizontal px-1 hidden lg:flex text-lg'>
 					{nav.map((item, index) => (
-						<li key={index}>
+						<motion.li
+							key={index}
+							custom={index}
+							initial='hidden'
+							animate='visible'
+							variants={navItemVariants}>
 							<NavLink
 								to={item.path}
 								className={({ isActive }) =>
@@ -37,10 +55,12 @@ const MainNavagetion = () => {
 								}>
 								{item.label}
 							</NavLink>
-						</li>
+						</motion.li>
 					))}
 				</ul>
 			</div>
+
+			{/* Mobile menu */}
 			<div className='navbar-end lg:hidden'>
 				<div className='dropdown lg:hidden'>
 					<div
@@ -61,29 +81,42 @@ const MainNavagetion = () => {
 							/>
 						</svg>
 					</div>
-					<ul
+					<motion.ul
 						tabIndex={0}
+						initial={{ opacity: 0, scale: 0.95 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ duration: 0.3 }}
 						className='menu menu-sm dropdown-content bg-[#111111] rounded-box z-[1] mt-3 w-52 p-2 shadow right-0'>
 						{nav.map((item, index) => (
 							<li key={index}>
 								<NavLink
 									to={item.path}
 									className={({ isActive }) =>
-										isActive ? 'text-[#F5E9DC] font-extrabold' : 'text-[#F5E9DC]'
+										isActive
+											? 'text-[#F5E9DC] font-extrabold'
+											: 'text-[#F5E9DC]'
 									}>
 									{item.label}
 								</NavLink>
 							</li>
 						))}
-					</ul>
+					</motion.ul>
 				</div>
 			</div>
+
+			{/* Contact Button */}
 			<div className='navbar-end hidden lg:flex'>
-				<Link to='/contact' className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center'>
-					Contact Me
-				</Link>
+				<motion.div
+					whileHover={{ scale: 1.05 }}
+					whileTap={{ scale: 0.95 }}>
+					<Link
+						to='/contact'
+						className='btn bg-primary border-none hover:bg-primary/80 text-[#F5E9DC] lg:px-10 text-center whitespace-nowrap'>
+						Contact Me
+					</Link>
+				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

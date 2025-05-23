@@ -58,7 +58,7 @@ const Services = () => {
 						or overcome specific challenges, I’ll help you with actionable
 						insights.
 					</p>
-					<div class='mt-6 md:mt-0 flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
+					<div class='mt-6 md:mt-[52px] flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm'>
 						<Link class='bg-primary text-black py-2 px-4 rounded-lg'>
 							Book A Call
 						</Link>
