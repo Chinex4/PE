@@ -148,6 +148,62 @@ const ResourceTabs = () => {
             {/* Keep your form modal as-is */}
             {showForm && (
                 // [your form modal code remains unchanged]
+<div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50'>  
+                                        <div className='bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-[400px] animate-fadeIn'>  
+                                                <h2 className='text-lg font-bold mb-4 text-center'>  
+                                                        Get Your Resource  
+                                                </h2>  
+                                                <form  
+                                                        onSubmit={handleSubmit}  
+                                                        className='space-y-4'>  
+                                                        <div>  
+                                                                <label className='block text-sm font-medium text-gray-700'>  
+                                                                        Name  
+                                                                </label>  
+                                                                <input  
+                                                                        type='text'  
+                                                                        name='name'  
+                                                                        value={formData.name}  
+                                                                        onChange={handleChange}  
+                                                                        className='w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary'  
+                                                                        placeholder='Enter your name'  
+                                                                />  
+                                                                {errors.name && (  
+                                                                        <p className='text-red-500 text-xs'>{errors.name}</p>  
+                                                                )}  
+                                                        </div>  
+                                                        <div>  
+                                                                <label className='block text-sm font-medium text-gray-700'>  
+                                                                        Email  
+                                                                </label>  
+                                                                <input  
+                                                                        type='email'  
+                                                                        name='email'  
+                                                                        value={formData.email}  
+                                                                        onChange={handleChange}  
+                                                                        className='w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary'  
+                                                                        placeholder='Enter your email'  
+                                                                />  
+                                                                {errors.email && (  
+                                                                        <p className='text-red-500 text-xs'>{errors.email}</p>  
+                                                                )}  
+                                                        </div>  
+                                                        <div className='flex justify-between items-center'>  
+                                                                <button  
+                                                                        onClick={closeForm}  
+                                                                        className='mt-3 text-gray-500 hover:text-gray-700 block text-center'>  
+                                                                        Cancel  
+                                                                </button>  
+                                                                <button  
+                                                                        type='submit'  
+                                                                        disabled={loading}  
+                                                                        className='bg-primary text-[#F5E9DC] py-2 px-4 rounded-md font-medium'>  
+                                                                        {loading ? "Redirecting..." : "Get Resource"}  
+                                                                </button>  
+                                                        </div>  
+                                                </form>  
+                                        </div>  
+                                </div>
             )}
         </div>
     );
