@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
+
 
 const NewsletterPlan = () => {
 	const [searchParams] = useSearchParams();

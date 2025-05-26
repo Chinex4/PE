@@ -65,7 +65,7 @@ function App() {
 						element={<ReachOut />}
 					/>
 					<Route
-						path='/newsletter'
+						path='/mindandmarket'
 						element={<NewsLetter />}
 					/>
 					<Route

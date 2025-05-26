@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import smiley from '/images/prepic.png';
+import smiley from '/images/smileyyy.svg';
 import MyButton from '../ui/Button';
 
 const HeroSection = () => {
@@ -23,7 +23,8 @@ const HeroSection = () => {
 				</div>
 			</div>
 			<div className='mt-8'>
-				 <img loading="lazy"
+				<img
+					loading='lazy'
 					src={smiley}
 					alt='Entrepreneur'
 					className='w-full lg:w-[83rem]'
