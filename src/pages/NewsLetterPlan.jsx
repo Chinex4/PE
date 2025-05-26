@@ -1,7 +1,7 @@
-// pages/newsletter/plan.jsx
 import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
+import emailjs from 'emailjs-com';
 
 const NewsletterPlan = () => {
 	const [searchParams] = useSearchParams();
@@ -9,6 +9,7 @@ const NewsletterPlan = () => {
 
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
+	const [number, setNumber] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -17,12 +18,33 @@ const NewsletterPlan = () => {
 			return;
 		}
 
-		// Example: Log or send data to backend
-		console.log({ name, email, plan });
+		// EmailJS template params
+		const templateParams = {
+			name,
+			email,
+			number,
+			plan,
+		};
 
-		toast.success('Thank you! Your details have been recorded.');
-		setName('');
-		setEmail('');
+		emailjs
+			.send(
+				'service_zcid34g', // e.g. service_xxxxxx
+				'template_q849keb', // e.g. template_yyyyyy
+				templateParams,
+				'_1zDbTqyA0_Su2Xpg' // e.g. 9VxRTHJWy6s...
+			)
+			.then(() => {
+				toast.success(
+					'Thank you! Your details have been recorded and email sent.'
+				);
+				setName('');
+				setEmail('');
+				setNumber('');
+			})
+			.catch((error) => {
+				console.error(error);
+				toast.error('Something went wrong. Please try again.');
+			});
 	};
 
 	return (
@@ -53,6 +75,13 @@ const NewsletterPlan = () => {
 						placeholder='Your email address'
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
+						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-white placeholder-gray-400'
+					/>
+					<input
+						type='text'
+						placeholder='Whatsapp Number (Optional)'
+						value={number}
+						onChange={(e) => setNumber(e.target.value)}
 						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-white placeholder-gray-400'
 					/>
 
