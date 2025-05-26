@@ -13,7 +13,7 @@ const SponsorsCarousel = () => {
 					<div className="inline-flex gap-12 animate-marquee min-w-max">
 						{/* Double the logos for seamless looping */}
 						{sponsors.concat(sponsors).map((sponsor, index) => (
-							<img
+							 <img loading="lazy"
 								key={index}
 								src={sponsor.imgSrc}
 								alt={sponsor.alt}

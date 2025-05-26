@@ -14,7 +14,7 @@ const CaseStudy = () => {
 				<div class='flex flex-col md:flex-row items-center rounded-lg'>
 					{/* <!-- Logo/Image --> */}
 					<div class='w-full md:w-1/2 lg:w-1/2 flex justify-center mb-6 md:mb-0'>
-						<img
+						 <img loading="lazy"
 							src='/images/xquisiteee.png'
 							alt='Xquisite Logo'
 							class='w-full h-auto'

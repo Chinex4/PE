@@ -26,7 +26,7 @@ const Footer = () => {
 				{/* Logo Section */}
 				<div className='flex items-center mb-6 lg:mb-0'>
 					<NavLink to='/'>
-						<img
+						 <img loading="lazy"
 							src={'/images/logo.svg'}
 							alt='Logo'
 							className='logo w-[130px]'

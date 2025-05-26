@@ -25,7 +25,7 @@ const HeroSection = () => {
 				/>
 			</div>
 			<div className='mt-8 '>
-				<img
+				 <img loading="lazy"
 					className='rounded-3xl'
 					src={'/images/smiley-on-stage.jpg'}
 					alt='Service Icon'

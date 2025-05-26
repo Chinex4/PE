@@ -16,7 +16,7 @@ const HeroSection = () => {
 				<MyButton label='Request for a Resource' href='#resourceform' />
 			</div>
 			<div className='mt-8 mb-16'>
-				<img
+				 <img loading="lazy"
 					src={'/images/resourceflash.png'}
 					alt='Resource Icon'
 				/>

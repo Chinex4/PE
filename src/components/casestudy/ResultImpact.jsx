@@ -11,7 +11,7 @@ const ResultsImpact = () => {
 			</p>
 			<div className='flex flex-col md:flex-row justify-center gap-12'>
 				<div className='text-center'>
-					<img
+					 <img loading="lazy"
 						src='/images/archicon.png'
 						alt='Increased Engagement'
 						className='mx-auto mb-2'
@@ -21,7 +21,7 @@ const ResultsImpact = () => {
 					</p>
 				</div>
 				<div className='text-center'>
-					<img
+					 <img loading="lazy"
 						src='/images/archicon.png'
 						alt='Revenue Growth'
 						className='mx-auto mb-2'
@@ -29,7 +29,7 @@ const ResultsImpact = () => {
 					<p className='text-lg font-semibold text-[#F5E9DC]'>Revenue Growth</p>
 				</div>
 				<div className='text-center'>
-					<img
+					 <img loading="lazy"
 						src='/images/archicon.png'
 						alt='Brand Recognition'
 						className='mx-auto mb-2'

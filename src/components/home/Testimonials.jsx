@@ -45,7 +45,7 @@ const Testimonials = () => {
 						onClick={() => openModal(testimonial)}
 						className='cursor-pointer bg-[#1C1C1C] text-white rounded-lg p-6 shadow-md h-[270px] flex flex-col justify-between hover:shadow-lg transition'>
 						<div className='flex items-center space-x-4 mb-4'>
-							<img
+							 <img loading="lazy"
 								className='w-10 h-10 md:w-12 md:h-12 rounded-full object-cover'
 								src={testimonial.pic || '/images/man.png'}
 								alt={testimonial.author}

@@ -23,7 +23,7 @@ const BookDetails = () => {
 	return (
 		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0 '>
 			<div className='flex flex-col lg:flex-row justify-between gap-10'>
-				<img
+				 <img loading="lazy"
 					src={book.image}
 					alt={book.title}
 					className='lg:w-[842px] lg:h-[595px] object-cover rounded-lg shadow-md'

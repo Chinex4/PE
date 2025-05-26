@@ -22,7 +22,7 @@ const HeroSection = () => {
 
 			{/* Image */}
 			<div className='mb-10 lg:mb-0 lg:ml-10'>
-				<img
+				 <img loading="lazy"
 					src='/images/envelope.png'
 					alt='Newsletter Envelope'
 					className='max-w-xs md:max-w-sm'

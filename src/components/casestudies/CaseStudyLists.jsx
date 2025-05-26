@@ -24,7 +24,7 @@ const CaseStudies = () => {
 						whileHover={{ scale: 1.05 }}
 						transition={{ type: 'spring', stiffness: 200, damping: 10 }}>
 						<div className=' bg-white flex items-center justify-center rounded-lg'>
-							<img
+							 <img loading="lazy"
 								src={caseStudy.image}
 								alt={caseStudy.title}
 								className=''

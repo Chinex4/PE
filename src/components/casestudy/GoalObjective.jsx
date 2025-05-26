@@ -18,7 +18,7 @@ const GoalsObjectives = () => {
 					{/* Goal Item 1 */}
 					<div className='flex flex-col items-center'>
 						<div className='mb-5'>
-							<img src="/images/archicon.png" alt="" />{' '}
+							 <img loading="lazy" src="/images/archicon.png" alt="" />{' '}
 							{/* Replace with actual icon */}
 						</div>
 						<h3 className='text-center text-sm font-medium'>
@@ -29,7 +29,7 @@ const GoalsObjectives = () => {
 					{/* Goal Item 2 */}
 					<div className='flex flex-col items-center'>
 						<div className='mb-5'>
-							<img src="/images/archicon.png" alt="" />{' '}
+							 <img loading="lazy" src="/images/archicon.png" alt="" />{' '}
 							{/* Replace with actual icon */}
 						</div>
 						<h3 className='text-center text-sm font-medium'>
@@ -40,7 +40,7 @@ const GoalsObjectives = () => {
 					{/* Goal Item 3 */}
 					<div className='flex flex-col items-center'>
 						<div className='mb-5'>
-							<img src="/images/archicon.png" alt="" />{' '}
+							 <img loading="lazy" src="/images/archicon.png" alt="" />{' '}
 							{/* Replace with actual icon */}
 						</div>
 						<h3 className='text-center text-sm font-medium'>
@@ -51,7 +51,7 @@ const GoalsObjectives = () => {
 					{/* Goal Item 4 */}
 					<div className='flex flex-col items-center'>
 						<div className='mb-5'>
-							<img src="/images/archicon.png" alt="" />{' '}
+							 <img loading="lazy" src="/images/archicon.png" alt="" />{' '}
 							{/* Replace with actual icon */}
 						</div>
 						<h3 className='text-center text-sm font-medium'>

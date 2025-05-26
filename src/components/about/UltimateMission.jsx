@@ -8,7 +8,7 @@ const UltimateMission = () => {
 				<div className='flex flex-col lg:flex-row rounded-lg shadow-lg overflow-hidden'>
 					{/* Logo/Image */}
 					<div className='w-full lg:w-1/2 flex justify-center md:justify-start'>
-						<img
+						 <img loading="lazy"
 							src='/images/me.png'
 							alt='me'
 							className='w-full h-auto'

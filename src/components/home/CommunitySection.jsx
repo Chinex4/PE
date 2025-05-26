@@ -6,7 +6,7 @@ const CommunitySection = () => {
 		<div className='text-[#F5E9DC] py-16 px-4'>
 			<div className='flex flex-col lg:flex-row items-center lg:space-x-8'>
 				<div className='w-full lg:w-1/2 mb-8 lg:mb-0'>
-					<img
+					 <img loading="lazy"
 						src='/images/ligero.jpg' // Replace with the actual image path
 						alt='Community'
 						className='rounded-lg shadow-lg w-full h-auto'

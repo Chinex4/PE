@@ -43,7 +43,7 @@ const TeamValuesAndApproach = () => {
 						key={index}
 						className='flex flex-col items-center text-center'>
 						<div className='text-4xl mb-4'>
-							<img
+							 <img loading="lazy"
 								src={`/images/${value.icon}`}
 								alt=''
 							/>

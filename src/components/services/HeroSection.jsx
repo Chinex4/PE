@@ -19,7 +19,7 @@ const HeroSection = () => {
 				/>
 			</div>
 			<div className='mt-8'>
-				<img
+				 <img loading="lazy"
 					src={'/images/Subheading.png'}
 					alt='Service Icon'
 				/>

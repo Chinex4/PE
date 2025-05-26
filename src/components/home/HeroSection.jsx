@@ -23,7 +23,7 @@ const HeroSection = () => {
 				</div>
 			</div>
 			<div className='mt-8'>
-				<img
+				 <img loading="lazy"
 					src={smiley}
 					alt='Entrepreneur'
 					className='w-full lg:w-[83rem]'

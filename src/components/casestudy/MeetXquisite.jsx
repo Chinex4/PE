@@ -13,7 +13,7 @@ const MeetXquisite = () => {
     				</p>
 				</div>
 				<div className='relative mx-auto w-full lg:w-2/3'>
-					<img
+					 <img loading="lazy"
 						src='/images/shirt.png'
 						alt='Two T-shirts with text "Eat Well Live Well"'
 						className='w-full h-auto rounded-md shadow-lg'

@@ -26,7 +26,7 @@ const PrinciplesSection = () => {
 							className='flex items-center gap-3'>
 							{/* <CheckCircle2 className='text-green-500 w-5 h-5' /> */}
 							<span>
-								<img
+								 <img loading="lazy"
 									src='/images/thumbs.png'
 									alt='thumbs up'
 								/>

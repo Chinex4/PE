@@ -33,7 +33,7 @@ const BrandStrategist = () => {
 				<MyButton to='/reach-out' label="Let's Fix Your Message"/>
 			</div>
 			<div className='mt-8 hidden md:block'>
-				<img
+				 <img loading="lazy"
 					src={'/images/news.PNG'}
 					alt='Service Icon'
 					className='w-[300px]'

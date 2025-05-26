@@ -23,7 +23,7 @@ const HeroSection = () => {
 				</Link> */}
 			</div>
 			<div className='mt-8'>
-				<img
+				 <img loading="lazy"
 					src={'/images/casestudyhero.png'}
 					alt='Service Icon'
                     className=''

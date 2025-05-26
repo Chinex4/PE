@@ -16,7 +16,7 @@ const MediaLinks = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 						className='relative block overflow-hidden rounded-lg shadow-lg w-full max-w-xl'>
-						<img
+						 <img loading="lazy"
 							src={item.imageUrl}
 							alt={item.name}
 							className='w-full h-64 object-cover'

@@ -13,7 +13,7 @@ const plans = [
     name: '3 Months',
     price: 9000,
     description:
-      'Commit for quarterly and save more that 13%. Includes all premium content + bonus resources.',
+      'Commit quarterly and save more that 13%. Includes all premium content + bonus resources.',
     tier: '3months',
     link: 'https://selar.com/40mz35',
   },

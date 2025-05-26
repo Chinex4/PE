@@ -79,7 +79,7 @@ const Resources = () => {
 						key={index}
 						className='bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full max-w-[250px] md:max-w-[350px] mx-auto'>
 						<Link to={`/book/${encodeURIComponent(item.title)}`}>
-							<img
+							 <img loading="lazy"
 								src={item.image}
 								alt={item.title}
 								className='w-full h-[180px] md:h-[350px] object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02]'

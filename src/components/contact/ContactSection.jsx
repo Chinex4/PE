@@ -46,7 +46,7 @@ const ContactSection = () => {
 					<div className='space-y-6'>
 						<div className='flex items-start gap-4'>
 							<span className='text-2xl'>
-								<img
+								 <img loading="lazy"
 									className='w-[8rem]'
 									src='/images/callicon.png'
 									alt=''
@@ -68,7 +68,7 @@ const ContactSection = () => {
 						</div>
 						<div className='flex items-start gap-4'>
 							<span className='text-2xl'>
-								<img
+								 <img loading="lazy"
 									className='w-[8rem]'
 									src='/images/emailicon.png'
 									alt=''
@@ -90,7 +90,7 @@ const ContactSection = () => {
 						</div>
 						<div className='flex items-start gap-4'>
 							<span className='text-2xl'>
-								<img
+								 <img loading="lazy"
 									className='w-[7rem]'
 									src='/images/personicon.png'
 									alt=''
@@ -112,7 +112,7 @@ const ContactSection = () => {
 												key={index}
 												href={link.link}
 												className='text-primary'>
-												<img
+												 <img loading="lazy"
 													className='w-[2rem]'
 													src={`/images/${link.icon}.png`}
 													alt=''
