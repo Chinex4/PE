@@ -41,7 +41,9 @@ const Footer = () => {
 							key={index}
 							to={item.path}
 							className={({ isActive }) =>
-								isActive ? 'text-[#F5E9DC]' : 'text-navGray hover:text-[#F5E9DC] transition-colors duration-300'
+								isActive
+									? 'text-[#F5E9DC]'
+									: 'text-navGray hover:text-[#F5E9DC] transition-colors duration-300'
 							}>
 							{item.label}
 						</NavLink>
@@ -64,7 +66,7 @@ const Footer = () => {
 						className='hover:text-orange-500'>
 						<FaInstagram />
 					</a>
-					
+
 					<a
 						href='https://www.youtube.com/@_preciousevans'
 						target='_blank'
@@ -72,12 +74,13 @@ const Footer = () => {
 						className='hover:text-orange-500'>
 						<FaYoutube />
 					</a>
-					<Link
-						to='/contact'
+					<a
+						href='https://www.linkedin.com/in/precious-evans-995626351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+						target='_blank'
 						rel='noopener noreferrer'
 						className='hover:text-orange-500'>
 						<FaLinkedinIn />
-					</Link>
+					</a>
 					<Link
 						to='/contact'
 						rel='noopener noreferrer'
@@ -90,7 +93,6 @@ const Footer = () => {
 			{/* Copyright and Policy Links */}
 			<div className='text-center mt-10 text-sm text-navGray'>
 				© 2025 Precious Evans PE.
-				
 			</div>
 		</footer>
 	);

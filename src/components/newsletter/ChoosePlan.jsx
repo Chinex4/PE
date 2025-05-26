@@ -13,7 +13,7 @@ const plans = [
     name: '3 Months',
     price: 9000,
     description:
-      'Commit for half a year and save. Includes all premium content + bonus resources.',
+      'Commit for quarterly and save more that 13%. Includes all premium content + bonus resources.',
     tier: '3months',
     link: 'https://selar.com/40mz35',
   },
@@ -21,7 +21,7 @@ const plans = [
     name: '1 year',
     price: 37000,
     description:
-      'Best value for deep thinkers. Full access, all updates, and exclusive yearly-only perks.',
+      'Best for long term thinkers. Full access, all updates, and exclusive yearly-only perks.',
     tier: '1year',
     link: 'https://selar.com/996w1e', // Replace with the correct Selar link
   },
