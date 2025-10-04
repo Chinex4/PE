@@ -7,7 +7,7 @@ const BrandStrategist = () => {
   return (
     <div className="text-[#F5E9DC] text-center ">
       <div className="max-w-2xl mx-auto bg-[#272727]/30 shadow-[0_20px_80px_rgba(0,0,0,0.55)] px-5 sm:px-8 lg:px-12 py-8 sm:py-10 lg:py-14 rounded-3xl">
-        <h1 className="text-2xl font-bold mb-4 uppercase font-dela">
+        <h1 className="text-xl md:text-2xl font-bold mb-4 uppercase font-dela">
           Why you feel stuck trying to build your personal brand and <br />
           <span className="text-primary">what actually works</span>
         </h1>
