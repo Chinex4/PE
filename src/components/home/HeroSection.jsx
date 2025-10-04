@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="text-[#F5E9DC] mt-16 lg:mt-28 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
       <div className="text-center lg:text-left max-w-2xl">
         <h1 className="text-3xl md:text-[28px] md:text-4xl font-bold mb-4 uppercase font-dela">
-          The Difference Between Where You Are & Where You Dream To Be is
+          In building your personal brand, The Difference Between Where You Are & Where You Dream To Be is
           Clarity & Action.
         </h1>
         <p className="text-lg mb-8 text-navGray">
