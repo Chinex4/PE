@@ -1,4 +1,3 @@
-
 export const testimonials = [
   {
     quote:
@@ -435,9 +434,9 @@ export const approachSteps = [
 export const caseStudies = [
   {
     id: 0,
-    title: "Meet Mary With The Voice (Therapist, Storyteller, Speaker)",
+    title: "Meet Mary With The Voice",
     description:
-      "Using insights from our research, we refreshed the brand’s visual identity including colors, typography, and imagery to build a cohesive and recognizable look that appeals to both primary and secondary audiences...",
+      "She is a global voice of healing and intimacy, helping individuals and communities heal, reconnect with themselves, their emotions...",
     image: "/images/mary-voice.png",
     link: "/mary-with-the-voice",
   },
