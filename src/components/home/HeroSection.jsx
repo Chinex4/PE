@@ -5,9 +5,9 @@ import MyButton from '../ui/Button';
 
 const HeroSection = () => {
 	return (
-		<div className='text-[#F5E9DC] mt-16 flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
+		<div className='text-[#F5E9DC] mt-16 lg:mt-28 flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
 			<div className='text-center lg:text-left max-w-2xl'>
-				<h1 className='text-4xl font-bold mb-4 uppercase'>
+				<h1 className='text-4xl font-bold mb-4 uppercase font-dela'>
 					Do you know saying the right thing to your audience can be the
 					difference between 1X and 10X?
 				</h1>

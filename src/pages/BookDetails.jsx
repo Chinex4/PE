@@ -21,7 +21,7 @@ const BookDetails = () => {
 	}
 
 	return (
-		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0 '>
+		<div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-28 '>
 			<div className='flex flex-col lg:flex-row justify-between gap-10'>
 				 <img loading="lazy"
 					src={book.image}

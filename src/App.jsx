@@ -18,6 +18,7 @@ import NewsLetter from './pages/NewsLetter';
 import AnimatedBackground from './components/AnimatedBackground'
 import AnimatedBlobs from './components/AnimatedBlobs';
 import NewsletterPlan from './pages/NewsLetterPlan';
+import PersonalBrand from './pages/PersonalBrand';
 
 function App() {
 	return (
@@ -71,6 +72,10 @@ function App() {
 					<Route
 						path='/newsletter/plan'
 						element={<NewsletterPlan />}
+					/>
+					<Route
+						path='/personalbrandprofitsystem'
+						element={<PersonalBrand />}
 					/>
 				</Routes>
 				<Footer />

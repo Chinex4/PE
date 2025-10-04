@@ -14,6 +14,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Poppins', 'Arial', 'sans-serif'], // Fallback to Arial if Helvetica isn't available
+				dela: ['Dela Gothic One', 'Arial', 'sans-serif'], // Fallback to Arial if Helvetica isn't available
 			},
 			colors: {
 				primary: '#F4A261',
