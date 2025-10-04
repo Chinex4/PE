@@ -6,7 +6,7 @@ const nav = [
 	{ path: '/', label: 'Home' },
 	{ path: '/resources', label: 'Resources' },
 	{ path: '/services', label: 'Services' },
-	{ path: '/mindandmarket', label: 'Newsletter' },
+	{ path: '/newsletter', label: 'Newsletter' },
 	{ path: '/case-studies', label: 'Case Studies' },
 	{ path: '/about', label: 'About Me' },
 ];

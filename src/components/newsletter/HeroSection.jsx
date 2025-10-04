@@ -4,7 +4,7 @@ import MyButton from "../ui/Button";
 
 const HeroSection = () => {
   return (
-    <div className="text-[#F5E9DC] mt-16 lg:mt-28 flex flex-col lg:flex-row items-center justify-between lg:justify-start lg:gap-52">
+    <div className="text-[#F5E9DC] mt-16 lg:mt-28 flex flex-col lg:flex-row items-center justify-between lg:justify-start gap-20 lg:gap-52">
       {/* Text Content */}
       <div className="max-w-xl text-center lg:text-left">
         <h2 className="text-3xl md:text-4xl font-semibold mb-4 font-dela">
@@ -17,7 +17,7 @@ const HeroSection = () => {
         </p>
 
         <MyButton
-          label="Subscribe Now"
+          label="Subscribe Now For Free"
           href="https://substack.com/@preciousevans"
         />
       </div>

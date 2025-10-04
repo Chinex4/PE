@@ -1,17 +1,19 @@
 import React from "react";
 
-export default function PersonalBrandHero({courseLink = "https://selar.com/7q87935pb5"}) {
+export default function PersonalBrandHero({
+  courseLink = "https://selar.com/7q87935pb5",
+}) {
   return (
     <section className="relative overflow-hidden text-[#F5E9DC]">
       {/* Decorative vectors */}
       <img
-        src="/images/infinity-vector.png"   /* <- replace path */
+        src="/images/infinity-vector.png" /* <- replace path */
         alt=""
         aria-hidden="true"
         className="pointer-events-none select-none hidden md:block absolute left-[24%] top-1/3 w-20 opacity-80"
       />
       <img
-        src="/images/x-clip.png"          /* <- replace path */
+        src="/images/x-clip.png" /* <- replace path */
         alt=""
         aria-hidden="true"
         className="pointer-events-none select-none hidden sm:block absolute right-[24%] bottom-[18%] w-10 opacity-80"
@@ -53,6 +55,11 @@ export default function PersonalBrandHero({courseLink = "https://selar.com/7q879
             >
               Join the Waitlist Now
             </a>
+          </div>
+
+          <div className="mt-8 lg:mt-6 flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-center font-dela">
+            <p className="text-primary text-xl font-semibold ">NGN 34,999</p>
+            <p className=" line-through">NGN 45,000</p>
           </div>
         </div>
 

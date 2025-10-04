@@ -17,8 +17,8 @@ const Services = () => {
             but be understood.
           </p>
           <div class="mt-6 md:mt-0 flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm">
-            <Link class="bg-primary py-2 px-4 rounded-lg">Get Started</Link>
-            <Link class="border hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
+            <Link to="/reach-out?services-page" class="bg-primary py-2 px-4 rounded-lg">Get Started</Link>
+            <Link to="/reach-out?services-page" class="border hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
               Explore The Process
             </Link>
           </div>
@@ -36,10 +36,10 @@ const Services = () => {
             real opportunities.
           </p>
           <div class="mt-6 md:mt-0 flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-xs">
-            <Link class="bg-primary text-black py-2 px-4 rounded-lg">
+            <Link to="/reach-out?services-page" class="bg-primary text-black py-2 px-4 rounded-lg">
               Request Coaching
             </Link>
-            <Link class="border  hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
+            <Link to="/reach-out?services-page" class="border  hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
               How Coaching Works
             </Link>
           </div>
@@ -57,10 +57,10 @@ const Services = () => {
             actionable steps toward your goals.
           </p>
           <div class="mt-6 md:mt-[52px] flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm">
-            <Link to={"/reach-out?type=services-page"} class="bg-primary text-black py-2 px-4 rounded-lg">
+            <Link to="/reach-out?services-page" class="bg-primary text-black py-2 px-4 rounded-lg">
               Book A Call
             </Link>
-            <Link class="border hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
+            <Link to="/reach-out?services-page" class="border hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
               View More Details
             </Link>
           </div>
@@ -81,10 +81,10 @@ const Services = () => {
             <br />
           </p>
           <div class="flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm">
-            <Link class="bg-primary text-black py-2 px-4 rounded-lg">
+            <Link to="/reach-out?services-page" class="bg-primary text-black py-2 px-4 rounded-lg">
               Request Availability
             </Link>
-            <Link class="border hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
+            <Link to="/reach-out?services-page" class="border hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">
               Learn More
             </Link>
           </div>

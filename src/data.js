@@ -252,6 +252,29 @@ export const resources = {
   ],
   personalBranding: [
     // Add more starter pack items
+    {
+      title: "Personal Brand Profit System",
+      price: "$23 (NGN 34,499)",
+      image: "/images/personalbrand.png",
+      pageLink: "/personalbrandprofitsystem",
+      link: "https://selar.com/0103v0",
+      description: `
+				This guide was designed to help you learn from top food brands. it is quite straight forward with clear lessons and HOW TO. This is essential for food brands looking to stand out, below is the author's note
+			`,
+      author: `
+				"The moment you begin to experience stagnancy or backlog, that’s where doubt begins to find its way back into your heart. Right before I began to write this, I had a very long conversation with the inner me and I think that will be my note.
+				<br /> <br />
+				'How do I scale from here?'
+				<br /> <br />
+				It rang in my head constantly, and then I realized that scaling up is growth and sustainability together. Growth happens to be a journey and it happens by the day while sustainability keeps it moving always, so this means by the day we keep on scaling but then does it work?
+				<br /> <br />
+				When a seed is planted, there are elements necessary to cause it’s growth and when one is missing there’s a possibility of the seed not dying or not growing as it should. 
+				<br /> <br />
+				And that same way, when a Food Business is formed, there are elements which I call recipes required to make it grow into its true form and vision just as the creator saw before beginning the journey.
+				<br /> <br />
+				At the end of this playbook, with the application of the recipes combined together and in its right amount, you wouldn’t have to worry about scaling, it will begin to happen on default."
+			`,
+    },
   ],
   contentCreation: [
     // Add more starter pack items

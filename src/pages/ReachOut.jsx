@@ -11,7 +11,7 @@ const ReachOut = () => {
   console.log(searchParams);
 
   const callType = (searchParams.get("type") || "general").toLowerCase();
-  
+
   console.log("`callType` is", callType);
 
   const handleSubmit = (e) => {
@@ -134,9 +134,12 @@ const ReachOut = () => {
                 transition={{ duration: 0.28, ease: "easeInOut" }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <h2 className="text-lg font-semibold font-dela">Message Sent</h2>
+                <h2 className="text-lg font-semibold font-dela">
+                  Message Sent
+                </h2>
                 <p className="text-neutral-300 mt-2">
-                  Thanks for reaching out! You can take the next step right now.
+                  Thank you for reaching out! I will reach out to you shortly.
+                  You can take the next step right now.
                 </p>
 
                 <div className="mt-5 grid gap-3">
@@ -153,9 +156,9 @@ const ReachOut = () => {
                     href={calUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-lg bg-white text-black px-4 py-2 font-semibold hover:opacity-95"
+                    className="inline-flex items-center justify-center rounded-lg bg-primary text-black px-4 py-2 font-semibold hover:opacity-95"
                   >
-                    Proceed To Calendly
+                    Schedule a Call
                   </a>
                 </div>
 

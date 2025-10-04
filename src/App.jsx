@@ -40,7 +40,7 @@ function App() {
           <Route path="/mary-with-the-voice" element={<MaryWithTheVoice />} />
           <Route path="/case-studies" element={<CaseStudyPage />} />
           <Route path="/reach-out" element={<ReachOut />} />
-          <Route path="/mindandmarket" element={<NewsLetter />} />
+          <Route path="/newsletter" element={<NewsLetter />} />
           <Route path="/newsletter/plan" element={<NewsletterPlan />} />
           <Route
             path="/personalbrandprofitsystem/complete-your-purchase"
