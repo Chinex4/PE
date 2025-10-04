@@ -1,6 +1,12 @@
 export const testimonials = [
   {
     quote:
+      "Precious is good at strategy & consulting, that's his field and strength.",
+    author: "Mary With The Voice (Entrepreneur)",
+    location: "Nigeria",
+  },
+  {
+    quote:
       "I read the Content Strategy Guide and I must say that it is really incredible. You really broke down everything and made it easy to understand. I will make sure to try out what I read there for my brand",
     author: "Ayanfe (Entrepreneur)",
     location: "Nigeria",

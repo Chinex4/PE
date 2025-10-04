@@ -20,6 +20,7 @@ import AnimatedBlobs from './components/AnimatedBlobs';
 import NewsletterPlan from './pages/NewsLetterPlan';
 import PersonalBrand from './pages/PersonalBrand';
 import MaryWithTheVoice from './pages/MaryWithTheVoice';
+import PbpsCompletePurchaseForm from './pages/PbpsCompletePurchaseForm';
 
 function App() {
 	return (
@@ -77,6 +78,10 @@ function App() {
 					<Route
 						path='/newsletter/plan'
 						element={<NewsletterPlan />}
+					/>
+					<Route
+						path='/personalbrandprofitsystem/complete-your-purchase'
+						element={<PbpsCompletePurchaseForm />}
 					/>
 					<Route
 						path='/personalbrandprofitsystem'

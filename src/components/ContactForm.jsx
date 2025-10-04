@@ -34,7 +34,7 @@ const ContactForm = () => {
 
 	return (
 		<div className='  py-16 px-4'>
-			<h2 className='text-center text-[24px] text-[#F5E9DC] leading-[1.1] font-bold mb-12'>
+			<h2 className='text-center text-[24px] text-[#F5E9DC] leading-[1.1] font-bold font-dela mb-12'>
 				SEND ME A DIRECT MESSAGE TODAY TO CONNECT
 				<span className='text-[3rem] leading-[2px] text-primary'>.</span>
 			</h2>

@@ -8,7 +8,7 @@ const NewsLetter = () => {
     <div className='px-4 py-5 lg:px-[10rem] lg:py-[2rem] mt-8 lg:mt-0'>
         <HeroSection />
         <PrinciplesSection />
-        <ChoosePlan />
+        {/* <ChoosePlan /> */}
     </div>
   )
 }

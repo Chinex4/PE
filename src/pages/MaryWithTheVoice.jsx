@@ -32,19 +32,18 @@ const MaryWithTheVoice = () => {
                 Meet Mary With The Voice
               </h2>
               <p className="mb-8 opacity-80">
-                Meet Mary,
+                
                 <span className="rounded-md bg-primary/15 px-1.5 py-0.5 text-primary">
-                  a therapist
+                  Therapist
                 </span>
-                ,{" "}
+                {" "}
                 <span className="rounded-md bg-primary/15 px-1.5 py-0.5 text-primary">
-                  storyteller
+                  Storyteller
                 </span>
-                , and{" "}
+                {" "}
                 <span className="rounded-md bg-primary/15 px-1.5 py-0.5 text-primary">
-                  speaker
+                  Speaker
                 </span>
-                .
               </p>
             </div>
             <div className="relative mx-auto w-full lg:w-2/3">
@@ -94,7 +93,7 @@ const MaryWithTheVoice = () => {
             </div>
           </div>
         </section>
-        <section className=" text-[#F5E9DC] py-16 px-4">
+        <section className=" text-[#F5E9DC] px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-semibold uppercase mb-8">
               Goal

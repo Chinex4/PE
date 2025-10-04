@@ -4,7 +4,7 @@ import { media } from '../../data';
 const MediaLinks = () => {
 	return (
 		<div className='text-[#F5E9DC] py-16'>
-			<h2 className='text-center text-2xl font-bold mb-12 leading-[3px]'>
+			<h2 className='text-center text-2xl font-bold mb-12 font-dela leading-[3px]'>
 				CONNECT WITH ME THROUGH THE MEDIA
 				<span className='text-5xl text-primary'>.</span>
 			</h2>

@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function CourseFitSection({courseLink = "https://selar.com/7q87935pb5"}) {
+export default function CourseFitSection({
+  courseLink = "https://selar.com/7q87935pb5",
+}) {
   return (
     <section className="text-[#F5E9DC]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
@@ -62,6 +64,23 @@ export default function CourseFitSection({courseLink = "https://selar.com/7q8793
                 "Authentic Visibility",
                 "Monetization Systems",
                 "Consistency & Growth",
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="inline-flex items-center rounded-md border border-primary/30 bg-primary/15 px-3 py-1.5 text-xs sm:text-sm font-semibold text-primary"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+            <p className="mt-6 text-sm sm:text-base font-medium">
+              You'll get :
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {[
+                "Recorded Explanatory Videos",
+                "Ebook & Guides",
+                "Checklists"
               ].map((t) => (
                 <span
                   key={t}

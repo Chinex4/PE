@@ -23,7 +23,7 @@ const Testimonials = () => {
 
 	return (
 		<div className='text-[#F5E9DC] py-16 px-4'>
-			<h2 className='text-center uppercase text-2xl font-bold mb-12 leading-[3px]'>
+			<h2 className='text-center uppercase text-2xl font-bold mb-12 font-dela leading-[3px]'>
 				CLIENTs' REVIEWS
 				<span className='text-5xl text-primary'>.</span>
 			</h2>

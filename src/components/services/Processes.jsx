@@ -5,7 +5,7 @@ const Processes = () => {
 	return (
 		<div class=' text-[#F5E9DC] py-16 px-4'>
 			{/* <!-- Title --> */}
-			<h2 class='text-center text-2xl font-bold mb-12 uppercase '>
+			<h2 class='text-center text-2xl font-bold mb-12 font-dela uppercase '>
 				The Process To Helping You Win<span class='text-primary'>•</span>
 			</h2>
 

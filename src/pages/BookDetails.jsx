@@ -29,7 +29,7 @@ const BookDetails = () => {
 					className='lg:w-[842px] lg:h-[595px] object-cover rounded-lg shadow-md'
 				/>
 				<div>
-					<h1 className='text-4xl font-bold mt-4 text-[#F5E9DC]'>{book.title}</h1>
+					<h1 className='text-[28px] md:text-4xl font-bold mt-4 text-[#F5E9DC]'>{book.title}</h1>
 					<p className='text-2xl text-[#F5E9DC]/80 mt-2'>Price: {book.price}</p>
 					<a
 						href={book.link}

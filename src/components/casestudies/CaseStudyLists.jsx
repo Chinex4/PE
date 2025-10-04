@@ -13,7 +13,7 @@ const CaseStudies = () => {
 	};
 	return (
 		<section className=' text-[#F5E9DC] py-16 px-4'>
-			<h2 className='text-center uppercase text-2xl font-bold mb-12'>
+			<h2 className='text-center uppercase text-2xl font-bold mb-12 font-dela'>
 				View Most Of Our Case Studies<span className='text-primary'>.</span>
 			</h2>
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
