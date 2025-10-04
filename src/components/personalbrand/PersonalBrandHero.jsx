@@ -58,8 +58,10 @@ export default function PersonalBrandHero({
           </div>
 
           <div className="mt-8 lg:mt-6 flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-center font-dela">
-            <p className="text-primary text-xl font-semibold ">NGN 34,999</p>
-            <p className=" line-through">NGN 45,000</p>
+            <p className="text-primary text-xl font-semibold ">
+              NGN 34,999 ($23)
+            </p>
+            <p className=" line-through">NGN 45,000 ($30)</p>
           </div>
         </div>
 

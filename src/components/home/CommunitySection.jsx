@@ -8,7 +8,7 @@ const CommunitySection = () => {
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <img
             loading="lazy"
-            src="/images/ligero.jpg" // Replace with the actual image path
+            src="/images/newsss.jpg" // Replace with the actual image path
             alt="Community"
             className="rounded-lg shadow-lg w-full h-auto"
           />

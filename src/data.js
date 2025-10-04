@@ -254,7 +254,7 @@ export const resources = {
     // Add more starter pack items
     {
       title: "Personal Brand Profit System",
-      price: "$23 (NGN 34,499)",
+      price: "$23 (NGN 34,999)",
       image: "/images/personalbrand.png",
       pageLink: "/personalbrandprofitsystem",
       link: "https://selar.com/0103v0",
