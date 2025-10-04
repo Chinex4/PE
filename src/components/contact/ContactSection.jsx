@@ -60,7 +60,7 @@ const ContactSection = () => {
 									discuss your goals, challenges, and potential strategies to
 									move your brand forward.{' '}
 									<Link
-										to='/reach-out?type=Consultation'
+										to='/reach-out?type=contactpage-consultation'
 										className='text-primary underline'>
 										Schedule Your Call
 									</Link>

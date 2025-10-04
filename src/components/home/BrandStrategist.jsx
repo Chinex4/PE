@@ -28,7 +28,7 @@ const BrandStrategist = () => {
             closer to your full potential.
           </span>
         </p>
-        <MyButton to="/reach-out?type=Clarity-Call" label="Book A Clarity Call" />
+        <MyButton to="/reach-out?type=homepage-brandstrategist-section" label="Book A Clarity Call" />
       </div>
     </div>
   );

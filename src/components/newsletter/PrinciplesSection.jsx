@@ -7,12 +7,12 @@ const PrinciplesSection = () => {
       {/* Left Side */}
       <div className=" lg:flex lg:justify-center">
         <h2 className="text-2xl md:text-3xl font-bold uppercase leading-snug font-dela text-center">
-          NOT JUST EXPERIENCES,
+          NOT JUST MOTIVATION,
           <br />
-          NOT JUST LAWS BUT
+          NOT JUST STRATEGY, BUT
           <br />
           <span className="text-[#F4A261] pb-1 inline-block">
-            SIMPLE PRINCIPLES
+            CLARITY THAT TRANSFORMS
           </span>
         </h2>
 
@@ -39,48 +39,43 @@ const PrinciplesSection = () => {
 
       <div className="text-center lg:max-w-xl lg:mx-auto  text-navGray text-sm md:text-base space-y-5">
         <p>
-          It started with a simple observation.... <br /> Too many founders and
-          creators are sprinting toward growth, chasing speed, hacks, and hype,
-          without truly understanding what makes a brand stand out or a business
-          sustainable.
+          It started with a simple realization.... <br /> Too many people,
+          founders, creators, and professionals, are chasing growth, speed, and
+          visibility without true clarity. Everyone wants to grow fast, but few
+          stop to ask what foundation are they really building on?
         </p>
         <p>
-          I kept seeing talented people building without clarity. Launching
-          offers with no real positioning. Scaling businesses with shaky
-          foundations. And I knew what was missing, principles.
+          I kept seeing talented people with big dreams but no direction.
+          Launching ideas without alignment. Creating brands without a message.
+          Scaling without a solid foundation. And I realized what was missing,
+          clarity and principles.
         </p>
         <p>
           Not just more tactics. <br />
-          Not just another how-to thread. <br />
+          Not just another trend. <br />
           But deeper thinking. Better questions. <br />
           Clarity that creates confidence. <br />
         </p>
         <p>
-          So I built Mind & Market, a weekly letter for founders, brand
-          builders, and creators who want to scale with substance.
+          That’s why I built Limitless, a weekly letter for those who want to
+          grow with intention, not hype.
         </p>
         <p>
-          Each week, I study what works and what doesn’t in branding, marketing,
-          strategy, and mindset. Then I distill it into clear, thoughtful
-          insights you can use. Real lessons. No fluff. The kind of mental
-          shifts and frameworks that change how you build.
+          Each week, I share grounded insights on personal branding, mindset,
+          and strategy, lessons that help you think deeper, act clearer, and
+          build brands (and lives) that actually last.
         </p>
         <p>
           Because sometimes, what you need isn’t more noise, it’s sharper
-          thinking. Whether you're defining your brand, launching your next
-          offer, or shifting your mindset for growth, Join the letter list
-          today by subscribing.
+          thinking and meaningful direction. If you’re ready to grow with
+          clarity and become limitless, join the list today.
         </p>
       </div>
       <div className="-mt-2 text-center">
-        <a
-          className="
-					inline-block text-center bg-primary text-black px-6 py-3 rounded-md text-lg mx-auto
-				"
-          href=""
-        >
-          Sign Up Now &rarr;
-        </a>
+        <MyButton
+          label="Join Limtless"
+          href="https://substack.com/@preciousevans"
+        />
       </div>
     </section>
   );

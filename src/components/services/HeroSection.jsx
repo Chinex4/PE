@@ -15,7 +15,7 @@ const HeroSection = () => {
 				</p>
 				<MyButton
 					label='Get A Free Brand Audit'
-					to='/reach-out'
+					to='/reach-out?type=services-hero-section'
 				/>
 			</div>
 			<div className='mt-8'>

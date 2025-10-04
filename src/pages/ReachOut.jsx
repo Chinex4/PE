@@ -8,8 +8,11 @@ const ReachOut = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [calUrl, setCalUrl] = useState("#");
   const [searchParams] = useSearchParams();
+  console.log(searchParams);
 
   const callType = (searchParams.get("type") || "general").toLowerCase();
+  
+  console.log("`callType` is", callType);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -75,34 +78,34 @@ const ReachOut = () => {
             type="email"
             name="user_email"
             placeholder="Email address"
-            className="w-full p-3 rounded-md text-white bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
+            className="w-full p-3 rounded-md text-[#F5E9DC] bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
             required
           />
           <input
             type="tel"
             name="user_phone"
             placeholder="Phone Number"
-            className="w-full p-3 rounded-md text-white bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
+            className="w-full p-3 rounded-md text-[#F5E9DC] bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
             required
           />
           <input
             type="text"
             name="brand_handle"
             placeholder="Brand Handle"
-            className="w-full p-3 rounded-md text-white bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
+            className="w-full p-3 rounded-md text-[#F5E9DC] bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
             required
           />
           <input
             type="text"
             name="user_name"
             placeholder="Full Name"
-            className="w-full p-3 rounded-md text-white bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
+            className="w-full p-3 rounded-md text-[#F5E9DC] bg-[#1c1c1c] placeholder:text-navGray focus:outline-none"
             required
           />
           <textarea
             name="message"
             placeholder="Tell me a little about your brand and the problem you are facing and I will reach out to you in no time."
-            className="w-full p-3 text-white bg-[#1c1c1c] placeholder:text-navGray rounded-md focus:outline-none h-32"
+            className="w-full p-3 text-[#F5E9DC] bg-[#1c1c1c] placeholder:text-navGray rounded-md focus:outline-none h-32"
             required
           />
           <button
@@ -124,7 +127,7 @@ const ReachOut = () => {
               onClick={() => setIsModalOpen(false)}
             >
               <motion.div
-                className="bg-[#272727] text-white p-6 rounded-2xl shadow-xl max-w-sm w-[92%] text-center border border-white/10"
+                className="bg-[#272727] text-[#F5E9DC] p-6 rounded-2xl shadow-xl max-w-sm w-[92%] text-center border border-white/10"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 50, opacity: 0 }}
@@ -157,7 +160,7 @@ const ReachOut = () => {
                 </div>
 
                 <button
-                  className="mt-5 text-sm text-neutral-400 hover:text-white"
+                  className="mt-5 text-sm text-neutral-400 hover:text-[#F5E9DC]"
                   onClick={() => setIsModalOpen(false)}
                 >
                   Close

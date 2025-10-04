@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import smiley from "/images/smileyyy.svg";
 import MyButton from "../ui/Button";
 
@@ -17,7 +16,7 @@ const HeroSection = () => {
           completely lost. Book a call, let’s talk about it.
         </p>
         <div className="">
-          <MyButton label="Book a Call" to="/reach-out?type=Clarity-call" />
+          <MyButton label="Book a Call" to="/reach-out?type=homepage-cta" />
         </div>
       </div>
       <div className="mt-8">
