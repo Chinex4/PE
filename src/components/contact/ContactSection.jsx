@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { links } from '../../data';
 import emailjs from '@emailjs/browser';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
 	const form = useRef();
@@ -58,11 +59,11 @@ const ContactSection = () => {
 									Get started with a 30-minute discovery call where we’ll
 									discuss your goals, challenges, and potential strategies to
 									move your brand forward.{' '}
-									<a
-										href='#'
+									<Link
+										to='/reach-out?type=Consultation'
 										className='text-primary underline'>
 										Schedule Your Call
-									</a>
+									</Link>
 								</p>
 							</div>
 						</div>

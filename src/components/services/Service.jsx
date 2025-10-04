@@ -57,7 +57,7 @@ const Services = () => {
             actionable steps toward your goals.
           </p>
           <div class="mt-6 md:mt-[52px] flex flex-col lg:flex-row gap-4 text-center whitespace-nowrap text-sm">
-            <Link class="bg-primary text-black py-2 px-4 rounded-lg">
+            <Link to={"/reach-out?type=Services"} class="bg-primary text-black py-2 px-4 rounded-lg">
               Book A Call
             </Link>
             <Link class="border hover:bg-primary hover:text-black transition-all duration-300 border-primary text-primary py-2 px-4 rounded-lg">

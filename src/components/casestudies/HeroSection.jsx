@@ -15,7 +15,7 @@ const HeroSection = () => {
 					case study highlights the challenges, strategies, and successes that
 					drive impactful growth.
 				</p>
-				<MyButton label='Book A Call Now' to='/reach-out' />
+				<MyButton label='Book A Call Now' to='/reach-out?type=CaseStudy' />
 				{/* <Link
 					to='/reach-out'
 					className='btn bg-primary hover:bg-primary/80 mb-8 border-none text-lg text-black px-8'>

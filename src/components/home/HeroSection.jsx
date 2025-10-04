@@ -17,7 +17,7 @@ const HeroSection = () => {
           completely lost. Book a call, let’s talk about it.
         </p>
         <div className="">
-          <MyButton label="Book a Call" to="/reach-out" />
+          <MyButton label="Book a Call" to="/reach-out?type=Clarity-call" />
         </div>
       </div>
       <div className="mt-8">

@@ -43,7 +43,7 @@ function FAQ() {
                         <>
                           {faq.answer.split("[BOOK_LINK]")[0]}
                           <Link
-                            to="/contact"
+                            to="/reach-out?type=FAQ"
                             className="text-primary underline underline-offset-4 hover:opacity-90"
                           >
                             Book a Clarity Call
