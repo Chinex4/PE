@@ -145,7 +145,7 @@ export const resources = {
   latest: [
     {
       title: "Personal Brand Profit System",
-      price: "NGN 34,499",
+      price: "$23 (NGN 34,499)",
       image: "/images/personalbrand.png",
       pageLink: "/personalbrandprofitsystem",
       link: "https://selar.com/0103v0",
