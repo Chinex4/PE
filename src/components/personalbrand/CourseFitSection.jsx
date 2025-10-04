@@ -80,7 +80,8 @@ export default function CourseFitSection({
               {[
                 "Recorded Explanatory Videos",
                 "Ebook & Guides",
-                "Checklists"
+                "15mins Clarity Call",
+                "Checklists",
               ].map((t) => (
                 <span
                   key={t}
