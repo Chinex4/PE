@@ -25,7 +25,7 @@ const teamValues = [
 const myApproach = {
 	title: 'My Approach',
 	description:
-		'I believe a powerful brand strategy is more than just a logo or tagline; it’s about telling your brand’s story in a way that aligns with your goals and resonates with your audience. A brand strategy is one that builds trust and loyalty to give the audience a perception to keep desiring. Through in-depth consultation and research, I work alongside you to create a strategy that brings your vision to life.',
+		'I believe building a powerful personal brand goes far beyond visuals or social media presence, it’s about discovering who you are, clarifying your message, and positioning your value with intention. My approach is simple: clarity first, then strategy. Through deep conversations and guided frameworks, I help you uncover your authentic story, define your goals, and create a brand that aligns with your purpose and attracts the opportunities meant for you. Together, we turn confusion into clarity, potential into progress, and vision into visible results.',
 };
 
 // React component

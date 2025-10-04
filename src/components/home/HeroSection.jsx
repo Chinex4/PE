@@ -1,37 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import smiley from '/images/smileyyy.svg';
-import MyButton from '../ui/Button';
+import React from "react";
+import { Link } from "react-router-dom";
+import smiley from "/images/smileyyy.svg";
+import MyButton from "../ui/Button";
 
 const HeroSection = () => {
-	return (
-		<div className='text-[#F5E9DC] mt-16 lg:mt-28 flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
-			<div className='text-center lg:text-left max-w-2xl'>
-				<h1 className='text-4xl font-bold mb-4 uppercase font-dela'>
-					Do you know saying the right thing to your audience can be the
-					difference between 1X and 10X?
-				</h1>
-				<p className='text-lg mb-8 text-navGray'>
-					Fix your brand messaging, implement a solid strategy, and watch your
-					business grow in revenue and relevance.
-				</p>
-				<div className=''>
-					<MyButton
-						label='Book a Call'
-						to='/reach-out'
-					/>
-				</div>
-			</div>
-			<div className='mt-8'>
-				<img
-					loading='lazy'
-					src={smiley}
-					alt='Entrepreneur'
-					className='w-full lg:w-[83rem]'
-				/>
-			</div>
-		</div>
-	);
+  return (
+    <div className="text-[#F5E9DC] mt-16 lg:mt-28 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+      <div className="text-center lg:text-left max-w-2xl">
+        <h1 className="text-4xl font-bold mb-4 uppercase font-dela">
+          The Difference Between Where You Are & Where You Dream To Be is
+          Clarity & Action.
+        </h1>
+        <p className="text-lg mb-8 text-navGray">
+          I know exactly how it feels, having so much potential yet feeling like
+          you aren’t doing enough, or not even knowing where to start. Feeling
+          completely lost. Book a call, let’s talk about it.
+        </p>
+        <div className="">
+          <MyButton label="Book a Call" to="/reach-out" />
+        </div>
+      </div>
+      <div className="mt-8">
+        <img
+          loading="lazy"
+          src={smiley}
+          alt="Entrepreneur"
+          className="w-full lg:w-[83rem]"
+        />
+      </div>
+    </div>
+  );
 };
 
 export default HeroSection;

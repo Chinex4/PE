@@ -19,6 +19,7 @@ import AnimatedBackground from './components/AnimatedBackground'
 import AnimatedBlobs from './components/AnimatedBlobs';
 import NewsletterPlan from './pages/NewsLetterPlan';
 import PersonalBrand from './pages/PersonalBrand';
+import MaryWithTheVoice from './pages/MaryWithTheVoice';
 
 function App() {
 	return (
@@ -56,6 +57,10 @@ function App() {
 					<Route
 						path='/xquisite'
 						element={<CaseStudy />}
+					/>
+					<Route
+						path='/mary-with-the-voice'
+						element={<MaryWithTheVoice />}
 					/>
 					<Route
 						path='/case-studies'

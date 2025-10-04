@@ -79,7 +79,7 @@ const ResourceTabs = () => {
       <div className="flex flex-col md:flex-row gap-8 md:gap-6 mb-6">
         {/* Search Input with Label */}
         <div className="w-full md:w-1/2">
-          <label className="block mb-1 text-sm font-medium text-white">
+          <label className="block mb-1 text-sm font-medium text-[#F5E9DC]">
             Search Resources
           </label>
           <input
@@ -87,29 +87,29 @@ const ResourceTabs = () => {
             placeholder="Search resources..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-4 py-2 bg-[#1a1a1a] text-white border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            className="w-full px-4 py-2 bg-[#1a1a1a] text-[#F5E9DC] border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
         {/* Resource Category Dropdown with Label */}
         <div className="w-full md:w-1/2">
-          <label className="block mb-1 text-sm font-medium text-white">
+          <label className="block mb-1 text-sm font-medium text-[#F5E9DC]">
             Resource Categories
           </label>
           <Listbox value={activeTab} onChange={setActiveTab}>
             <div className="relative">
-              <Listbox.Button className="w-full py-2 pl-4 pr-10 text-left bg-[#1a1a1a] text-white border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary">
+              <Listbox.Button className="w-full py-2 pl-4 pr-10 text-left bg-[#1a1a1a] text-[#F5E9DC] border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary">
                 {activeTab.label}
                 <ChevronUpDownIcon className="absolute right-3 top-2 h-5 w-5 text-gray-400" />
               </Listbox.Button>
-              <Listbox.Options className="absolute z-10 mt-1 w-full bg-[#1a1a1a] text-white border rounded-md shadow-lg max-h-60 overflow-auto focus:outline-none">
+              <Listbox.Options className="absolute z-10 mt-1 w-full bg-[#1a1a1a] text-[#F5E9DC] border rounded-md shadow-lg max-h-60 overflow-auto focus:outline-none">
                 {tabs.map((tab) => (
                   <Listbox.Option
                     key={tab.id}
                     value={tab}
                     className={({ active }) =>
                       `cursor-pointer select-none px-4 py-2 ${
-                        active ? "bg-primary text-white" : "text-white"
+                        active ? "bg-primary text-[#F5E9DC]" : "text-[#F5E9DC]"
                       }`
                     }
                   >

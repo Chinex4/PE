@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SomethingToNote() {
   return (
-    <section className="relative text-white">
+    <section className="relative text-[#F5E9DC]">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         {/* Heading + underline accent */}
         <div className="text-center">

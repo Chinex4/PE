@@ -43,7 +43,7 @@ const Testimonials = () => {
 					<SwiperSlide
 						key={index}
 						onClick={() => openModal(testimonial)}
-						className='cursor-pointer bg-[#1C1C1C] text-white rounded-lg p-6 shadow-md h-[270px] flex flex-col justify-between hover:shadow-lg transition'>
+						className='cursor-pointer bg-[#1C1C1C] text-[#F5E9DC] rounded-lg p-6 shadow-md h-[270px] flex flex-col justify-between hover:shadow-lg transition'>
 						<div className='flex items-center space-x-4 mb-4'>
 							 <img loading="lazy"
 								className='w-10 h-10 md:w-12 md:h-12 rounded-full object-cover'
@@ -94,7 +94,7 @@ const Testimonials = () => {
 						aria-hidden='true'
 					/>
 
-					<div className='bg-[#1C1C1C] text-white p-6 rounded-lg z-50 max-w-md w-full relative shadow-lg'>
+					<div className='bg-[#1C1C1C] text-[#F5E9DC] p-6 rounded-lg z-50 max-w-md w-full relative shadow-lg'>
 						<Dialog.Title className='text-lg font-bold mb-2'>
 							{selectedTestimonial?.author}
 						</Dialog.Title>

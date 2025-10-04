@@ -9,7 +9,7 @@ const MyButton = ({ to = '', href = '', label = '', sec = false }) => {
 
 	const iconClasses =
 		'w-8 h-8 rounded-full bg-white flex items-center justify-center';
-	const labelClasses = `whitespace-nowrap ${sec ? 'text-white' : 'text-black'}`;
+	const labelClasses = `whitespace-nowrap ${sec ? 'text-[#F5E9DC]' : 'text-black'}`;
 
 	const content = (
 		<>

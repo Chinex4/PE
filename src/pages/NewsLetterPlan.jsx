@@ -49,7 +49,7 @@ const NewsletterPlan = () => {
 	};
 
 	return (
-		<section className='min-h-screen bg-[#171717] text-white px-6 py-16 flex items-center justify-center'>
+		<section className='min-h-screen bg-[#171717] text-[#F5E9DC] px-6 py-16 flex items-center justify-center'>
 			<Toaster />
 			<div className='w-full max-w-lg bg-zinc-900 p-8 rounded-xl shadow-lg'>
 				<h2 className='text-3xl font-bold text-primary mb-6 text-center'>
@@ -69,26 +69,26 @@ const NewsletterPlan = () => {
 						placeholder='Your full name'
 						value={name}
 						onChange={(e) => setName(e.target.value)}
-						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-white placeholder-gray-400'
+						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-[#F5E9DC] placeholder-gray-400'
 					/>
 					<input
 						type='email'
 						placeholder='Your email address'
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
-						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-white placeholder-gray-400'
+						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-[#F5E9DC] placeholder-gray-400'
 					/>
 					<input
 						type='text'
 						placeholder='Whatsapp Number (Optional)'
 						value={number}
 						onChange={(e) => setNumber(e.target.value)}
-						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-white placeholder-gray-400'
+						className='w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-[#F5E9DC] placeholder-gray-400'
 					/>
 
 					<button
 						type='submit'
-						className='w-full bg-primary hover:opacity-90 text-white font-semibold py-3 rounded transition-all duration-200'>
+						className='w-full bg-primary hover:opacity-90 text-[#F5E9DC] font-semibold py-3 rounded transition-all duration-200'>
 						Submit
 					</button>
 				</form>

@@ -2,9 +2,9 @@ import React from "react";
 
 export default function CourseFitSection({courseLink = "https://selar.com/7q87935pb5"}) {
   return (
-    <section className="text-white">
+    <section className="text-[#F5E9DC]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-        <div className="rounded-[28px] border border-white/5 bg-[#121212] shadow-[0_20px_80px_rgba(0,0,0,0.55)] px-5 sm:px-8 lg:px-12 py-8 sm:py-10 lg:py-14">
+        <div className="rounded-[28px] border border-white/5 bg-[#272727]/30 shadow-[0_20px_80px_rgba(0,0,0,0.55)] px-5 sm:px-8 lg:px-12 py-8 sm:py-10 lg:py-14">
           {/* Intro */}
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight">
             If you fall into either of these 2 categories, this course was built

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PersonalBrandHero({courseLink = "https://selar.com/7q87935pb5"}) {
   return (
-    <section className="relative overflow-hidden text-white">
+    <section className="relative overflow-hidden text-[#F5E9DC]">
       {/* Decorative vectors */}
       <img
         src="/images/infinity-vector.png"   /* <- replace path */
@@ -33,7 +33,7 @@ export default function PersonalBrandHero({courseLink = "https://selar.com/7q879
             <span className="block text-2xl md:text-3xl lg:text-5xl sm:text-4xl">
               Your Biggest Currency
             </span>
-            <span className="block text-2xl md:text-3xl lg:text-5xl sm:text-4xl text-primary">
+            <span className="block text-2xl md:text-3xl lg:text-5xl sm:text-4xl">
               When You Can Use It.
             </span>
           </h1>
