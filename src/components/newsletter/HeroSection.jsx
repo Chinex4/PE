@@ -18,7 +18,7 @@ const HeroSection = () => {
 
         <MyButton
           label="Subscribe Now For Free"
-          href="https://substack.com/@preciousevans"
+          to="/limitlesswithevansprecious/complete-your-subscription"
         />
       </div>
 

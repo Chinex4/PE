@@ -79,39 +79,62 @@ const Resources = () => {
             key={index}
             className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full max-w-[250px] md:max-w-[350px] mx-auto"
           >
-            <Link to={`/book/${encodeURIComponent(item.title)}`}>
-              <img
-                loading="lazy"
-                src={item.image}
-                alt={item.title}
-                className="w-full h-[180px] md:h-[350px] object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
-              />
-            </Link>
-            <div className="p-3 flex flex-col flex-grow justify-between">
-              <div>
-                <h3 className="font-semibold text-xs md:text-lg mb-1 text-black">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 mb-3 text-xs md:text-base">
-                  Available for: {item.price}
-                </p>
-              </div>
-              {item.pageLink ? (
-                <Link
-                  to={item.pageLink}
-                  className="inline-block w-full text-center bg-primary text-black px-3 py-2 rounded-md text-xs md:text-base mt-auto"
-                >
-                  Learn More
+            {item.pageLink ? (
+              <>
+                <Link to="/personalbrandprofitsystem">
+                  <img
+                    loading="lazy"
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-[180px] md:h-[350px] object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                  />
                 </Link>
-              ) : (
-                <button
-                  onClick={() => openForm(item)}
-                  className="inline-block w-full text-center bg-primary text-black px-3 py-2 rounded-md text-xs md:text-base mt-auto"
-                >
-                  Get Now
-                </button>
-              )}
-            </div>
+                <div className="p-3 flex flex-col flex-grow justify-between">
+                  <div>
+                    <h3 className="font-semibold text-xs md:text-lg mb-1 text-black">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 mb-3 text-xs md:text-base">
+                      Available for: {item.price}
+                    </p>
+                  </div>
+                  <Link
+                    to={item.pageLink}
+                    className="inline-block w-full text-center bg-primary text-black px-3 py-2 rounded-md text-xs md:text-base mt-auto"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <>
+                <Link to={`/book/${encodeURIComponent(item.title)}`}>
+                  <img
+                    loading="lazy"
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-[180px] md:h-[350px] object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                  />
+                </Link>
+                <div className="p-3 flex flex-col flex-grow justify-between">
+                  <div>
+                    <h3 className="font-semibold text-xs md:text-lg mb-1 text-black">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 mb-3 text-xs md:text-base">
+                      Available for: {item.price}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={() => openForm(item)}
+                    className="inline-block w-full text-center bg-primary text-black px-3 py-2 rounded-md text-xs md:text-base mt-auto"
+                  >
+                    Get Now
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>

@@ -28,7 +28,7 @@ const CommunitySection = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <MyButton
               label="Subscribe Now For Free"
-              href="https://substack.com/@preciousevans"
+              to="/limitlesswithevansprecious/complete-your-subscription"
             />
             <MyButton label="Learn More" to="/newsletter" sec={true} />
           </div>

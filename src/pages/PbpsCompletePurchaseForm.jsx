@@ -19,15 +19,15 @@ const PbpsCompletePurchaseForm = () => {
     const templateParams = {
       name,
       email,
-      number,
+      // number,
     };
 
     emailjs
       .send(
-        "service_zcid34g", // e.g. service_xxxxxx
-        "template_q849keb", // e.g. template_yyyyyy
+        "service_qkspffw",
+        "template_fzydfai",
         templateParams,
-        "_1zDbTqyA0_Su2Xpg" // e.g. 9VxRTHJWy6s...
+        "0RiVTGCzmj2-c6jzL"
       )
       .then(() => {
         toast.success(

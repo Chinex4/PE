@@ -20,6 +20,7 @@ import MaryWithTheVoice from "./pages/MaryWithTheVoice";
 import PbpsCompletePurchaseForm from "./pages/PbpsCompletePurchaseForm";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
+import LimitlessCompleteSubscription from "./pages/LimitlessCompleteSubscription";
 
 function App() {
   return (
@@ -45,6 +46,10 @@ function App() {
           <Route
             path="/personalbrandprofitsystem/complete-your-purchase"
             element={<PbpsCompletePurchaseForm />}
+          />
+          <Route
+            path="/limitlesswithevansprecious/complete-your-subscription"
+            element={<LimitlessCompleteSubscription />}
           />
           <Route
             path="/personalbrandprofitsystem"
