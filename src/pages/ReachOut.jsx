@@ -61,8 +61,8 @@ const ReachOut = () => {
   return (
     <div className="px-4 py-5 lg:px-[10rem] lg:py-[2rem] lg:mt-0">
       <div className="mt-8 lg:mt-28 py-16 px-4">
-        <h2 className="text-center text-[24px] text-primary leading-[1.1] font-dela font-bold mb-12">
-          Fill this form and I will reach out <br />
+        <h2 className="text-center text-[24px]  text-primary leading-[1.1] font-heading font-bold mb-12">
+          Fill this form and I will reach out <br className="hidden md:block" />
           to you shortly to get started
         </h2>
 
