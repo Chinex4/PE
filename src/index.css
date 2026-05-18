@@ -2,6 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+@font-face {
+	font-family: "Helvetica Now Display";
+	src: url("/fonts/helveticanowtext-bold-demo.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica Now Display";
+	src: url("/fonts/helveticanowtext-bolditalic-demo.ttf") format("truetype");
+	font-style: italic;
+	font-weight: 400 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica Now Display";
+	src: url("/fonts/helveticanowtext-black-demo.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 800 900;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica Now Display";
+	src: url("/fonts/helveticanowtext-blackitalic-demo.ttf") format("truetype");
+	font-style: italic;
+	font-weight: 800 900;
+	font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

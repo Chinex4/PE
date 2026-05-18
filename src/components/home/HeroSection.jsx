@@ -9,14 +9,14 @@ const HeroSection = () => {
             src="/images/icons/infinity-icon.png"
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute left-[44px] top-[53%] hidden w-[62px] -translate-y-1/2 object-contain sm:block"
+            className="pointer-events-none absolute left-[17rem] top-[53%] hidden w-[83px] -translate-y-1/2 object-contain sm:block"
           />
 
           <img
             src="/images/icons/star-icon.png"
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute right-[214px] top-[45%] hidden w-[31px] object-contain sm:block"
+            className="pointer-events-none absolute right-[18rem] top-[45%] hidden w-[33px] object-contain sm:block"
           />
 
           <div className="mx-auto mt-[6px] max-w-[560px] text-center">
@@ -24,7 +24,7 @@ const HeroSection = () => {
               You have the expertise, the experience, the story...
             </p>
 
-            <h1 className="mx-auto max-w-[532px] text-[33px] font-extrabold leading-[0.98] tracking-[0.01em] text-white sm:text-[38px]">
+            <h1 className=" text-[33px] font-extrabold leading-[0.98] tracking-[0.01em] text-white sm:text-[48px]">
               Now{" "}
               <span className="text-[#F4A261]">
                 show up as who you actually are
