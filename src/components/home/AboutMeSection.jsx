@@ -1,11 +1,19 @@
-import { Link } from "react-router-dom";
+import MyButton from "../ui/Button";
 
 const AboutMeSection = () => {
   return (
-    <section className="mx-auto py-16 text-[#F5E9DC] lg:py-20">
+    <section className="mx-auto py-16 text-[#F5E9DC]">
       <div className="relative overflow-hidden bg-[#171717]">
-        <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
-          <div className="relative z-10 py-10 lg:py-14">
+        <div className="flex flex-col items-center gap-10 md:flex-row md:items-center md:gap-12">
+          <div className="w-full shrink-0 md:w-[50%] xl:w-[48%]">
+            <img
+              src="/images/icons/smiley-on-stage.jpg"
+              alt="Precious Evans"
+              className="mx-auto w-full max-w-[460px] object-contain object-bottom md:max-w-[500px]"
+            />
+          </div>
+
+          <div className="relative z-10 w-full py-10 md:px-0 md:py-14">
             <p className="text-sm font-semibold uppercase tracking-normal text-primary">
               About
             </p>
@@ -18,7 +26,7 @@ const AboutMeSection = () => {
               .
             </h2>
 
-            <div className="mt-8 max-w-[35rem] space-y-5 text-base font-medium leading-snug text-[#F5E9DC]">
+            <div className="mb-3 mt-8 max-w-[35rem] space-y-5 text-base leading-snug text-[#F5E9DC]">
               <p>
                 I'm Precious Evans, and the people I work with aren't struggling
                 because they lack expertise.
@@ -53,20 +61,10 @@ const AboutMeSection = () => {
               </p>
             </div>
 
-            <Link
-              to="/reach-out?type=about-me"
-              className="mt-9 inline-flex h-12 min-w-[10.5rem] items-center justify-center rounded-sm bg-primary px-8 text-sm font-extrabold uppercase text-black transition hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-[#171717]"
-            >
-              Let's talk
-            </Link>
-          </div>
-
-          <div className="relative min-h-[28rem] lg:min-h-[52rem]">
-            <div className="absolute inset-x-0 bottom-0 top-10 lg:left-10" />
-            <img
-              src="/images/prepic.png"
-              alt="Precious Evans"
-              className="relative mx-auto h-full max-h-[50rem] w-auto object-contain object-bottom lg:absolute lg:bottom-0 lg:right-[-2rem]"
+            <MyButton
+              to="/reach-out?type=homepage-cta"
+              label="Let's talk >"
+              className="mt-[31px] flex h-[46px] w-[222px] items-center justify-center rounded-[2px] bg-primary text-[14px] font-medium uppercase text-black transition hover:bg-[#f5ad73] focus:outline-none focus:ring-2 focus:ring-[#F4A261] focus:ring-offset-2 focus:ring-offset-[#151515]"
             />
           </div>
         </div>

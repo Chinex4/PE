@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MyButton from "../ui/Button";
 
 const reminders = [
   "The real you is already enough to build from.",
@@ -10,7 +11,7 @@ const FinalTalkSection = () => {
   return (
     <section className="mx-auto py-16 text-[#F5E9DC] lg:py-20">
       <div className="grid gap-10 bg-[#171717] px-6 py-10 sm:px-10 lg:grid-cols-[0.72fr_1fr] lg:px-12 lg:py-14">
-        <div className="relative hidden overflow-hidden lg:block">
+        <div className="relative hidden overflow-hidden md:block">
           <img
             src="/images/icons/end-pic.jpeg"
             alt="Precious Evans"
@@ -23,14 +24,14 @@ const FinalTalkSection = () => {
             Still here?
           </p>
 
-          <h2 className="mt-3 max-w-[36rem] text-[2rem] font-extrabold leading-[1.04] tracking-normal text-white sm:text-[2.5rem]">
+          <h2 className="mt-3 max-w-[36rem] text-[2rem] font-extrabold leading-[1.04] tracking-normal text-[#F5E9DC] sm:text-[2.5rem]">
             You've read this far{" "}
             <span className="font-serif italic text-primary">
               for a reason.
             </span>
           </h2>
 
-          <div className="mt-7 max-w-[40rem] space-y-5 text-sm font-medium leading-snug text-[#F5E9DC]">
+          <div className="mt-7 max-w-[40rem] space-y-5 text-sm  leading-snug text-[#F5E9DC]">
             <p>
               Something on this page spoke to you. Maybe it was the part about
               hiding behind a polished persona. Maybe it was the realisation
@@ -38,7 +39,7 @@ const FinalTalkSection = () => {
               you yet.
             </p>
 
-            <p className="font-extrabold text-white">
+            <p className="font-extrabold text-[#F5E9DC]">
               Whatever it was, don't ignore it.
             </p>
 
@@ -49,7 +50,7 @@ const FinalTalkSection = () => {
               arrives.
             </p>
 
-            <p className="font-extrabold text-white">
+            <p className="font-extrabold text-[#F5E9DC]">
               You've already waited long enough.
             </p>
 
@@ -66,11 +67,11 @@ const FinalTalkSection = () => {
             </p>
           </div>
 
-          <ul className="mt-8 grid gap-4">
+          <ul className="mt-8 grid gap-4 mb-4">
             {reminders.map((item) => (
               <li
                 key={item}
-                className="grid grid-cols-[1.25rem_1fr] gap-4 text-sm font-semibold leading-tight text-white"
+                className="grid grid-cols-[1.25rem_1fr] gap-4 text-sm  leading-tight text-[#F5E9DC]"
               >
                 <span className="flex h-5 w-5 items-center justify-center bg-primary text-xs font-black text-black">
                   ✓
@@ -80,12 +81,7 @@ const FinalTalkSection = () => {
             ))}
           </ul>
 
-          <Link
-            to="/reach-out?type=final-cta"
-            className="mt-9 inline-flex h-12 min-w-[10.5rem] items-center justify-center rounded-sm bg-primary px-8 text-sm font-extrabold uppercase text-black transition hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-[#171717]"
-          >
-            Let's talk
-          </Link>
+          <MyButton to="/reach-out?type=homepage-cta" label="Let's talk >" className="mx-auto mt-[31px] flex h-[46px] w-[222px] items-center justify-center rounded-[2px] bg-primary text-[14px] font-medium uppercase text-black transition hover:bg-[#f5ad73] focus:outline-none focus:ring-2 focus:ring-[#F4A261] focus:ring-offset-2 focus:ring-offset-[#151515]" />
         </div>
       </div>
     </section>

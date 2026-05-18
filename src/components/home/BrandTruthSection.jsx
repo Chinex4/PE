@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Play } from "lucide-react";
+import MyButton from "../ui/Button";
 
 const painPoints = [
   "You show up as a polished, over-packaged version of yourself and it feels hollow",
@@ -10,7 +11,7 @@ const painPoints = [
 
 const BrandTruthSection = () => {
   return (
-    <section className="mx-auto py-16 text-white">
+    <section className="mx-auto py-16 text-[#F5E9DC]">
       <div className="relative grid min-h-[27rem] items-end gap-8 overflow-hidden lg:grid-cols-[1fr_0.95fr]">
         <div className="relative z-10 pb-7 pt-8 lg:max-w-[38rem] lg:pt-0">
           <h2 className="max-w-[35rem] text-[2rem] font-extrabold leading-[1.08] tracking-normal sm:text-[2.25rem] lg:text-[2.5rem]">
@@ -18,7 +19,7 @@ const BrandTruthSection = () => {
             <span className="text-primary">your brand.</span>
           </h2>
 
-          <p className="mt-5 max-w-[22rem] text-sm leading-snug text-white">
+          <p className="mt-5 max-w-[22rem] text-sm leading-snug text-[#F5E9DC]">
             You've put in the work and you know your field. But when it comes to
             showing up online, something holds you back.
           </p>
@@ -27,7 +28,7 @@ const BrandTruthSection = () => {
             {painPoints.map((point) => (
               <li
                 key={point}
-                className="grid grid-cols-[0.9rem_1fr] gap-4 text-sm font-medium leading-snug text-white"
+                className="grid grid-cols-[0.9rem_1fr] gap-4 text-sm  leading-snug text-[#F5E9DC]"
               >
                 <span className="mt-[0.45rem] h-[0.18rem] w-3 rounded-full bg-primary" />
                 <span>{point}</span>
@@ -66,16 +67,11 @@ const BrandTruthSection = () => {
             refer you.
           </p>
 
-          <p className="mt-7 text-sm font-extrabold leading-tight">
+          <p className="mt-7 mb-3 text-sm font-extrabold leading-tight">
             That's what I help you unlock.
           </p>
 
-          <Link
-            to="/reach-out?type=homepage-cta"
-            className="mt-6 inline-flex h-10 min-w-[8.9rem] items-center justify-center rounded-sm bg-primary px-6 text-sm font-medium uppercase text-black transition hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-[#F5E9DC]"
-          >
-            Book a call &gt;
-          </Link>
+          <MyButton to="/reach-out?type=homepage-cta" label="Book a call &gt;" className="mx-auto mt-[31px] flex h-[46px] w-[222px] items-center justify-center rounded-[2px] bg-primary text-[14px] font-medium uppercase text-black transition hover:bg-[#f5ad73] focus:outline-none focus:ring-2 focus:ring-[#F4A261] focus:ring-offset-2 focus:ring-offset-[#151515]" />
         </div>
 
         <button

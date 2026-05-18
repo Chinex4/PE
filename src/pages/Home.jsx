@@ -19,7 +19,7 @@ function Home() {
 		<div className='home-page px-4 pb-5 lg:px-[10rem] lg:pb-[2rem]'>
       <SEO />
       <HeroSection />
-      <SponsorsCarousel />
+      {/* <SponsorsCarousel /> */}
       <TestimonialsSection />
       <BrandTruthSection />
       <TrueMethodSection />

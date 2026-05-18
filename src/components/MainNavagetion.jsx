@@ -41,7 +41,7 @@ const MainNavigation = () => {
 	}, []);
 
 	return (
-		<header className="max-w-7xl mx-auto flex items-center justify-between pt-[82px]">
+		<header className="max-w-7xl px-4 lg:px-0 mx-auto flex items-center justify-between pt-[2rem] lg:pt-[82px]">
           <Link to="/" aria-label="Precious Evans home">
             <img
               src="/images/logo.svg"
@@ -54,7 +54,7 @@ const MainNavigation = () => {
             src="/images/icons/pawn-icon.png"
             alt=""
             aria-hidden="true"
-            className="mr-[104px] size-10 object-contain"
+            className=" size-10 object-contain"
           />
         </header>
 	);

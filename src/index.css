@@ -6,7 +6,7 @@
 	font-family: "Helvetica Now Display";
 	src: url("/fonts/helveticanowtext-bold-demo.ttf") format("truetype");
 	font-style: normal;
-	font-weight: 400 700;
+	font-weight: 700;
 	font-display: swap;
 }
 
@@ -14,7 +14,7 @@
 	font-family: "Helvetica Now Display";
 	src: url("/fonts/helveticanowtext-bolditalic-demo.ttf") format("truetype");
 	font-style: italic;
-	font-weight: 400 700;
+	font-weight: 700;
 	font-display: swap;
 }
 
@@ -22,7 +22,7 @@
 	font-family: "Helvetica Now Display";
 	src: url("/fonts/helveticanowtext-black-demo.ttf") format("truetype");
 	font-style: normal;
-	font-weight: 800 900;
+	font-weight: 900;
 	font-display: swap;
 }
 
@@ -30,7 +30,7 @@
 	font-family: "Helvetica Now Display";
 	src: url("/fonts/helveticanowtext-blackitalic-demo.ttf") format("truetype");
 	font-style: italic;
-	font-weight: 800 900;
+	font-weight: 900;
 	font-display: swap;
 }
 
@@ -45,7 +45,8 @@ html {
 }
 
 .home-page {
-	font-family: "Helvetica Now Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
 .home-page :where(h1, h2, h3, h4, h5, h6),

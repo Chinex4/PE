@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MyButton from "../ui/Button";
 
 const methodSteps = [
   {
@@ -43,16 +44,16 @@ const outcomes = [
 
 const TrueMethodSection = () => {
   return (
-    <section className="mx-auto grid gap-12 py-20 text-white lg:grid-cols-[1fr_0.87fr] lg:gap-20 lg:py-24">
+    <section className="mx-auto grid gap-12 py-20 text-[#F5E9DC] lg:grid-cols-[1fr_0.87fr] lg:gap-20 lg:py-24">
       <div>
-        <p className="text-sm leading-none text-white">Authenticity Framework</p>
+        <p className="text-sm leading-none text-[#F5E9DC]">Authenticity Framework</p>
 
         <h2 className="mt-3 text-[2.2rem] font-extrabold leading-none tracking-normal sm:text-[2.6rem]">
           The{" "}
           <span className="font-serif italic text-primary">TRUE</span> Method
         </h2>
 
-        <p className="mt-4 max-w-[27rem] text-lg font-medium leading-tight text-white">
+        <p className="mt-4 max-w-[27rem] text-lg  leading-tight text-[#F5E9DC]">
           The framework that gives you a legacy and builds your brand around the
           only thing no one can copy, which is YOU.
         </p>
@@ -61,7 +62,7 @@ const TrueMethodSection = () => {
           {methodSteps.map((step) => (
             <p
               key={step.label}
-              className="max-w-[27rem] text-lg font-medium leading-tight text-white"
+              className="max-w-[27rem] text-lg  leading-tight text-[#F5E9DC]"
             >
               <span className="font-serif text-3xl font-bold italic text-primary">
                 {step.label.charAt(0)}
@@ -87,7 +88,7 @@ const TrueMethodSection = () => {
                 <dt className="text-lg font-medium italic leading-none">
                   {outcome.phase}
                 </dt>
-                <dd className="text-sm font-medium leading-none">
+                <dd className="text-sm leading-none">
                   {outcome.result}
                 </dd>
               </div>
@@ -96,17 +97,13 @@ const TrueMethodSection = () => {
         </div>
 
         <div className="mt-8 border-t border-black/15 pt-5">
-          <p className="max-w-[20rem] text-sm font-medium leading-tight">
+          <p className="max-w-[20rem] text-sm mb-3 leading-tight">
             After this, we build your personal brand with you together, holding
             your hand at every stage till you can stand strong.
           </p>
 
-          <Link
-            to="/reach-out?type=true-method"
-            className="mt-7 flex h-12 w-full items-center justify-center rounded-sm bg-primary px-6 text-sm font-medium uppercase text-black transition hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-[#F5E9DC]"
-          >
-            Book a call &gt;
-          </Link>
+          <MyButton to="/reach-out?type=homepage-cta" label="Book a call &gt;" className="mx-auto mt-[31px] flex h-[46px] w-[222px] items-center justify-center rounded-[2px] bg-primary text-[14px] font-medium uppercase text-black transition hover:bg-[#f5ad73] focus:outline-none focus:ring-2 focus:ring-[#F4A261] focus:ring-offset-2 focus:ring-offset-[#151515]" />
+
         </div>
       </div>
     </section>
