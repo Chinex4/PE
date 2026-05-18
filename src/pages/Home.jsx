@@ -1,31 +1,36 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import HeroSection from '../components/home/HeroSection';
 import SponsorsCarousel from '../components/home/SponsorsCarousel';
-import BrandStrategist from '../components/home/BrandStrategist';
-import Testimonials from '../components/home/Testimonials';
-import MediaLinks from '../components/home/MediaLinks';
+import BrandTruthSection from '../components/home/BrandTruthSection';
+import TrueMethodSection from '../components/home/TrueMethodSection';
+import WhoThisIsForSection from '../components/home/WhoThisIsForSection';
+import AboutMeSection from '../components/home/AboutMeSection';
+import TestimonialsSection from '../components/home/Testimonials';
 import CommunitySection from '../components/home/CommunitySection';
 import ContactForm from '../components/ContactForm';
 import Resources from '../components/home/Resources';
 import YoutubeSection from '../components/home/YoutubeSection';
 import FAQ from '../components/FAQ';
+import FinalTalkSection from '../components/home/FinalTalkSection';
 import CaseStudy from '../components/home/CaseStudy';
 
 function Home() {
 	return (
-		<div className='px-4 py-5 lg:px-[10rem] lg:pb-[2rem] mt-8 lg:mt-0'>
+		<div className='home-page px-4 pb-5 lg:px-[10rem] lg:pb-[2rem]'>
       <HeroSection />
       <SponsorsCarousel />
-      <BrandStrategist />
-      <Resources />
+      <TestimonialsSection />
+      <BrandTruthSection />
+      <TrueMethodSection />
+      <WhoThisIsForSection />
+      <AboutMeSection />
+      {/* <Resources /> */}
       <CaseStudy />
-      <YoutubeSection />
-      <Testimonials />
+      {/* <YoutubeSection /> */}
       {/* <MediaLinks /> */}
-      <CommunitySection /> 
+      {/* <CommunitySection />  */}
       <FAQ />
-      <ContactForm />
+      <FinalTalkSection />
+      {/* <ContactForm /> */}
     </div>
 	);
 }

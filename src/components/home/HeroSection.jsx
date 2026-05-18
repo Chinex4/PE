@@ -1,33 +1,53 @@
-import React from "react";
-import smiley from "/images/smileyyy.svg";
-import MyButton from "../ui/Button";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div className="text-[#F5E9DC] mt-16 lg:mt-28 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
-      <div className="text-center lg:text-left max-w-2xl">
-        <h1 className="text-2xl md:text-[28px] md:text-4xl font-bold mb-4 uppercase font-dela">
-          In building your personal brand, The Difference Between Where You Are
-          & Where You Dream To Be is Clarity & Action.
-        </h1>
-        <p className="text-lg mb-8 text-navGray">
-          I know exactly how it feels, having so much potential yet feeling like
-          you aren’t doing enough, or not even knowing where to start. Feeling
-          completely lost. Book a call, let’s talk about it.
-        </p>
-        <div className="">
-          <MyButton label="Book a Call" to="/reach-out?type=homepage-cta" />
+    <section className="relative overflow-hidden bg-[#171717] text-[#F5E9DC]">
+      <div className="mx-auto flex w-full flex-col px-8 sm:px-12 lg:px-0">
+        <div className="relative flex items-center justify-center py-[10rem]">
+          <img
+            src="/images/icons/infinity-icon.png"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute left-[44px] top-[53%] hidden w-[62px] -translate-y-1/2 object-contain sm:block"
+          />
+
+          <img
+            src="/images/icons/star-icon.png"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute right-[214px] top-[45%] hidden w-[31px] object-contain sm:block"
+          />
+
+          <div className="mx-auto mt-[6px] max-w-[560px] text-center">
+            <p className="mb-[18px] text-[14px] font-semibold leading-none text-white">
+              You have the expertise, the experience, the story...
+            </p>
+
+            <h1 className="mx-auto max-w-[532px] text-[33px] font-extrabold leading-[0.98] tracking-[0.01em] text-white sm:text-[38px]">
+              Now{" "}
+              <span className="text-[#F4A261]">
+                show up as who you actually are
+              </span>{" "}
+              and watch everything change.
+            </h1>
+
+            <p className="mx-auto mt-[20px] max-w-[376px] text-[15px] leading-[1.25] text-white/90">
+              You don't need a new persona. You need permission to be yourself,
+              a clear path to build your personal brand around it, and someone
+              who'll help you discover exactly how to get there.
+            </p>
+
+            <Link
+              to="/reach-out?type=homepage-cta"
+              className="mx-auto mt-[31px] flex h-[46px] w-[222px] items-center justify-center rounded-[2px] bg-primary text-[14px] font-medium uppercase text-black transition hover:bg-[#f5ad73] focus:outline-none focus:ring-2 focus:ring-[#F4A261] focus:ring-offset-2 focus:ring-offset-[#151515]"
+            >
+              Book a call &gt;
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="mt-8">
-        <img
-          loading="lazy"
-          src={smiley}
-          alt="Entrepreneur"
-          className="w-full lg:w-[83rem]"
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 

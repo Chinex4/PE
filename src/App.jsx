@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import Resources from "./pages/Resources";
 import Services from "./pages/Services";
 import "./App.css";
-import MainNavagetion from "./components/MainNavagetion";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -21,6 +20,7 @@ import PbpsCompletePurchaseForm from "./pages/PbpsCompletePurchaseForm";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
 import LimitlessCompleteSubscription from "./pages/LimitlessCompleteSubscription";
+import MainNavigation from "./components/MainNavagetion";
 
 function App() {
   return (
@@ -28,8 +28,8 @@ function App() {
       <AnimatedBackground />
       {/* <AnimatedBlobs /> */}
       <div className="max-w-[100rem] relative z-20 mx-auto">
-        <MainNavagetion />
         <ScrollToTop />
+        <MainNavigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resources" element={<Resources />} />

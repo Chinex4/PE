@@ -15,6 +15,7 @@ export default {
 			fontFamily: {
 				sans: ['Poppins', 'Arial', 'sans-serif'], // Fallback to Arial if Helvetica isn't available
 				dela: ['Dela Gothic One', 'Arial', 'sans-serif'], // Fallback to Arial if Helvetica isn't available
+				heading: ['League Spartan', 'Arial', 'sans-serif'], // Fallback to Arial if Helvetica isn't available
 			},
 			colors: {
 				primary: '#F4A261',
@@ -23,6 +24,4 @@ export default {
 			},
 		},
 	},
-	plugins: [require('daisyui')],
-	themes: ['light', 'dark', 'cupcake', 'black'],
 };
