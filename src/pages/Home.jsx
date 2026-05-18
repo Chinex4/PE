@@ -12,10 +12,12 @@ import YoutubeSection from '../components/home/YoutubeSection';
 import FAQ from '../components/FAQ';
 import FinalTalkSection from '../components/home/FinalTalkSection';
 import CaseStudy from '../components/home/CaseStudy';
+import SEO from '../components/SEO';
 
 function Home() {
 	return (
 		<div className='home-page px-4 pb-5 lg:px-[10rem] lg:pb-[2rem]'>
+      <SEO />
       <HeroSection />
       <SponsorsCarousel />
       <TestimonialsSection />
