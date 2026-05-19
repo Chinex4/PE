@@ -32,13 +32,40 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Deploy dist folder to cPanel public_html
-        uses: easingthemes/ssh-deploy@main
+      - name: Prepare remote deploy folder
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.CPANEL_SSH_HOST }}
-          REMOTE_USER: ${{ secrets.CPANEL_SSH_USER }}
-          REMOTE_PORT: ${{ secrets.CPANEL_SSH_PORT }}
-          SOURCE: "dist/"
-          TARGET: "/home/precio74/public_html/"
-          ARGS: "-rlgoDzvc --delete"
+          host: ${{ secrets.CPANEL_SSH_HOST }}
+          username: ${{ secrets.CPANEL_SSH_USER }}
+          key: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.CPANEL_SSH_PORT }}
+          script: |
+            rm -rf /home/precio74/deploy_tmp
+            mkdir -p /home/precio74/deploy_tmp
+
+      - name: Upload build files to cPanel
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.CPANEL_SSH_HOST }}
+          username: ${{ secrets.CPANEL_SSH_USER }}
+          key: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.CPANEL_SSH_PORT }}
+          source: "dist/*"
+          target: "/home/precio74/deploy_tmp"
+          strip_components: 1
+
+      - name: Move build files into public_html
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.CPANEL_SSH_HOST }}
+          username: ${{ secrets.CPANEL_SSH_USER }}
+          key: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.CPANEL_SSH_PORT }}
+          script: |
+            mkdir -p /home/precio74/public_html
+
+            find /home/precio74/public_html -mindepth 1 -maxdepth 1 ! -name ".well-known" -exec rm -rf {} +
+
+            cp -a /home/precio74/deploy_tmp/. /home/precio74/public_html/
+
+            rm -rf /home/precio74/deploy_tmp
