@@ -6,7 +6,7 @@ const CaseStudy = () => {
   return (
     <section className="text-[#F5E9DC] py-16 px-4">
       <div class="">
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-12 uppercase">
+        <h2 className="text-center text-3xl md:text-4xl font-bold font-heading mb-12">
           Case Studies
           <span className="text-5xl text-primary">.</span>
         </h2>
@@ -39,7 +39,7 @@ const CaseStudy = () => {
             </p>
 
             {/* <!-- Call-to-Action Button --> */}
-            <MyButton to="/mary-with-the-voice" label="View More Case Studies" />
+            <MyButton to="/mary-with-the-voice" label="View Case Study" />
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const reminders = [
 const FinalTalkSection = () => {
   return (
     <section className="mx-auto py-16 text-[#F5E9DC] lg:py-20">
-      <div className="grid gap-10 bg-[#171717] px-6 py-10 sm:px-10 lg:grid-cols-[0.72fr_1fr] lg:px-12 lg:py-14">
+      <div className="grid gap-10 bg-[#171717] py-10 sm:px-10 lg:grid-cols-[0.72fr_1fr] lg:px-12 lg:py-14">
         <div className="relative hidden overflow-hidden md:block">
           <img
             src="/images/icons/end-pic.jpeg"

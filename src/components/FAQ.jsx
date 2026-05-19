@@ -1,5 +1,12 @@
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  ThemeProvider,
+  createTheme,
+} from "@mui/material";
+import { Minus, Plus } from "lucide-react";
 import MyButton from "./ui/Button";
 
 const faqs = [
@@ -52,49 +59,125 @@ const faqs = [
   },
 ];
 
-function FAQ() {
-  return (
-    <section className="text-[#F5E9DC] py-16 px-4">
-      <div className="flex flex-col items-center justify-center gap-12 max-w-6xl mx-auto">
-        {/* Left Section */}
-        <div className="text-center lg:text-center">
-          <h2 className="text-2xl font-bold mb-8 uppercase font-dela">
-            Everything you’ve been wondering but haven’t asked yet.
-          </h2>
-          <p className="mt-2 text-navGray">
-            Do you have any questions about building your brand or ready to get
-            started? Dive into our FAQs for quick answers, or reach out
-            directly. I’m just a message away!
-          </p>
-          <div className="mt-6">
-            <MyButton to="/contact" label="Send A message &rarr;" />
-          </div>
-        </div>
+const faqTheme = createTheme({
+  palette: {
+    mode: "dark",
+    primary: { main: "#F4A261" },
+  },
+  typography: {
+    fontFamily: "Poppins, Arial, sans-serif",
+  },
+});
 
-        {/* Right Section */}
-        <div className="space-y-4 w-full">
-          {faqs.map((faq, index) => (
-            <Disclosure key={index}>
-              {({ open }) => (
-                <div className="border-b border-[#F5E9DC] pb-2">
-                  <Disclosure.Button className="flex justify-between items-center w-full py-4 text-left text-lg">
-                    <span className="flex-1">{faq.question}</span>
-                    <ChevronUpIcon
-                      className={`w-5 h-5 min-w-[20px] min-h-[20px] text-[#F5E9DC] transition-transform ${
-                        open ? "rotate-180" : "rotate-0"
+function FAQ() {
+  const [expanded, setExpanded] = useState(0);
+
+  const handleChange = (index) => (_, isExpanded) => {
+    setExpanded(isExpanded ? index : false);
+  };
+
+  return (
+    <ThemeProvider theme={faqTheme}>
+      <section className="py-16 text-[#F5E9DC] sm:py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <div>
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.26em] text-primary">
+                FAQ
+              </p>
+              <h2 className="max-w-2xl mx-auto font-heading text-3xl font-bold leading-tight md:text-4xl">
+                Everything you've been wondering but haven't asked yet.
+              </h2>
+            </div>
+            <div className="">
+              <p className="max-w-xl mx-auto text-sm leading-6 text-neutral-400 lg:max-w-md">
+                Quick answers about the personal brand process, what makes it
+                different, and how to know if you're ready.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-2 lg:gap-6">
+            {faqs.map((faq, index) => {
+              const isOpen = expanded === index;
+
+              return (
+                <Accordion
+                  key={faq.question}
+                  expanded={isOpen}
+                  onChange={handleChange(index)}
+                  disableGutters
+                  square={false}
+                  className={isOpen ? "lg:row-span-2" : ""}
+                  sx={{
+                    bgcolor: isOpen ? "#1F1B17" : "#171717",
+                    color: "#F5E9DC",
+                    border: isOpen
+                      ? "1px solid rgba(244,162,97,0.55)"
+                      : "1px solid rgba(255,255,255,0.09)",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    boxShadow: isOpen
+                      ? "0 20px 50px rgba(0,0,0,0.32)"
+                      : "none",
+                    transition:
+                      "border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease",
+                    "&:before": { display: "none" },
+                    "&.Mui-expanded": { margin: 0 },
+                  }}
+                >
+                  <AccordionSummary
+                    expandIcon={
+                      isOpen ? (
+                        <Minus size={21} color="#F4A261" strokeWidth={2.4} />
+                      ) : (
+                        <Plus size={21} color="#F5E9DC" strokeWidth={2.4} />
+                      )
+                    }
+                    sx={{
+                      minHeight: { xs: 74, sm: 86 },
+                      px: { xs: 2.25, sm: 3.5 },
+                      py: 1.5,
+                      "&.Mui-expanded": {
+                        minHeight: { xs: 74, sm: 86 },
+                      },
+                      "& .MuiAccordionSummary-content": {
+                        alignItems: "center",
+                        gap: 2.5,
+                        my: 0,
+                      },
+                      "& .MuiAccordionSummary-content.Mui-expanded": {
+                        my: 0,
+                      },
+                    }}
+                  >
+                    <span
+                      className={`mr-2 h-[2px] w-5 shrink-0 rounded-full ${
+                        isOpen ? "bg-primary" : "bg-white/50"
                       }`}
                     />
-                  </Disclosure.Button>
-                  <Disclosure.Panel className="text-navGray pb-4">
-                    {faq.answer}
-                  </Disclosure.Panel>
-                </div>
-              )}
-            </Disclosure>
-          ))}
+                    <span className="text-base font-semibold leading-6 text-[#F5E9DC] sm:text-lg">
+                      {faq.question}
+                    </span>
+                  </AccordionSummary>
+                  <AccordionDetails
+                    sx={{
+                      px: { xs: 2.25, sm: 3.5 },
+                      pb: { xs: 3, sm: 4 },
+                      pt: 0,
+                    }}
+                  >
+                    <p className="max-w-xl pl-9 text-sm leading-7 text-neutral-400 sm:pl-[3.25rem]">
+                      {faq.answer}
+                    </p>
+                  </AccordionDetails>
+                </Accordion>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </ThemeProvider>
   );
 }
 
