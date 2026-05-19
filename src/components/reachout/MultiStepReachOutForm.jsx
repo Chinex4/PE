@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Dialog, Transition } from "@headlessui/react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import {
   Alert,
@@ -11,7 +12,9 @@ import {
   ThemeProvider,
   createTheme,
 } from "@mui/material";
+import { CheckCircle } from "lucide-react";
 import { Controller, useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import ChoiceGroup from "./ChoiceGroup";
 import FormStepWrapper from "./FormStepWrapper";
@@ -443,9 +446,11 @@ const steps = [
 ];
 
 const MultiStepReachOutForm = () => {
+  const navigate = useNavigate();
   const [activeStep, setActiveStep] = useState(0);
   const [submitStatus, setSubmitStatus] = useState("idle");
   const [submitError, setSubmitError] = useState("");
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
 
   const {
     control,
@@ -517,6 +522,7 @@ const MultiStepReachOutForm = () => {
       setSubmitStatus("success");
       reset(defaultReachOutValues);
       setActiveStep(0);
+      setIsSuccessModalOpen(true);
     } catch (error) {
       console.error(error);
       setSubmitStatus("error");
@@ -524,6 +530,11 @@ const MultiStepReachOutForm = () => {
         "Something went wrong while sending your application. Please try again."
       );
     }
+  };
+
+  const handleSuccessModalClose = () => {
+    setIsSuccessModalOpen(false);
+    navigate("/");
   };
 
   return (
@@ -555,21 +566,6 @@ const MultiStepReachOutForm = () => {
 
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="px-5 py-6 sm:px-7 sm:py-8">
-            {submitStatus === "success" ? (
-              <Alert
-                severity="success"
-                sx={{
-                  bgcolor: "rgba(46,125,50,0.16)",
-                  color: "#D7F5DD",
-                  border: "1px solid rgba(129,199,132,0.35)",
-                  "& .MuiAlert-icon": { color: "#81c784" },
-                }}
-              >
-                Thank you. Your application has been received. I&apos;ll reach
-                out to you shortly.
-              </Alert>
-            ) : null}
-
             {submitError ? (
               <Alert
                 severity="error"
@@ -619,6 +615,63 @@ const MultiStepReachOutForm = () => {
           </div>
         </form>
       </div>
+
+      <Transition appear show={isSuccessModalOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="relative z-50"
+          onClose={handleSuccessModalClose}
+        >
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-200"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-150"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/75 backdrop-blur-sm" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center px-4 py-8">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-200"
+                enterFrom="opacity-0 translate-y-4 scale-95"
+                enterTo="opacity-100 translate-y-0 scale-100"
+                leave="ease-in duration-150"
+                leaveFrom="opacity-100 translate-y-0 scale-100"
+                leaveTo="opacity-0 translate-y-4 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md overflow-hidden rounded-2xl border border-primary/35 bg-[#171717] p-6 text-center shadow-2xl shadow-black/50">
+                  <div className="mx-auto flex size-14 items-center justify-center rounded-full border border-primary/35 bg-primary/15 text-primary">
+                    <CheckCircle size={30} strokeWidth={2.2} />
+                  </div>
+
+                  <Dialog.Title className="mt-5 font-heading text-2xl font-bold leading-tight text-[#F5E9DC]">
+                    Request received
+                  </Dialog.Title>
+
+                  <Dialog.Description className="mt-3 text-sm leading-6 text-neutral-300">
+                    Thank you. Your request has been received. I&apos;ll
+                    reach out to you shortly.
+                  </Dialog.Description>
+
+                  <button
+                    type="button"
+                    onClick={handleSuccessModalClose}
+                    className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-bold text-black transition hover:bg-[#f7b47c] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-[#171717]"
+                  >
+                    Back to home
+                  </button>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
     </ThemeProvider>
   );
 };
