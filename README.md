@@ -1,40 +1,28 @@
-# Precious Evans Website
+# Precious Evans
 
-React + Vite website.
+Identity, purpose and personal branding platform. Existing React 18, Vite 5, React Router 6 and Tailwind 3 stack; EmailJS enquiry delivery. Primary pages are prerendered at build time and hydrated in React. Legacy resource, case-study and purchase routes remain available.
 
-## Reach-out Form Email Setup
-
-The `/reach-out` application form sends email through EmailJS from the React
-client. EmailJS public keys are intended for browser use, but keep the values in
-environment variables so setup stays clean across local and deployed builds.
-
-Create a local `.env.local` file from `.env.example`:
-
-```bash
-VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
-VITE_EMAILJS_ADMIN_TEMPLATE_ID=your_admin_template_id
-VITE_EMAILJS_USER_TEMPLATE_ID=your_optional_user_confirmation_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
-```
-
-- `VITE_EMAILJS_SERVICE_ID`: your EmailJS service id.
-- `VITE_EMAILJS_ADMIN_TEMPLATE_ID`: the template that sends the full
-  application to you.
-- `VITE_EMAILJS_USER_TEMPLATE_ID`: optional template for the applicant
-  confirmation email.
-- `VITE_EMAILJS_PUBLIC_KEY`: your EmailJS public key.
-
-The form sends template variables such as `full_name`, `user_email`,
-`phone`, `brand_handle`, `profile_type`, `online_footprint`,
-`monthly_revenue`, `urgent_problems`, `content_creation`, `brand_goals`,
-`investment_range`, `done_for_you_fit`, `weekly_time`, `start_timeline`,
-`extra_notes`, `submitted_at`, and a full plain-text `message`.
-
-To test locally, run:
-
-```bash
+```sh
+npm ci
+cp .env.example .env.local
 npm run dev
 ```
 
-Open `/reach-out`, complete the form, and submit. For deployment, add the same
-`VITE_EMAILJS_*` variables in Vercel Project Settings before building.
+Fill confirmed public configuration only. Never put secret API keys in VITE variables. Blank booking and EmailJS configuration gives an honest unavailable state.
+
+```sh
+npm run lint
+npm run typecheck
+npm test
+npm run build
+npm run preview
+```
+
+Copy and images: `src/editorial/content.js`. Checked contract: `src/editorial/schema.ts`. SEO: `src/editorial/metadata.js`. Tokens: `src/editorial/editorial.css`.
+
+- [Repository audit](docs/repo-audit.md)
+- [Design decisions and reference analysis](docs/design-notes.md)
+- [Configuration and content editing](docs/configuration.md)
+- [Verification and remaining release work](docs/verification.md)
+
+No production deployment is part of this branch. See the handoff for required owner configuration and outstanding confirmation.
