@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet-async";
 const siteUrl = "https://preciousevans.com";
 const siteName = "Precious Evans";
 const defaultTitle =
-  "Precious Evans | Personal Brand Strategist for Experts, Coaches and Professionals";
+  "Precious Evans | Identity, Purpose & Personal Branding";
 const defaultDescription =
-  "Build a personal brand around who you really are. Precious Evans helps corporate professionals, entrepreneurs and coaches clarify their story, voice and positioning through the T.R.U.E. Method.";
+  "Precious Evans is a strategist, speaker, teacher and coach working across identity, purpose and personal branding. He helps young people find direction and young entrepreneurs build with intention.";
 const defaultImage = `${siteUrl}/images/pepicture.png`;
 
 const SEO = ({
@@ -27,7 +27,7 @@ const SEO = ({
     founder: {
       "@type": "Person",
       name: "Precious Evans",
-      jobTitle: "Personal Brand Strategist",
+      jobTitle: "Strategist, speaker, teacher and coach",
     },
     areaServed: "Worldwide",
     serviceType: [
@@ -44,7 +44,7 @@ const SEO = ({
       <meta name="description" content={description} />
       <meta
         name="keywords"
-        content="Precious Evans, personal brand strategist, personal branding, brand strategy, brand positioning, TRUE Method, coach branding, expert branding, entrepreneur branding"
+        content="Precious Evans, identity, purpose, coaching, personal branding, speaking"
       />
       <meta name="author" content="Precious Evans" />
       <meta name="robots" content="index, follow" />

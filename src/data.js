@@ -383,7 +383,7 @@ export const processToWinSteps = [
 // FAQs and answers
 export const faqs = [
   {
-    question: "What exactly do you do as a Personal Brand Strategist?",
+    question: "What does your work on identity, purpose and personal branding involve?",
     answer:
       "I help individuals and entrepreneurs discover, define, and communicate their unique value. My process focuses on gaining clarity about who you are, what you stand for, and how to position your brand to attract the right audience and opportunities. Together, we build a personal brand that feels authentic and produces real results.",
   },

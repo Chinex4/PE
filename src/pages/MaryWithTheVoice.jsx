@@ -1,6 +1,6 @@
 import React from "react";
 
-export const approachSteps = [
+const approachSteps = [
   {
     step: "1",
     title: "Brand Clarity:",

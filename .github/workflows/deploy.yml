@@ -16,6 +16,15 @@ jobs:
       VITE_EMAILJS_USER_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_USER_TEMPLATE_ID }}
       VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
+      VITE_BOOKING_URL: ${{ vars.VITE_BOOKING_URL }}
+      VITE_OURTALENTO_URL: ${{ vars.VITE_OURTALENTO_URL }}
+      VITE_CONTACT_EMAIL: ${{ vars.VITE_CONTACT_EMAIL }}
+      VITE_INSTAGRAM_URL: ${{ vars.VITE_INSTAGRAM_URL }}
+      VITE_LINKEDIN_URL: ${{ vars.VITE_LINKEDIN_URL }}
+      VITE_YOUTUBE_URL: ${{ vars.VITE_YOUTUBE_URL }}
+      VITE_ANALYTICS_PROVIDER: ${{ vars.VITE_ANALYTICS_PROVIDER }}
+      VITE_ANALYTICS_ID: ${{ vars.VITE_ANALYTICS_ID }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
