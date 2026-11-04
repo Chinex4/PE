@@ -73,6 +73,17 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => {
+    if (!open) return;
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        document.querySelector(".menu-toggle")?.focus();
+      }
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [open]);
   return (
     <header className="site-header">
       <div className="header-inner">
@@ -104,12 +115,7 @@ export function Header() {
           id="mobile-navigation"
           className="mobile-nav"
           aria-label="Mobile navigation"
-          onKeyDown={(e) => {
-            if (e.key === "Escape") {
-              setOpen(false);
-              document.querySelector(".menu-toggle").focus();
-            }
-          }}
+
         >
           {navigation.map((x) => (
             <NavLink key={x.href} to={x.href}>
