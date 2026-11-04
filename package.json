@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build && node scripts/static-metadata.mjs",
+    "build": "vite build && vite build --ssr src/prerender.jsx --outDir dist-ssr && node scripts/static-metadata.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

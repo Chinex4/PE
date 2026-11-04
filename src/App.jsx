@@ -25,6 +25,14 @@ import Platform, {
   Footer as EditorialFooter,
 } from "./editorial/Platform";
 
+function Legacy({ children }) {
+  return (
+    <div className="legacy-page bg-[#171717] text-[#F5E9DC] min-h-screen font-sans">
+      {children}
+    </div>
+  );
+}
+
 function App() {
   return (
     <div>
@@ -33,41 +41,116 @@ function App() {
       </a>
       <ScrollToTop />
       <Header />
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1}>
         <Suspense fallback={<p className="frame">Loading…</p>}>
           <Routes>
             <Route path="/" element={<Platform page="home" />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/book/:title" element={<BookDetails />} />
+            <Route
+              path="/resources"
+              element={
+                <Legacy>
+                  <Resources />
+                </Legacy>
+              }
+            />
+            <Route
+              path="/book/:title"
+              element={
+                <Legacy>
+                  <BookDetails />
+                </Legacy>
+              }
+            />
             <Route
               path="/services"
               element={<Navigate to="/personal-branding" replace />}
             />
             <Route path="/about" element={<Platform page="about" />} />
             <Route path="/contact" element={<Platform page="contact" />} />
-            <Route path="/xquisite" element={<CaseStudy />} />
-            <Route path="/mary-with-the-voice" element={<MaryWithTheVoice />} />
-            <Route path="/case-studies" element={<CaseStudyPage />} />
+            <Route
+              path="/xquisite"
+              element={
+                <Legacy>
+                  <CaseStudy />
+                </Legacy>
+              }
+            />
+            <Route
+              path="/mary-with-the-voice"
+              element={
+                <Legacy>
+                  <MaryWithTheVoice />
+                </Legacy>
+              }
+            />
+            <Route
+              path="/case-studies"
+              element={
+                <Legacy>
+                  <CaseStudyPage />
+                </Legacy>
+              }
+            />
             <Route
               path="/reach-out"
               element={<Navigate to="/contact" replace />}
             />
-            <Route path="/newsletter" element={<NewsLetter />} />
-            <Route path="/newsletter/plan" element={<NewsletterPlan />} />
+            <Route
+              path="/newsletter"
+              element={
+                <Legacy>
+                  <NewsLetter />
+                </Legacy>
+              }
+            />
+            <Route
+              path="/newsletter/plan"
+              element={
+                <Legacy>
+                  <NewsletterPlan />
+                </Legacy>
+              }
+            />
             <Route
               path="/personalbrandprofitsystem/complete-your-purchase"
-              element={<PbpsCompletePurchaseForm />}
+              element={
+                <Legacy>
+                  <PbpsCompletePurchaseForm />
+                </Legacy>
+              }
             />
             <Route
               path="/limitlesswithevansprecious/complete-your-subscription"
-              element={<LimitlessCompleteSubscription />}
+              element={
+                <Legacy>
+                  <LimitlessCompleteSubscription />
+                </Legacy>
+              }
             />
             <Route
               path="/personalbrandprofitsystem"
-              element={<PersonalBrand />}
+              element={
+                <Legacy>
+                  <PersonalBrand />
+                </Legacy>
+              }
             />
-            <Route path="/coming-soon" element={<ComingSoon />} />
-            <Route path="*" element={<NotFound />} />
+            <Route
+              path="/coming-soon"
+              element={
+                <Legacy>
+                  <ComingSoon />
+                </Legacy>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <Legacy>
+                  <NotFound />
+                </Legacy>
+              }
+            />
             <Route path="/coaching" element={<Platform page="coaching" />} />
             <Route
               path="/personal-branding"

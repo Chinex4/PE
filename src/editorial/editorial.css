@@ -802,3 +802,13 @@ a.audience-card:hover {
     gap: 40px;
   }
 }
+/* Offscreen Home sections retain their semantics while deferring layout work. */
+@supports (content-visibility: auto) {
+  .editorial > .work-section,
+  .editorial > .audience-section,
+  .editorial > .offers-section,
+  .editorial > .ourtalento-band {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
+}

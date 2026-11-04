@@ -1,3 +1,5 @@
+process.env.NODE_ENV = "production";
+const { renderPage } = await import("../dist-ssr/prerender.js");
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { metadata } from "../src/editorial/metadata.js";
 const template = await readFile("dist/index.html", "utf8");
@@ -46,6 +48,10 @@ for (const [page, path] of Object.entries(routes)) {
       )
       .join("\n");
   const html = template
+    .replace(
+      '<div id="root"></div>',
+      `<div id="root" data-rendered-path="/${path}">${renderPage("/" + path)}</div>`,
+    )
     .replace(/<title>[\s\S]*?<\/title>/, "")
     .replace(/<meta\s+name="description"[\s\S]*?\/>/, "")
     .replace(/<link rel="canonical"[^>]*\/>/, "")

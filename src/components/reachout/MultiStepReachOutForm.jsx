@@ -1,3 +1,4 @@
+import { config as siteConfig } from "../../editorial/config";
 import { Fragment, useMemo, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Dialog, Transition } from "@headlessui/react";
@@ -91,7 +92,7 @@ const joinList = (value) =>
 
 const getFirstName = (fullName) => fullName.trim().split(/\s+/)[0] || fullName;
 
-const bookingLink = "https://calendar.app.google/FqmihKDGYk4yd9Ps7";
+const bookingLink = siteConfig.bookingUrl || "/booking";
 
 const buildEmailParams = (values) => {
   const submittedAt = new Date().toLocaleString();

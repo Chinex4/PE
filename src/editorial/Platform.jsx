@@ -39,7 +39,7 @@ function Photo({ kind, alt, priority = false }) {
       height={kind === "speaking" ? 1226 : 900}
       alt={alt}
       loading={priority ? "eager" : "lazy"}
-      fetchPriority={priority ? "high" : "auto"}
+      fetchpriority={priority ? "high" : "auto"}
       decoding="async"
     />
   );

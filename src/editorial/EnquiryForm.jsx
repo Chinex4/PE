@@ -56,6 +56,7 @@ export default function EnquiryForm({ kind = "contact" }) {
   );
   return (
     <form
+      method="post"
       onSubmit={submit}
       className="enquiry-form"
       aria-label={`${kind} enquiry`}
