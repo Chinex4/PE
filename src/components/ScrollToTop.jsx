@@ -6,10 +6,12 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     if (location.hash) {
-      requestAnimationFrame(() =>
+      const frame = requestAnimationFrame(() =>
         document.getElementById(location.hash.slice(1))?.scrollIntoView(),
       );
-    } else {
+      return () => cancelAnimationFrame(frame);
+    }
+    if (window.scrollY !== 0 || window.scrollX !== 0) {
       window.scrollTo({ top: 0, behavior: "instant" });
     }
   }, [location]);

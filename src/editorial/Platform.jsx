@@ -495,11 +495,21 @@ function Booking() {
 export default function Platform({ page = "home" }) {
   const { pathname } = useLocation();
   useEffect(() => {
+    if (
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) return;
+
+    if (
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) return;
+
     const observer = new IntersectionObserver(
       (entries) =>
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.classList.add("is-seen");
+            e.target.classList.add("reveal", "is-seen");
             observer.unobserve(e.target);
           }
         }),
@@ -507,12 +517,9 @@ export default function Platform({ page = "home" }) {
     );
     document
       .querySelectorAll(
-        ".section h2,.section h3,.section p,.section article,.belief-band p",
+        ".editorial > .section, .editorial > .audience-section, .editorial > .ourtalento-band, .belief-band p",
       )
-      .forEach((e) => {
-        e.classList.add("reveal");
-        observer.observe(e);
-      });
+      .forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, [pathname]);
   const pages = {

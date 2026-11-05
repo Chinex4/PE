@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import emailjs from "@emailjs/browser";
 import { config } from "./config";
 import { deliverEnquiry, validateEnquiry } from "./enquiry";
 export default function EnquiryForm({ kind = "contact" }) {
@@ -27,7 +26,10 @@ export default function EnquiryForm({ kind = "contact" }) {
         values,
         kind,
         config.emailjs,
-        emailjs.send,
+        async (...args) => {
+          const { send } = await import("@emailjs/browser");
+          return send(...args);
+        },
       );
       if (result.sent) {
         setStatus("Thank you. Your message has been sent.");
