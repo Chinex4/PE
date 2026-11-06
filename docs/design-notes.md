@@ -10,4 +10,4 @@
 
 **Icons.** All icons are Lucide SVGs. Text arrows such as the old north-east arrow render as emoji on iPhones, so none remain.
 
-**Booking.** One button component serves the whole page. It is a real link to the Cal.com calendar that opens as a popup, and it loads Cal.com only when a visitor shows intent.
+**Booking.** One button component serves the whole page. It opens a short form, which emails Precious through EmailJS, then opens the Cal.com calendar with the name and email filled in. A failed email never blocks booking. Each button is also a real link to the calendar.

@@ -34,6 +34,11 @@ export const config = {
         "https://www.linkedin.com/in/precious-evans-009563270",
     },
   ].filter((x) => x.url),
+  emailjs: {
+    serviceId: "service_hzqkqj6",
+    templateId: "template_uyhpfre",
+    publicKey: env.VITE_EMAILJS_PUBLIC_KEY,
+  },
   analytics: env.VITE_ANALYTICS_PROVIDER || "",
   analyticsId: env.VITE_ANALYTICS_ID || "",
 };

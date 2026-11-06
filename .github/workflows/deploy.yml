@@ -12,6 +12,7 @@ jobs:
 
     env:
 
+      VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
       VITE_BOOKING_URL: ${{ vars.VITE_BOOKING_URL }}
       VITE_OURTALENTO_URL: ${{ vars.VITE_OURTALENTO_URL }}
       VITE_CONTACT_EMAIL: ${{ vars.VITE_CONTACT_EMAIL }}

@@ -66,6 +66,7 @@ export const work = {
         "Building a practical growth plan.",
       ],
       button: "Sign Up For Coaching Session",
+      topic: "Identity & personal development coaching",
     },
     {
       title: "Personal Brand Strategy & Development",
@@ -82,6 +83,7 @@ export const work = {
         "Digital presence and brand development.",
       ],
       button: "Build Your Personal Brand",
+      topic: "Personal brand strategy & development",
     },
   ],
 };
