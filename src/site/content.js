@@ -5,7 +5,7 @@ export const hero = {
   title: "Understand Who You Are & Build a Personal Brand that Reflects It.",
   body: "I coach young people and entrepreneurs to gain clarity on their identity, get a clear direction and build a personal brand that creates meaningful opportunities.",
   primary: "Book a Clarity Call Session",
-  secondary: "See Testimonials",
+  secondary: "See what clients say about me",
 };
 
 export const potential = {
@@ -89,7 +89,7 @@ export const work = {
 };
 
 export const testimonials = {
-  title: "Words from people I’ve worked with.",
+  title: "Words From People I Have Worked With",
   // Each quote is a list of paragraphs. Photos match by order, t1 to t5.
   items: [
     {
