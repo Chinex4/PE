@@ -1196,8 +1196,7 @@ main:focus {
 }
 
 .form input,
-.form select,
-.form textarea {
+.form select {
   width: 100%;
   min-height: 48px;
   padding: 11px 14px;
@@ -1216,10 +1215,6 @@ main:focus {
 
 .form input::placeholder {
   color: rgba(0, 0, 0, 0.45);
-}
-
-.form textarea {
-  resize: vertical;
 }
 
 .form .btn {

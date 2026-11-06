@@ -12,7 +12,7 @@ All `VITE_` values are public and embedded at build time, so never put a secret 
 | `VITE_YOUTUBE_URL` | Overrides the default YouTube link in the footer. |
 | `VITE_ANALYTICS_PROVIDER`, `VITE_ANALYTICS_ID` | `plausible` or `gtag`. Empty disables analytics. |
 
-The booking form sends `to_name`, `from_name`, `user_name`, `user_email`, `user_phone`, `type`, `message` and `reply_to` to the EmailJS template, then opens the calendar. The template design is in `docs/email-template.html`, and the recipient is set in EmailJS. Hours, session length and the booking page wording are set in the Cal.com dashboard. Every booking button sends a `booking_cta_click` event with its location.
+The booking form sends `to_name`, `from_name`, `user_name`, `user_email`, `user_phone`, `type` and `reply_to` to the EmailJS template, then opens the calendar. The template design is in `docs/email-template.html`, and the recipient is set in EmailJS. Hours, session length and the booking page wording are set in the Cal.com dashboard. Every booking button sends a `booking_cta_click` event with its location.
 
 ## Before launch
 

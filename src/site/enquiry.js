@@ -26,12 +26,6 @@ export function validateEnquiry(values) {
     return "Please enter a valid phone number, with your country code.";
   if (!TOPICS.includes(values.enquiry_type))
     return "Please choose what you’d like to focus on.";
-  if (
-    typeof values.message !== "string" ||
-    values.message.trim().length < 10 ||
-    values.message.length > 5000
-  )
-    return "Please add a little more detail to your message.";
   return "";
 }
 
@@ -56,7 +50,6 @@ export async function deliverEnquiry(values, settings, send) {
         user_email: email,
         user_phone: values.user_phone.trim(),
         type: values.enquiry_type,
-        message: values.message.trim(),
         reply_to: email,
       },
       { publicKey: settings.publicKey, limitRate: { throttle: 10000 } },

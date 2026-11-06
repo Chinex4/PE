@@ -171,16 +171,6 @@ function BookingForm({ topic, onDone }) {
           ))}
         </select>
       </label>
-      <label>
-        Where are you right now?
-        <textarea
-          name="message"
-          required
-          minLength={10}
-          maxLength={5000}
-          rows={3}
-        />
-      </label>
       <div className="form__trap" aria-hidden="true">
         <label>
           Website

@@ -11,7 +11,6 @@ const values = {
   user_name: " Test Visitor ",
   user_email: "visitor@example.com",
   user_phone: "+234 801 234 5678",
-  message: "I would like to discuss my next steps.",
   enquiry_type: "Personal brand strategy & development",
 };
 
@@ -53,7 +52,6 @@ test("invalid, honeypot, unavailable and provider failure", async () => {
 
 test("reject whitespace, overlong input and unknown topics", () => {
   assert.ok(validateEnquiry({ ...values, user_name: "  " }));
-  assert.ok(validateEnquiry({ ...values, message: "x".repeat(5001) }));
   assert.ok(validateEnquiry({ ...values, enquiry_type: "Other" }));
   assert.ok(validateEnquiry({ ...values, user_phone: "" }));
   assert.ok(validateEnquiry({ ...values, user_phone: "12345" }));
