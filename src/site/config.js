@@ -20,13 +20,17 @@ export const config = {
     },
     { name: "TikTok", url: "https://www.tiktok.com/@_preciousevans" },
     {
+      name: "YouTube",
+      url:
+        safeUrl(env.VITE_YOUTUBE_URL) ||
+        "https://www.youtube.com/@_preciousevans",
+    },
+    {
       name: "LinkedIn",
       url:
         safeUrl(env.VITE_LINKEDIN_URL) ||
         "https://www.linkedin.com/in/precious-evans-009563270",
     },
-    { name: "X", url: "https://x.com/_preciousevans" },
-    { name: "YouTube", url: safeUrl(env.VITE_YOUTUBE_URL) },
   ].filter((x) => x.url),
   analytics: env.VITE_ANALYTICS_PROVIDER || "",
   analyticsId: env.VITE_ANALYTICS_ID || "",

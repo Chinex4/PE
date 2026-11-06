@@ -8,25 +8,27 @@ export default function Testimonials() {
   return (
     <section className="testimonials section" id="testimonials">
       <div className="frame">
-        <div className="testimonials__top">
-          <Reveal as="h2">{title}</Reveal>
-          <Reveal className="quotes" delay={0.1}>
-            {items.map((item, index) => (
-              <figure
-                className="quote"
-                key={item.name}
-                data-active={index === active}
-                aria-hidden={index !== active}
-              >
-                <blockquote>{item.quote}</blockquote>
-                <figcaption>
-                  <strong>{item.name}</strong>
-                  <span>{item.role}</span>
-                </figcaption>
-              </figure>
-            ))}
-          </Reveal>
-        </div>
+        <Reveal as="h2">{title}</Reveal>
+        <Reveal className="quotes" delay={0.1}>
+          {items.map((item, index) => (
+            <figure
+              className="quote"
+              key={item.name}
+              data-active={index === active}
+              aria-hidden={index !== active}
+            >
+              <blockquote>
+                {item.quote.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </blockquote>
+              <figcaption>
+                <strong>{item.name}</strong>
+                <span>{item.role}</span>
+              </figcaption>
+            </figure>
+          ))}
+        </Reveal>
         <Reveal className="strip" role="group" aria-label="Choose a testimonial">
           {items.map((item, index) => (
             <button

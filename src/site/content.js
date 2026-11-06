@@ -53,7 +53,7 @@ export const work = {
   offers: [
     {
       title: "Identity & Personal Development Coaching",
-      tagline: "Understand yourself & find your direction.",
+      tagline: "Understand who you’re becoming and get a clear direction to building.",
       paragraphs: [
         "You have potential, ambitions and ideas, but you’re still figuring out how to bring them together.",
         "Through group + one-on-one coaching, we’ll understand your identity, recognise your strengths, clarify your direction and develop a practical approach to your personal growth.",
@@ -90,42 +90,47 @@ export const work = {
 
 export const testimonials = {
   title: "Words from people I’ve worked with.",
-  // PLACEHOLDER: every quote, name, role and photo below is dummy content.
-  // Replace all of it with real, approved testimonials before launch.
+  // Each quote is a list of paragraphs. Photos match by order, t1 to t5.
   items: [
     {
-      quote:
-        "I came in with five ideas and no direction. I left knowing exactly which one was mine, and why.",
-      name: "Tobenna Eze",
-      role: "Founder, creative agency",
+      quote: [
+        "“If I’m being genuine, I have never seen anyone coach on Personal Branding as you do. Your framework is so unique and easy. Love it, Evans!”",
+      ],
+      name: "Iheanacho Precious",
+      role: "Lead, DonJed Energy",
       image: "/img/t1.webp",
     },
     {
-      quote:
-        "For the first time I could explain what I do without apologising for it. Clients noticed before I did.",
-      name: "Amara Okoye",
-      role: "Business consultant",
+      quote: [
+        "“Before our session started, right from the first conversation, Precious was already dropping insights and these are things I am still running with till today.",
+        "In the beginning I was like, is this a therapy session because it was that deep. It wasn’t branding on the surface, it was psychological. Talking with Precious helps.”",
+      ],
+      name: "Joyous Joy",
+      role: "Event Host & Founder, Legacy Gathering",
       image: "/img/t2.webp",
     },
     {
-      quote:
-        "The sessions were honest and practical. I stopped copying people online and started sounding like myself.",
-      name: "Kunle Adeyemi",
-      role: "Photographer",
+      quote: [
+        "“Precious is really good at strategy & Consulting. That is his field and strength for sure!”",
+      ],
+      name: "Mary Okon",
+      role: "Host, MWTV Podcast & Speaker",
       image: "/img/t3.webp",
     },
     {
-      quote:
-        "Identity sounded abstract until we worked on mine. Now every big decision has something solid to stand on.",
-      name: "Zainab Bello",
-      role: "Final-year student",
+      quote: [
+        "“Precious is daring and very persistent. The way he reached out and got into the company showed how daring and unique he is.”",
+      ],
+      name: "Victor Okafor",
+      role: "Managing Partner, Jali",
       image: "/img/t4.webp",
     },
     {
-      quote:
-        "My brand finally looks and sounds like the work I do. The right enquiries started coming in within weeks.",
-      name: "Ifeoma Nnadi",
-      role: "Fashion entrepreneur",
+      quote: [
+        "“Working with Precious is always beautiful and exciting. His energy and commitment is really inspiring. After one call I knew I want to work with him and I did.”",
+      ],
+      name: "Massa",
+      role: "Founder, Luminous Scrubs (US)",
       image: "/img/t5.webp",
     },
   ],
@@ -134,7 +139,7 @@ export const testimonials = {
 export const about = {
   title: "A little about me",
   name: "I’m Precious Evans.",
-  role: "I’m a personal brand strategist, teacher and founder of Ourtalento.",
+  role: "I’m a personal brand strategist, coach and founder of Ourtalento.",
   belief:
     "My work is driven by a simple belief: understanding who you are is an important part of becoming who you want to be.",
   paragraphs: [
@@ -177,7 +182,7 @@ export const closing = {
 };
 
 export const footer = {
-  statement: "Understand who you are. Build what matters.",
+  statement: "Identity is the foundation of everything meaningful we build",
   tagline: "Identity. Purpose. Personal Brand.",
 };
 

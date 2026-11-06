@@ -9,14 +9,14 @@ All `VITE_` values are public and embedded at build time, so never put a secret 
 | `VITE_CONTACT_EMAIL` | Shown in the footer when set. |
 | `VITE_OURTALENTO_URL` | Adds an Ourtalento link to the footer when set. |
 | `VITE_INSTAGRAM_URL`, `VITE_LINKEDIN_URL` | Override the default profile links in `src/site/config.js`. |
-| `VITE_YOUTUBE_URL` | Adds YouTube to the footer when set. |
+| `VITE_YOUTUBE_URL` | Overrides the default YouTube link in the footer. |
 | `VITE_ANALYTICS_PROVIDER`, `VITE_ANALYTICS_ID` | `plausible` or `gtag`. Empty disables analytics. |
 
 The EmailJS template receives `name`, `email`, `reply_to`, `subject`, `form_type`, `enquiry_type` and `message`. Set the recipient inside the template. Every booking button sends a `booking_cta_click` event with its location.
 
 ## Before launch
 
-1. Replace the placeholder testimonials in `src/site/content.js` and their images `public/img/t1.webp` to `t5.webp`. They are dummy content.
+1. Testimonial photos `public/img/t1.webp` to `t5.webp` match the quotes in `src/site/content.js` by order. Keep them at 500 × 620 and in black and white.
 2. Buy a Neue Montreal web licence from Pangram Pangram, then follow the steps in `src/site/fonts.css`.
 3. Set `VITE_BOOKING_URL`, or confirm the EmailJS template works for the request form.
 
