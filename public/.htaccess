@@ -4,9 +4,8 @@ RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
-RewriteRule ^services/?$ /personal-branding [R=301,L]
-RewriteRule ^reach-out/?$ /contact [R=301,L]
+# One-page site: every retired URL goes home.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule . / [R=301,L]
 </IfModule>

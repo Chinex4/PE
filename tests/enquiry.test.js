@@ -1,82 +1,57 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { deliverEnquiry, validateEnquiry } from "../src/editorial/enquiry.js";
+import { deliverEnquiry, validateEnquiry } from "../src/site/enquiry.js";
+
 const settings = {
   serviceId: "test-service",
   templateId: "test-template",
   publicKey: "public-test-key",
 };
-const base = {
+const values = {
   user_name: " Test Visitor ",
   user_email: "visitor@example.com",
   message: "I would like to discuss my next steps.",
-  enquiry_type: "Coaching",
+  enquiry_type: "Personal brand strategy & development",
 };
-for (const kind of ["contact", "branding", "speaking"]) {
-  const values =
-    kind === "speaking"
-      ? {
-          ...base,
-          organisation: "Example",
-          event_date: "2027-02-03",
-          audience: "Students",
-          topic: "Identity",
-        }
-      : base;
-  test(`${kind}: valid enquiry maps payload and awaits delivery`, async () => {
-    let payload;
-    const result = await deliverEnquiry(
-      values,
-      kind,
-      settings,
-      async (...args) => {
-        payload = args;
-      },
-    );
-    assert.equal(result.sent, true);
-    assert.equal(payload[2].reply_to, base.user_email);
-    assert.equal(payload[2].name, "Test Visitor");
-    assert.equal(payload[2].form_type, kind);
-    if (kind === "speaking")
-      assert.match(payload[2].message, /Event date: 2027-02-03/);
+
+test("valid enquiry maps payload and awaits delivery", async () => {
+  let payload;
+  const result = await deliverEnquiry(values, settings, async (...args) => {
+    payload = args;
   });
-  test(`${kind}: invalid, honeypot, unavailable and provider failure`, async () => {
-    let calls = 0;
-    const send = async () => {
-      calls++;
-    };
-    await assert.rejects(
-      () =>
-        deliverEnquiry({ ...values, user_email: "bad" }, kind, settings, send),
-      /valid email/,
-    );
-    assert.equal(calls, 0);
-    assert.equal(
-      (
-        await deliverEnquiry(
-          { ...values, website: "spam" },
-          kind,
-          settings,
-          send,
-        )
-      ).spam,
-      true,
-    );
-    assert.equal(calls, 0);
-    await assert.rejects(
-      () => deliverEnquiry(values, kind, {}, send),
-      /unavailable/,
-    );
-    await assert.rejects(
-      () =>
-        deliverEnquiry(values, kind, settings, async () => {
-          throw Error("private provider error");
-        }),
-      /could not be sent/,
-    );
-  });
-}
-test("reject whitespace and overlong input", () => {
-  assert.ok(validateEnquiry({ ...base, user_name: "  " }, "contact"));
-  assert.ok(validateEnquiry({ ...base, message: "x".repeat(5001) }, "contact"));
+  assert.equal(result.sent, true);
+  assert.equal(payload[2].reply_to, values.user_email);
+  assert.equal(payload[2].name, "Test Visitor");
+  assert.equal(payload[2].form_type, "clarity-call");
+  assert.match(payload[2].subject, /Personal brand strategy/);
+});
+
+test("invalid, honeypot, unavailable and provider failure", async () => {
+  let calls = 0;
+  const send = async () => {
+    calls++;
+  };
+  await assert.rejects(
+    () => deliverEnquiry({ ...values, user_email: "bad" }, settings, send),
+    /valid email/,
+  );
+  assert.equal(calls, 0);
+  const spam = await deliverEnquiry({ ...values, website: "x" }, settings, send);
+  assert.equal(spam.spam, true);
+  assert.equal(calls, 0);
+  await assert.rejects(() => deliverEnquiry(values, {}, send), /unavailable/);
+  await assert.rejects(
+    () =>
+      deliverEnquiry(values, settings, async () => {
+        throw Error("private provider error");
+      }),
+    /could not be sent/,
+  );
+});
+
+test("reject whitespace, overlong input and unknown topics", () => {
+  assert.ok(validateEnquiry({ ...values, user_name: "  " }));
+  assert.ok(validateEnquiry({ ...values, message: "x".repeat(5001) }));
+  assert.ok(validateEnquiry({ ...values, enquiry_type: "Other" }));
+  assert.equal(validateEnquiry(values), "");
 });

@@ -1,11 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/services",
-      "destination": "/personal-branding",
+      "source": "/:path((?!img/|assets/|favicon|apple-touch-icon|robots\\.txt|sitemap\\.xml).+)",
+      "destination": "/",
       "permanent": true
-    },
-    { "source": "/reach-out", "destination": "/contact", "permanent": true }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    }
+  ]
 }
