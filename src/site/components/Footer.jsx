@@ -91,23 +91,18 @@ export default function Footer() {
       >
         <div className="modal__prose">
           <p>
-            The booking form collects the details you provide so Precious Evans
-            can respond to your request. Please only include information
-            relevant to your enquiry.
+            Booking buttons open a calendar provided by Cal.com. The details you
+            enter there are handled under Cal.com’s privacy terms and shared
+            with Precious Evans so your session can be arranged.
           </p>
           <p>
-            Requests are delivered through EmailJS and the connected email
-            service. If booking opens a calendar provider, that provider’s
-            privacy terms apply to what you enter there.
-          </p>
-          <p>
-            Your information is used to respond and arrange the service you
-            request. It is not added to a marketing list through this form.
+            Your information is used to arrange and hold the session you book.
+            It is not added to a marketing list through this booking.
           </p>
           <p>
             Booking button clicks can be measured when analytics is enabled. The
-            event contains the button’s location on the page, without your form
-            details.
+            event contains the button’s location on the page, without your
+            booking details.
           </p>
         </div>
       </Modal>

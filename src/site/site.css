@@ -204,11 +204,6 @@ main:focus {
   transform: scale(0.98);
 }
 
-.btn:disabled {
-  opacity: 0.6;
-  cursor: wait;
-}
-
 .btn__icon {
   position: relative;
   flex: none;
@@ -1154,11 +1149,6 @@ main:focus {
   font-size: clamp(1.5rem, 2.4vw, 1.75rem);
 }
 
-.modal__intro {
-  margin-top: 12px;
-  color: rgba(0, 0, 0, 0.7);
-}
-
 .modal__prose {
   display: grid;
   gap: 14px;
@@ -1180,61 +1170,6 @@ main:focus {
 
 .modal__close:hover {
   background: rgba(0, 0, 0, 0.07);
-}
-
-.form {
-  display: grid;
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.form label {
-  display: grid;
-  gap: 6px;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.form input,
-.form select,
-.form textarea {
-  width: 100%;
-  min-height: 50px;
-  padding: 12px 14px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--white);
-  color: var(--black);
-  font: inherit;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.form textarea {
-  resize: vertical;
-}
-
-.form .btn {
-  margin-top: 4px;
-}
-
-.form .btn--peach:hover {
-  background: var(--black);
-  color: var(--white);
-  --icon-bg: var(--white);
-  --icon-fg: var(--black);
-}
-
-.form__status:empty {
-  display: none;
-}
-
-.form__trap {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
 }
 
 /* Tablet and below */

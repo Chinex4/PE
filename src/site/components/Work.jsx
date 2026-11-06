@@ -36,7 +36,6 @@ export default function Work() {
                 <BookingButton
                   label={offer.button}
                   location={`offer-${index + 1}`}
-                  topic={offer.topic}
                   variant={index === 1 ? "black" : "peach"}
                 />
               </div>

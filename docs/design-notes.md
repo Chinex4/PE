@@ -10,4 +10,4 @@
 
 **Icons.** All icons are Lucide SVGs. Text arrows such as the old north-east arrow render as emoji on iPhones, so none remain.
 
-**Booking.** One button component serves the whole page: it opens the calendar when configured, and the request form otherwise.
+**Booking.** One button component serves the whole page. It is a real link to the Cal.com calendar that opens as a popup, and it loads Cal.com only when a visitor shows intent.

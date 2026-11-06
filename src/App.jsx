@@ -2,7 +2,6 @@ import { LazyMotion, MotionConfig, domAnimation } from "framer-motion";
 import "@fontsource-variable/instrument-sans";
 import "./site/fonts.css";
 import "./site/site.css";
-import { BookingProvider } from "./site/components/Booking";
 import Header from "./site/components/Header";
 import Hero from "./site/components/Hero";
 import Potential from "./site/components/Potential";
@@ -19,24 +18,22 @@ export default function App() {
   return (
     <LazyMotion features={domAnimation} strict>
       <MotionConfig reducedMotion="user">
-        <BookingProvider>
-          <a className="skip-link" href="#main">
-            Skip to content
-          </a>
-          <Header />
-          <main id="main" tabIndex={-1}>
-            <Hero />
-            <Potential />
-            <Framework />
-            <Work />
-            <Testimonials />
-            <About />
-            <Faq />
-            <Closing />
-          </main>
-          <Footer />
-          <StickyCta />
-        </BookingProvider>
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
+        <Header />
+        <main id="main" tabIndex={-1}>
+          <Hero />
+          <Potential />
+          <Framework />
+          <Work />
+          <Testimonials />
+          <About />
+          <Faq />
+          <Closing />
+        </main>
+        <Footer />
+        <StickyCta />
       </MotionConfig>
     </LazyMotion>
   );

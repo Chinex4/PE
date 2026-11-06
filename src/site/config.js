@@ -8,7 +8,9 @@ const safeUrl = (value) => {
   }
 };
 export const config = {
-  bookingUrl: safeUrl(env.VITE_BOOKING_URL),
+  bookingUrl:
+    safeUrl(env.VITE_BOOKING_URL) ||
+    "https://cal.com/precious-evans-cch1ym/truecallswithpe",
   ourtalentoUrl: safeUrl(env.VITE_OURTALENTO_URL),
   email: env.VITE_CONTACT_EMAIL || "",
   socialLinks: [
@@ -34,11 +36,6 @@ export const config = {
   ].filter((x) => x.url),
   analytics: env.VITE_ANALYTICS_PROVIDER || "",
   analyticsId: env.VITE_ANALYTICS_ID || "",
-  emailjs: {
-    serviceId: env.VITE_EMAILJS_SERVICE_ID,
-    templateId: env.VITE_EMAILJS_ADMIN_TEMPLATE_ID,
-    publicKey: env.VITE_EMAILJS_PUBLIC_KEY,
-  },
 };
 export function trackBooking(location) {
   window.dispatchEvent(
